@@ -1,21 +1,28 @@
 import pandas as pd
-import holidays
 
 # 1. Cargar dataset existente
-df = pd.read_csv("data/clean/queue_times_weather.csv")
+df = pd.read_csv("data/tiempos_clean.csv")
 
-# 2. Convertir la columna 'date' a tipo datetime
+# 2. Convertir fecha a datetime
 df['fecha'] = pd.to_datetime(df['fecha'])
 
-# 3. Crear calendario de festivos de España (Madrid)
-festivos_madrid = holidays.Spain(subdiv='MD')  # 'MD' = Madrid
+# 3. Clasificar temporada solo por mes
+def clasificar_temporada(row):
+    mes = row['fecha'].month
 
-# 4. Crear columna booleana 'festivo'
-df['festivo'] = df['fecha'].dt.date.isin(festivos_madrid)
+    if mes in [3, 11]:
+        return 'baja'
+    elif mes in [4, 5, 9, 12]:
+        return 'media'
+    elif mes in [6, 7, 8, 10]:
+        return 'alta'
+    else:
+        return 'baja'
 
+df['temporada'] = df.apply(clasificar_temporada, axis=1)
 
-# 6. Guardar dataset enriquecido
-df.to_csv("data/tiempos.csv", index=False)
+# 4. Guardar
+df.to_csv("data/tiempos_final.csv", index=False)
 
-print("✅ Dataset enriquecido con festivos guardado como 'queue_times_weather_festivos.csv'")
-print(df[['fecha', 'festivo']].head(10))
+print("✅ Columna 'temporada' añadida correctamente (solo por mes).")
+print(df[['fecha', 'temporada']].head(15))
