@@ -9,19 +9,19 @@ from datetime import datetime
 
 def load_model_artifacts():
     """Carga todos los artefactos necesarios para hacer predicciones"""
-    model = joblib.load("../models/xgb_model_professional.pkl")
-    scaler = joblib.load("../models/xgb_scaler_professional.pkl")
-    encoding_maps = joblib.load("../models/xgb_encoding_professional.pkl")
-    columnas_entrenamiento = joblib.load("../models/xgb_columns_professional.pkl")
-    df_processed = joblib.load("../models/df_processed.pkl")
+    model = joblib.load("models/xgb_model_professional.pkl")
+    scaler = joblib.load("models/xgb_scaler_professional.pkl")
+    encoding_maps = joblib.load("models/xgb_encoding_professional.pkl")
+    columnas_entrenamiento = joblib.load("models/xgb_columns_professional.pkl")
+    df_processed = joblib.load("models/df_processed.pkl")
     
     # Cargar históricos
-    hist_mes = joblib.load("../models/hist_mes.pkl")
-    hist_hora = joblib.load("../models/hist_hora.pkl")
-    hist_dia_semana = joblib.load("../models/hist_dia_semana.pkl")
-    hist_mes_dia = joblib.load("../models/hist_mes_dia.pkl")
-    hist_hora_dia = joblib.load("../models/hist_hora_dia.pkl")
-    hist_mes_hora = joblib.load("../models/hist_mes_hora.pkl")
+    hist_mes = joblib.load("models/hist_mes.pkl")
+    hist_hora = joblib.load("models/hist_hora.pkl")
+    hist_dia_semana = joblib.load("models/hist_dia_semana.pkl")
+    hist_mes_dia = joblib.load("models/hist_mes_dia.pkl")
+    hist_hora_dia = joblib.load("models/hist_hora_dia.pkl")
+    hist_mes_hora = joblib.load("models/hist_mes_hora.pkl")
     
     return {
         "model": model,

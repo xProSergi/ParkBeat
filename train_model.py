@@ -17,7 +17,7 @@ import warnings
 from datetime import datetime, timedelta
 warnings.filterwarnings('ignore')
 
-os.makedirs("../models", exist_ok=True)
+os.makedirs("models", exist_ok=True)
 
 # -------------------------
 # 1) CARGA Y ANÁLISIS INICIAL
@@ -1194,17 +1194,17 @@ print("\n" + "=" * 70)
 print("💾 GUARDANDO MODELO Y ARTEFACTOS")
 print("=" * 70)
 
-joblib.dump(model, "../models/xgb_model_professional.pkl")
-joblib.dump(scaler, "../models/xgb_scaler_professional.pkl")
-joblib.dump(encoding_maps, "../models/xgb_encoding_professional.pkl")
-joblib.dump(columnas_entrenamiento, "../models/xgb_columns_professional.pkl")
-joblib.dump(hist_mes, "../models/hist_mes.pkl")
-joblib.dump(hist_hora, "../models/hist_hora.pkl")
-joblib.dump(hist_dia_semana, "../models/hist_dia_semana.pkl")
-joblib.dump(hist_mes_dia, "../models/hist_mes_dia.pkl")
-joblib.dump(hist_hora_dia, "../models/hist_hora_dia.pkl")
-joblib.dump(hist_mes_hora, "../models/hist_mes_hora.pkl")
-joblib.dump(df, "../models/df_processed.pkl")  # Guardar df procesado para usar en predicción
+joblib.dump(model, "models/xgb_model_professional.pkl")
+joblib.dump(scaler, "models/xgb_scaler_professional.pkl")
+joblib.dump(encoding_maps, "models/xgb_encoding_professional.pkl")
+joblib.dump(columnas_entrenamiento, "models/xgb_columns_professional.pkl")
+joblib.dump(hist_mes, "models/hist_mes.pkl")
+joblib.dump(hist_hora, "models/hist_hora.pkl")
+joblib.dump(hist_dia_semana, "models/hist_dia_semana.pkl")
+joblib.dump(hist_mes_dia, "models/hist_mes_dia.pkl")
+joblib.dump(hist_hora_dia, "models/hist_hora_dia.pkl")
+joblib.dump(hist_mes_hora, "models/hist_mes_hora.pkl")
+joblib.dump(df, "models/df_processed.pkl")  
 
 print("✅ Todos los artefactos guardados correctamente")
 
