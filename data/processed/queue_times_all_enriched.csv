@@ -1,4 +1,594 @@
 ﻿zona,atraccion,tiempo_espera,abierta,ultima_actualizacion,fecha,hora,dia_semana,mes,fin_de_semana,temperatura,humedad,sensacion_termica,codigo_clima,temporada
+Cartoon Village,A Toda Máquina,5,True,2025-10-16 11:40:09+00:00,2025-10-16,11:40,Jueves,10.0,0.0,19.1,64.0,18.8,3.0,alta
+Cartoon Village,Cartoon Carousel,5,True,2025-10-16 11:40:09+00:00,2025-10-16,11:40,Jueves,10.0,0.0,19.1,64.0,18.8,3.0,alta
+Cartoon Village,Convoy de Camiones,5,True,2025-10-16 11:40:09+00:00,2025-10-16,11:40,Jueves,10.0,0.0,19.1,64.0,18.8,3.0,alta
+Cartoon Village,Correcaminos Bip Bip,5,True,2025-10-16 11:40:09+00:00,2025-10-16,11:40,Jueves,10.0,0.0,19.1,64.0,18.8,3.0,alta
+Cartoon Village,Emergencias Pato Lucas,5,True,2025-10-16 11:40:09+00:00,2025-10-16,11:40,Jueves,10.0,0.0,19.1,64.0,18.8,3.0,alta
+Cartoon Village,He Visto un Lindo Gatito,5,True,2025-10-16 11:40:09+00:00,2025-10-16,11:40,Jueves,10.0,0.0,19.1,64.0,18.8,3.0,alta
+Cartoon Village,La Aventura de Scooby-Doo,5,True,2025-10-16 11:40:09+00:00,2025-10-16,11:40,Jueves,10.0,0.0,19.1,64.0,18.8,3.0,alta
+Cartoon Village,La Captura de Gossamer,5,True,2025-10-16 11:40:09+00:00,2025-10-16,11:40,Jueves,10.0,0.0,19.1,64.0,18.8,3.0,alta
+Cartoon Village,Looney Tunes Correo Aéreo,5,True,2025-10-16 11:40:09+00:00,2025-10-16,11:40,Jueves,10.0,0.0,19.1,64.0,18.8,3.0,alta
+Cartoon Village,Marvin el Marciano Cohetes Espaciales,5,True,2025-10-16 11:40:09+00:00,2025-10-16,11:40,Jueves,10.0,0.0,19.1,64.0,18.8,3.0,alta
+Cartoon Village,Pato Lucas Coches Locos,5,True,2025-10-16 11:40:09+00:00,2025-10-16,11:40,Jueves,10.0,0.0,19.1,64.0,18.8,3.0,alta
+Cartoon Village,Piolín y Silvestre Paseo en Autobús,5,True,2025-10-16 11:40:09+00:00,2025-10-16,11:40,Jueves,10.0,0.0,19.1,64.0,18.8,3.0,alta
+Cartoon Village,Scooby-Doo's Tea Party Mistery,5,True,2025-10-16 11:40:09+00:00,2025-10-16,11:40,Jueves,10.0,0.0,19.1,64.0,18.8,3.0,alta
+Cartoon Village,Tom & Jerry Picnic en el Parque,10,True,2025-10-16 11:40:09+00:00,2025-10-16,11:40,Jueves,10.0,0.0,19.1,64.0,18.8,3.0,alta
+Cartoon Village,Wile E. Coyote Zona de Explosión,5,True,2025-10-16 11:40:09+00:00,2025-10-16,11:40,Jueves,10.0,0.0,19.1,64.0,18.8,3.0,alta
+DC Super Heroes World,Batman Gotham City Escape,15,True,2025-10-16 11:40:09+00:00,2025-10-16,11:40,Jueves,10.0,0.0,19.1,64.0,18.8,3.0,alta
+DC Super Heroes World,La Venganza del Enigma,5,True,2025-10-16 11:40:09+00:00,2025-10-16,11:40,Jueves,10.0,0.0,19.1,64.0,18.8,3.0,alta
+DC Super Heroes World,Mr. Freeze Fábrica de Hielo,5,True,2025-10-16 11:40:09+00:00,2025-10-16,11:40,Jueves,10.0,0.0,19.1,64.0,18.8,3.0,alta
+DC Super Heroes World,Shadows of Arkham,5,True,2025-10-16 11:40:09+00:00,2025-10-16,11:40,Jueves,10.0,0.0,19.1,64.0,18.8,3.0,alta
+DC Super Heroes World,Superman La Atracción de Acero,5,True,2025-10-16 11:40:09+00:00,2025-10-16,11:40,Jueves,10.0,0.0,19.1,64.0,18.8,3.0,alta
+DC Super Heroes World,The Joker Coches de Choque,5,True,2025-10-16 11:40:09+00:00,2025-10-16,11:40,Jueves,10.0,0.0,19.1,64.0,18.8,3.0,alta
+Movie World Studios,Cine Tour,5,True,2025-10-16 11:40:09+00:00,2025-10-16,11:40,Jueves,10.0,0.0,19.1,64.0,18.8,3.0,alta
+Old West Territory,Coaster Express,5,True,2025-10-16 11:40:09+00:00,2025-10-16,11:40,Jueves,10.0,0.0,19.1,64.0,18.8,3.0,alta
+Old West Territory,Los Carros de la Mina,5,True,2025-10-16 11:40:09+00:00,2025-10-16,11:40,Jueves,10.0,0.0,19.1,64.0,18.8,3.0,alta
+Cartoon Village,Cartoon Carousel,5,True,2025-10-17 12:25:10+00:00,2025-10-17,12:25,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+Cartoon Village,Correcaminos Bip Bip,5,True,2025-10-17 12:25:10+00:00,2025-10-17,12:25,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+Cartoon Village,La Aventura de Scooby-Doo,5,True,2025-10-17 12:25:10+00:00,2025-10-17,12:25,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+Cartoon Village,La Captura de Gossamer,5,True,2025-10-17 12:25:10+00:00,2025-10-17,12:25,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+Cartoon Village,Looney Tunes Correo Aéreo,5,True,2025-10-17 12:25:10+00:00,2025-10-17,12:25,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+Cartoon Village,Tom & Jerry Picnic en el Parque,5,True,2025-10-17 12:25:10+00:00,2025-10-17,12:25,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+DC Super Heroes World,Batman Gotham City Escape,5,True,2025-10-17 12:25:10+00:00,2025-10-17,12:25,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+DC Super Heroes World,La Venganza del Enigma,10,True,2025-10-17 12:25:10+00:00,2025-10-17,12:25,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+DC Super Heroes World,Mr. Freeze Fábrica de Hielo,5,True,2025-10-17 12:25:10+00:00,2025-10-17,12:25,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+DC Super Heroes World,Shadows of Arkham,5,True,2025-10-17 12:25:10+00:00,2025-10-17,12:25,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+DC Super Heroes World,Superman La Atracción de Acero,5,True,2025-10-17 12:25:10+00:00,2025-10-17,12:25,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+DC Super Heroes World,The Joker Coches de Choque,5,True,2025-10-17 12:25:10+00:00,2025-10-17,12:25,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+Movie World Studios,Cine Tour,5,True,2025-10-17 12:25:10+00:00,2025-10-17,12:25,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+Movie World Studios,Hotel Embrujado,5,True,2025-10-17 12:25:10+00:00,2025-10-17,12:25,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+Movie World Studios,Stunt Fall,5,True,2025-10-17 12:25:10+00:00,2025-10-17,12:25,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+Old West Territory,Coaster Express,5,True,2025-10-17 12:25:10+00:00,2025-10-17,12:25,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+Old West Territory,Los Carros de la Mina,5,True,2025-10-17 12:25:10+00:00,2025-10-17,12:25,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+Cartoon Village,Cartoon Carousel,5,True,2025-10-17 12:40:09+00:00,2025-10-17,12:40,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+Cartoon Village,Correcaminos Bip Bip,5,True,2025-10-17 12:40:09+00:00,2025-10-17,12:40,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+Cartoon Village,La Aventura de Scooby-Doo,5,True,2025-10-17 12:40:09+00:00,2025-10-17,12:40,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+Cartoon Village,La Captura de Gossamer,5,True,2025-10-17 12:40:09+00:00,2025-10-17,12:40,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+Cartoon Village,Looney Tunes Correo Aéreo,5,True,2025-10-17 12:40:09+00:00,2025-10-17,12:40,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+Cartoon Village,Tom & Jerry Picnic en el Parque,5,True,2025-10-17 12:40:09+00:00,2025-10-17,12:40,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+DC Super Heroes World,Batman Gotham City Escape,10,True,2025-10-17 12:40:09+00:00,2025-10-17,12:40,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+DC Super Heroes World,La Venganza del Enigma,10,True,2025-10-17 12:40:09+00:00,2025-10-17,12:40,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+DC Super Heroes World,Mr. Freeze Fábrica de Hielo,5,True,2025-10-17 12:40:09+00:00,2025-10-17,12:40,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+DC Super Heroes World,Shadows of Arkham,5,True,2025-10-17 12:40:09+00:00,2025-10-17,12:40,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+DC Super Heroes World,The Joker Coches de Choque,5,True,2025-10-17 12:40:09+00:00,2025-10-17,12:40,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+Movie World Studios,Cine Tour,5,True,2025-10-17 12:40:09+00:00,2025-10-17,12:40,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+Movie World Studios,Hotel Embrujado,5,True,2025-10-17 12:40:09+00:00,2025-10-17,12:40,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+Movie World Studios,Stunt Fall,5,True,2025-10-17 12:40:09+00:00,2025-10-17,12:40,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+Old West Territory,Coaster Express,5,True,2025-10-17 12:40:09+00:00,2025-10-17,12:40,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+Old West Territory,Los Carros de la Mina,5,True,2025-10-17 12:40:09+00:00,2025-10-17,12:40,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+Cartoon Village,Cartoon Carousel,5,True,2025-10-17 12:55:10+00:00,2025-10-17,12:55,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+Cartoon Village,Correcaminos Bip Bip,5,True,2025-10-17 12:55:10+00:00,2025-10-17,12:55,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+Cartoon Village,La Aventura de Scooby-Doo,5,True,2025-10-17 12:55:10+00:00,2025-10-17,12:55,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+Cartoon Village,La Captura de Gossamer,5,True,2025-10-17 12:55:10+00:00,2025-10-17,12:55,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+Cartoon Village,Looney Tunes Correo Aéreo,5,True,2025-10-17 12:55:10+00:00,2025-10-17,12:55,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+DC Super Heroes World,Batman Gotham City Escape,10,True,2025-10-17 12:55:10+00:00,2025-10-17,12:55,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+DC Super Heroes World,La Venganza del Enigma,10,True,2025-10-17 12:55:10+00:00,2025-10-17,12:55,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+DC Super Heroes World,Mr. Freeze Fábrica de Hielo,5,True,2025-10-17 12:55:10+00:00,2025-10-17,12:55,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+DC Super Heroes World,Shadows of Arkham,5,True,2025-10-17 12:55:10+00:00,2025-10-17,12:55,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+DC Super Heroes World,The Joker Coches de Choque,5,True,2025-10-17 12:55:10+00:00,2025-10-17,12:55,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+Movie World Studios,Cine Tour,5,True,2025-10-17 12:55:10+00:00,2025-10-17,12:55,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+Movie World Studios,Hotel Embrujado,5,True,2025-10-17 12:55:10+00:00,2025-10-17,12:55,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+Movie World Studios,Stunt Fall,5,True,2025-10-17 12:55:10+00:00,2025-10-17,12:55,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+Old West Territory,Coaster Express,5,True,2025-10-17 12:55:10+00:00,2025-10-17,12:55,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+Old West Territory,Los Carros de la Mina,5,True,2025-10-17 12:55:10+00:00,2025-10-17,12:55,Viernes,10.0,0.0,21.1,50.0,20.8,1.0,alta
+Cartoon Village,Cartoon Carousel,5,True,2025-10-17 13:10:09+00:00,2025-10-17,13:10,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+Cartoon Village,Correcaminos Bip Bip,5,True,2025-10-17 13:10:09+00:00,2025-10-17,13:10,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+Cartoon Village,La Aventura de Scooby-Doo,15,True,2025-10-17 13:10:09+00:00,2025-10-17,13:10,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+Cartoon Village,La Captura de Gossamer,5,True,2025-10-17 13:10:09+00:00,2025-10-17,13:10,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+Cartoon Village,Looney Tunes Correo Aéreo,5,True,2025-10-17 13:10:09+00:00,2025-10-17,13:10,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+DC Super Heroes World,Batman Gotham City Escape,5,True,2025-10-17 13:10:09+00:00,2025-10-17,13:10,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+DC Super Heroes World,La Venganza del Enigma,10,True,2025-10-17 13:10:09+00:00,2025-10-17,13:10,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+DC Super Heroes World,Mr. Freeze Fábrica de Hielo,5,True,2025-10-17 13:10:09+00:00,2025-10-17,13:10,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+DC Super Heroes World,Shadows of Arkham,5,True,2025-10-17 13:10:09+00:00,2025-10-17,13:10,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+DC Super Heroes World,The Joker Coches de Choque,5,True,2025-10-17 13:10:09+00:00,2025-10-17,13:10,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+Movie World Studios,Cine Tour,5,True,2025-10-17 13:10:09+00:00,2025-10-17,13:10,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+Movie World Studios,Hotel Embrujado,5,True,2025-10-17 13:10:09+00:00,2025-10-17,13:10,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+Movie World Studios,Stunt Fall,5,True,2025-10-17 13:10:09+00:00,2025-10-17,13:10,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+Old West Territory,Coaster Express,5,True,2025-10-17 13:10:09+00:00,2025-10-17,13:10,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+Old West Territory,Los Carros de la Mina,5,True,2025-10-17 13:10:09+00:00,2025-10-17,13:10,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+Cartoon Village,Cartoon Carousel,5,True,2025-10-17 13:25:10+00:00,2025-10-17,13:25,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+Cartoon Village,Correcaminos Bip Bip,5,True,2025-10-17 13:25:10+00:00,2025-10-17,13:25,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+Cartoon Village,La Aventura de Scooby-Doo,15,True,2025-10-17 13:25:10+00:00,2025-10-17,13:25,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+Cartoon Village,La Captura de Gossamer,5,True,2025-10-17 13:25:10+00:00,2025-10-17,13:25,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+Cartoon Village,Looney Tunes Correo Aéreo,5,True,2025-10-17 13:25:10+00:00,2025-10-17,13:25,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+DC Super Heroes World,Batman Gotham City Escape,5,True,2025-10-17 13:25:10+00:00,2025-10-17,13:25,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+DC Super Heroes World,La Venganza del Enigma,10,True,2025-10-17 13:25:10+00:00,2025-10-17,13:25,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+DC Super Heroes World,Mr. Freeze Fábrica de Hielo,5,True,2025-10-17 13:25:10+00:00,2025-10-17,13:25,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+DC Super Heroes World,Shadows of Arkham,5,True,2025-10-17 13:25:10+00:00,2025-10-17,13:25,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+DC Super Heroes World,The Joker Coches de Choque,5,True,2025-10-17 13:25:10+00:00,2025-10-17,13:25,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+Movie World Studios,Cine Tour,5,True,2025-10-17 13:25:10+00:00,2025-10-17,13:25,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+Movie World Studios,Hotel Embrujado,5,True,2025-10-17 13:25:10+00:00,2025-10-17,13:25,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+Movie World Studios,Stunt Fall,5,True,2025-10-17 13:25:10+00:00,2025-10-17,13:25,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+Old West Territory,Coaster Express,5,True,2025-10-17 13:25:10+00:00,2025-10-17,13:25,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+Old West Territory,Los Carros de la Mina,5,True,2025-10-17 13:25:10+00:00,2025-10-17,13:25,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+Cartoon Village,A Toda Máquina,5,True,2025-10-17 13:40:10+00:00,2025-10-17,13:40,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+Cartoon Village,Cartoon Carousel,5,True,2025-10-17 13:40:10+00:00,2025-10-17,13:40,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+Cartoon Village,Correcaminos Bip Bip,5,True,2025-10-17 13:40:10+00:00,2025-10-17,13:40,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+Cartoon Village,La Aventura de Scooby-Doo,20,True,2025-10-17 13:40:10+00:00,2025-10-17,13:40,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+Cartoon Village,La Captura de Gossamer,5,True,2025-10-17 13:40:10+00:00,2025-10-17,13:40,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+Cartoon Village,Looney Tunes Correo Aéreo,5,True,2025-10-17 13:40:10+00:00,2025-10-17,13:40,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+DC Super Heroes World,Batman Gotham City Escape,5,True,2025-10-17 13:40:10+00:00,2025-10-17,13:40,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+DC Super Heroes World,La Venganza del Enigma,10,True,2025-10-17 13:40:10+00:00,2025-10-17,13:40,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+DC Super Heroes World,Mr. Freeze Fábrica de Hielo,5,True,2025-10-17 13:40:10+00:00,2025-10-17,13:40,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+DC Super Heroes World,Shadows of Arkham,5,True,2025-10-17 13:40:10+00:00,2025-10-17,13:40,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+DC Super Heroes World,Superman La Atracción de Acero,5,True,2025-10-17 13:40:10+00:00,2025-10-17,13:40,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+DC Super Heroes World,The Joker Coches de Choque,5,True,2025-10-17 13:40:10+00:00,2025-10-17,13:40,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+Movie World Studios,Cine Tour,5,True,2025-10-17 13:40:10+00:00,2025-10-17,13:40,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+Movie World Studios,Hotel Embrujado,5,True,2025-10-17 13:40:10+00:00,2025-10-17,13:40,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+Movie World Studios,Stunt Fall,5,True,2025-10-17 13:40:10+00:00,2025-10-17,13:40,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+Old West Territory,Coaster Express,5,True,2025-10-17 13:40:10+00:00,2025-10-17,13:40,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+Old West Territory,Los Carros de la Mina,5,True,2025-10-17 13:40:10+00:00,2025-10-17,13:40,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+Cartoon Village,A Toda Máquina,5,True,2025-10-17 13:55:09+00:00,2025-10-17,13:55,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+Cartoon Village,Cartoon Carousel,5,True,2025-10-17 13:55:09+00:00,2025-10-17,13:55,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+Cartoon Village,Correcaminos Bip Bip,5,True,2025-10-17 13:55:09+00:00,2025-10-17,13:55,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+Cartoon Village,La Aventura de Scooby-Doo,5,True,2025-10-17 13:55:09+00:00,2025-10-17,13:55,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+Cartoon Village,La Captura de Gossamer,5,True,2025-10-17 13:55:09+00:00,2025-10-17,13:55,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+Cartoon Village,Looney Tunes Correo Aéreo,5,True,2025-10-17 13:55:09+00:00,2025-10-17,13:55,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+DC Super Heroes World,Batman Gotham City Escape,5,True,2025-10-17 13:55:09+00:00,2025-10-17,13:55,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+DC Super Heroes World,La Venganza del Enigma,10,True,2025-10-17 13:55:09+00:00,2025-10-17,13:55,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+DC Super Heroes World,Mr. Freeze Fábrica de Hielo,5,True,2025-10-17 13:55:09+00:00,2025-10-17,13:55,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+DC Super Heroes World,Shadows of Arkham,5,True,2025-10-17 13:55:09+00:00,2025-10-17,13:55,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+DC Super Heroes World,Superman La Atracción de Acero,5,True,2025-10-17 13:55:09+00:00,2025-10-17,13:55,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+DC Super Heroes World,The Joker Coches de Choque,5,True,2025-10-17 13:55:09+00:00,2025-10-17,13:55,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+Movie World Studios,Cine Tour,5,True,2025-10-17 13:55:09+00:00,2025-10-17,13:55,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+Movie World Studios,Hotel Embrujado,5,True,2025-10-17 13:55:09+00:00,2025-10-17,13:55,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+Movie World Studios,Stunt Fall,5,True,2025-10-17 13:55:09+00:00,2025-10-17,13:55,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+Old West Territory,Coaster Express,5,True,2025-10-17 13:55:09+00:00,2025-10-17,13:55,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+Old West Territory,Los Carros de la Mina,5,True,2025-10-17 13:55:09+00:00,2025-10-17,13:55,Viernes,10.0,0.0,22.6,44.0,22.2,1.0,alta
+Cartoon Village,A Toda Máquina,5,True,2025-10-17 14:10:11+00:00,2025-10-17,14:10,Viernes,10.0,0.0,23.8,40.0,23.4,1.0,alta
+Cartoon Village,Cartoon Carousel,5,True,2025-10-17 14:10:11+00:00,2025-10-17,14:10,Viernes,10.0,0.0,23.8,40.0,23.4,1.0,alta
+Cartoon Village,Correcaminos Bip Bip,5,True,2025-10-17 14:10:11+00:00,2025-10-17,14:10,Viernes,10.0,0.0,23.8,40.0,23.4,1.0,alta
+Cartoon Village,La Aventura de Scooby-Doo,5,True,2025-10-17 14:10:11+00:00,2025-10-17,14:10,Viernes,10.0,0.0,23.8,40.0,23.4,1.0,alta
+Cartoon Village,La Captura de Gossamer,5,True,2025-10-17 14:10:11+00:00,2025-10-17,14:10,Viernes,10.0,0.0,23.8,40.0,23.4,1.0,alta
+Cartoon Village,Looney Tunes Correo Aéreo,5,True,2025-10-17 14:10:11+00:00,2025-10-17,14:10,Viernes,10.0,0.0,23.8,40.0,23.4,1.0,alta
+Cartoon Village,Tom & Jerry Picnic en el Parque,5,True,2025-10-17 14:10:11+00:00,2025-10-17,14:10,Viernes,10.0,0.0,23.8,40.0,23.4,1.0,alta
+DC Super Heroes World,Batman Gotham City Escape,5,True,2025-10-17 14:10:11+00:00,2025-10-17,14:10,Viernes,10.0,0.0,23.8,40.0,23.4,1.0,alta
+DC Super Heroes World,La Venganza del Enigma,5,True,2025-10-17 14:10:11+00:00,2025-10-17,14:10,Viernes,10.0,0.0,23.8,40.0,23.4,1.0,alta
+DC Super Heroes World,Mr. Freeze Fábrica de Hielo,5,True,2025-10-17 14:10:11+00:00,2025-10-17,14:10,Viernes,10.0,0.0,23.8,40.0,23.4,1.0,alta
+DC Super Heroes World,Shadows of Arkham,5,True,2025-10-17 14:10:11+00:00,2025-10-17,14:10,Viernes,10.0,0.0,23.8,40.0,23.4,1.0,alta
+DC Super Heroes World,Superman La Atracción de Acero,5,True,2025-10-17 14:10:11+00:00,2025-10-17,14:10,Viernes,10.0,0.0,23.8,40.0,23.4,1.0,alta
+DC Super Heroes World,The Joker Coches de Choque,5,True,2025-10-17 14:10:11+00:00,2025-10-17,14:10,Viernes,10.0,0.0,23.8,40.0,23.4,1.0,alta
+Movie World Studios,Cine Tour,5,True,2025-10-17 14:10:11+00:00,2025-10-17,14:10,Viernes,10.0,0.0,23.8,40.0,23.4,1.0,alta
+Movie World Studios,Hotel Embrujado,5,True,2025-10-17 14:10:11+00:00,2025-10-17,14:10,Viernes,10.0,0.0,23.8,40.0,23.4,1.0,alta
+Movie World Studios,Stunt Fall,5,True,2025-10-17 14:10:11+00:00,2025-10-17,14:10,Viernes,10.0,0.0,23.8,40.0,23.4,1.0,alta
+Old West Territory,Coaster Express,5,True,2025-10-17 14:10:11+00:00,2025-10-17,14:10,Viernes,10.0,0.0,23.8,40.0,23.4,1.0,alta
+Old West Territory,Los Carros de la Mina,5,True,2025-10-17 14:10:11+00:00,2025-10-17,14:10,Viernes,10.0,0.0,23.8,40.0,23.4,1.0,alta
+Cartoon Village,A Toda Máquina,5,True,2025-10-17 14:25:10+00:00,2025-10-17,14:25,Viernes,10.0,0.0,23.8,40.0,23.4,1.0,alta
+Cartoon Village,Cartoon Carousel,5,True,2025-10-17 14:25:10+00:00,2025-10-17,14:25,Viernes,10.0,0.0,23.8,40.0,23.4,1.0,alta
+Cartoon Village,Correcaminos Bip Bip,5,True,2025-10-17 14:25:10+00:00,2025-10-17,14:25,Viernes,10.0,0.0,23.8,40.0,23.4,1.0,alta
+Cartoon Village,La Aventura de Scooby-Doo,5,True,2025-10-17 14:25:10+00:00,2025-10-17,14:25,Viernes,10.0,0.0,23.8,40.0,23.4,1.0,alta
+Cartoon Village,La Captura de Gossamer,5,True,2025-10-17 14:25:10+00:00,2025-10-17,14:25,Viernes,10.0,0.0,23.8,40.0,23.4,1.0,alta
+Cartoon Village,Looney Tunes Correo Aéreo,5,True,2025-10-17 14:25:10+00:00,2025-10-17,14:25,Viernes,10.0,0.0,23.8,40.0,23.4,1.0,alta
+Cartoon Village,Tom & Jerry Picnic en el Parque,5,True,2025-10-17 14:25:10+00:00,2025-10-17,14:25,Viernes,10.0,0.0,23.8,40.0,23.4,1.0,alta
+DC Super Heroes World,Batman Gotham City Escape,5,True,2025-10-17 14:25:10+00:00,2025-10-17,14:25,Viernes,10.0,0.0,23.8,40.0,23.4,1.0,alta
+DC Super Heroes World,La Venganza del Enigma,5,True,2025-10-17 14:25:10+00:00,2025-10-17,14:25,Viernes,10.0,0.0,23.8,40.0,23.4,1.0,alta
+DC Super Heroes World,Mr. Freeze Fábrica de Hielo,5,True,2025-10-17 14:25:10+00:00,2025-10-17,14:25,Viernes,10.0,0.0,23.8,40.0,23.4,1.0,alta
+DC Super Heroes World,Shadows of Arkham,5,True,2025-10-17 14:25:10+00:00,2025-10-17,14:25,Viernes,10.0,0.0,23.8,40.0,23.4,1.0,alta
+DC Super Heroes World,Superman La Atracción de Acero,5,True,2025-10-17 14:25:10+00:00,2025-10-17,14:25,Viernes,10.0,0.0,23.8,40.0,23.4,1.0,alta
+DC Super Heroes World,The Joker Coches de Choque,10,True,2025-10-17 14:25:10+00:00,2025-10-17,14:25,Viernes,10.0,0.0,23.8,40.0,23.4,1.0,alta
+Movie World Studios,Cine Tour,5,True,2025-10-17 14:25:10+00:00,2025-10-17,14:25,Viernes,10.0,0.0,23.8,40.0,23.4,1.0,alta
+Movie World Studios,Hotel Embrujado,5,True,2025-10-17 14:25:10+00:00,2025-10-17,14:25,Viernes,10.0,0.0,23.8,40.0,23.4,1.0,alta
+Movie World Studios,Stunt Fall,5,True,2025-10-17 14:25:10+00:00,2025-10-17,14:25,Viernes,10.0,0.0,23.8,40.0,23.4,1.0,alta
+Old West Territory,Coaster Express,5,True,2025-10-17 14:25:10+00:00,2025-10-17,14:25,Viernes,10.0,0.0,23.8,40.0,23.4,1.0,alta
+Old West Territory,Los Carros de la Mina,5,True,2025-10-17 14:25:10+00:00,2025-10-17,14:25,Viernes,10.0,0.0,23.8,40.0,23.4,1.0,alta
+Cartoon Village,A Toda Máquina,10,True,2025-10-17 15:50:11+00:00,2025-10-17,15:50,Viernes,10.0,0.0,24.2,38.0,23.4,1.0,alta
+Cartoon Village,Cartoon Carousel,5,True,2025-10-17 15:50:11+00:00,2025-10-17,15:50,Viernes,10.0,0.0,24.2,38.0,23.4,1.0,alta
+Cartoon Village,Correcaminos Bip Bip,5,True,2025-10-17 15:50:11+00:00,2025-10-17,15:50,Viernes,10.0,0.0,24.2,38.0,23.4,1.0,alta
+Cartoon Village,La Aventura de Scooby-Doo,20,True,2025-10-17 15:50:11+00:00,2025-10-17,15:50,Viernes,10.0,0.0,24.2,38.0,23.4,1.0,alta
+Cartoon Village,La Captura de Gossamer,5,True,2025-10-17 15:50:11+00:00,2025-10-17,15:50,Viernes,10.0,0.0,24.2,38.0,23.4,1.0,alta
+Cartoon Village,Looney Tunes Correo Aéreo,5,True,2025-10-17 15:50:11+00:00,2025-10-17,15:50,Viernes,10.0,0.0,24.2,38.0,23.4,1.0,alta
+Cartoon Village,Tom & Jerry Picnic en el Parque,5,True,2025-10-17 15:50:11+00:00,2025-10-17,15:50,Viernes,10.0,0.0,24.2,38.0,23.4,1.0,alta
+DC Super Heroes World,Batman Gotham City Escape,15,True,2025-10-17 15:50:11+00:00,2025-10-17,15:50,Viernes,10.0,0.0,24.2,38.0,23.4,1.0,alta
+DC Super Heroes World,La Venganza del Enigma,10,True,2025-10-17 15:50:11+00:00,2025-10-17,15:50,Viernes,10.0,0.0,24.2,38.0,23.4,1.0,alta
+DC Super Heroes World,Mr. Freeze Fábrica de Hielo,5,True,2025-10-17 15:50:11+00:00,2025-10-17,15:50,Viernes,10.0,0.0,24.2,38.0,23.4,1.0,alta
+DC Super Heroes World,Superman La Atracción de Acero,15,True,2025-10-17 15:50:11+00:00,2025-10-17,15:50,Viernes,10.0,0.0,24.2,38.0,23.4,1.0,alta
+DC Super Heroes World,The Joker Coches de Choque,10,True,2025-10-17 15:50:11+00:00,2025-10-17,15:50,Viernes,10.0,0.0,24.2,38.0,23.4,1.0,alta
+Movie World Studios,Cine Tour,5,True,2025-10-17 15:50:11+00:00,2025-10-17,15:50,Viernes,10.0,0.0,24.2,38.0,23.4,1.0,alta
+Movie World Studios,Hotel Embrujado,5,True,2025-10-17 15:50:11+00:00,2025-10-17,15:50,Viernes,10.0,0.0,24.2,38.0,23.4,1.0,alta
+Movie World Studios,Stunt Fall,5,True,2025-10-17 15:50:11+00:00,2025-10-17,15:50,Viernes,10.0,0.0,24.2,38.0,23.4,1.0,alta
+Old West Territory,Coaster Express,10,True,2025-10-17 15:50:11+00:00,2025-10-17,15:50,Viernes,10.0,0.0,24.2,38.0,23.4,1.0,alta
+Old West Territory,Los Carros de la Mina,5,True,2025-10-17 15:50:11+00:00,2025-10-17,15:50,Viernes,10.0,0.0,24.2,38.0,23.4,1.0,alta
+Cartoon Village,A Toda Máquina,10,True,2025-10-17 16:05:09+00:00,2025-10-17,16:05,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Cartoon Village,Cartoon Carousel,5,True,2025-10-17 16:05:09+00:00,2025-10-17,16:05,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Cartoon Village,Correcaminos Bip Bip,10,True,2025-10-17 16:05:09+00:00,2025-10-17,16:05,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Cartoon Village,La Aventura de Scooby-Doo,10,True,2025-10-17 16:05:09+00:00,2025-10-17,16:05,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Cartoon Village,La Captura de Gossamer,5,True,2025-10-17 16:05:09+00:00,2025-10-17,16:05,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Cartoon Village,Looney Tunes Correo Aéreo,5,True,2025-10-17 16:05:09+00:00,2025-10-17,16:05,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Cartoon Village,Tom & Jerry Picnic en el Parque,5,True,2025-10-17 16:05:09+00:00,2025-10-17,16:05,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+DC Super Heroes World,Batman Gotham City Escape,5,True,2025-10-17 16:05:09+00:00,2025-10-17,16:05,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+DC Super Heroes World,La Venganza del Enigma,10,True,2025-10-17 16:05:09+00:00,2025-10-17,16:05,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+DC Super Heroes World,Mr. Freeze Fábrica de Hielo,5,True,2025-10-17 16:05:09+00:00,2025-10-17,16:05,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+DC Super Heroes World,Superman La Atracción de Acero,15,True,2025-10-17 16:05:09+00:00,2025-10-17,16:05,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+DC Super Heroes World,The Joker Coches de Choque,5,True,2025-10-17 16:05:09+00:00,2025-10-17,16:05,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Movie World Studios,Cine Tour,5,True,2025-10-17 16:05:09+00:00,2025-10-17,16:05,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Movie World Studios,Hotel Embrujado,5,True,2025-10-17 16:05:09+00:00,2025-10-17,16:05,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Movie World Studios,Stunt Fall,5,True,2025-10-17 16:05:09+00:00,2025-10-17,16:05,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Old West Territory,Coaster Express,10,True,2025-10-17 16:05:09+00:00,2025-10-17,16:05,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Old West Territory,Los Carros de la Mina,5,True,2025-10-17 16:05:09+00:00,2025-10-17,16:05,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Cartoon Village,A Toda Máquina,10,True,2025-10-17 16:20:10+00:00,2025-10-17,16:20,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Cartoon Village,Cartoon Carousel,5,True,2025-10-17 16:20:10+00:00,2025-10-17,16:20,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Cartoon Village,Correcaminos Bip Bip,5,True,2025-10-17 16:20:10+00:00,2025-10-17,16:20,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Cartoon Village,La Aventura de Scooby-Doo,10,True,2025-10-17 16:20:10+00:00,2025-10-17,16:20,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Cartoon Village,La Captura de Gossamer,5,True,2025-10-17 16:20:10+00:00,2025-10-17,16:20,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Cartoon Village,Looney Tunes Correo Aéreo,5,True,2025-10-17 16:20:10+00:00,2025-10-17,16:20,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Cartoon Village,Tom & Jerry Picnic en el Parque,5,True,2025-10-17 16:20:10+00:00,2025-10-17,16:20,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+DC Super Heroes World,Batman Gotham City Escape,5,True,2025-10-17 16:20:10+00:00,2025-10-17,16:20,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+DC Super Heroes World,La Venganza del Enigma,10,True,2025-10-17 16:20:10+00:00,2025-10-17,16:20,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+DC Super Heroes World,Mr. Freeze Fábrica de Hielo,5,True,2025-10-17 16:20:10+00:00,2025-10-17,16:20,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+DC Super Heroes World,Shadows of Arkham,5,True,2025-10-17 16:20:10+00:00,2025-10-17,16:20,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+DC Super Heroes World,Superman La Atracción de Acero,10,True,2025-10-17 16:20:10+00:00,2025-10-17,16:20,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+DC Super Heroes World,The Joker Coches de Choque,5,True,2025-10-17 16:20:10+00:00,2025-10-17,16:20,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Movie World Studios,Cine Tour,5,True,2025-10-17 16:20:10+00:00,2025-10-17,16:20,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Movie World Studios,Hotel Embrujado,5,True,2025-10-17 16:20:10+00:00,2025-10-17,16:20,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Movie World Studios,Stunt Fall,5,True,2025-10-17 16:20:10+00:00,2025-10-17,16:20,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Old West Territory,Coaster Express,10,True,2025-10-17 16:20:10+00:00,2025-10-17,16:20,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Old West Territory,Los Carros de la Mina,5,True,2025-10-17 16:20:10+00:00,2025-10-17,16:20,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Cartoon Village,A Toda Máquina,10,True,2025-10-17 16:35:11+00:00,2025-10-17,16:35,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Cartoon Village,Cartoon Carousel,5,True,2025-10-17 16:35:11+00:00,2025-10-17,16:35,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Cartoon Village,Correcaminos Bip Bip,5,True,2025-10-17 16:35:11+00:00,2025-10-17,16:35,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Cartoon Village,La Aventura de Scooby-Doo,10,True,2025-10-17 16:35:11+00:00,2025-10-17,16:35,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Cartoon Village,La Captura de Gossamer,5,True,2025-10-17 16:35:11+00:00,2025-10-17,16:35,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Cartoon Village,Looney Tunes Correo Aéreo,5,True,2025-10-17 16:35:11+00:00,2025-10-17,16:35,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Cartoon Village,Tom & Jerry Picnic en el Parque,5,True,2025-10-17 16:35:11+00:00,2025-10-17,16:35,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+DC Super Heroes World,Batman Gotham City Escape,5,True,2025-10-17 16:35:11+00:00,2025-10-17,16:35,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+DC Super Heroes World,La Venganza del Enigma,10,True,2025-10-17 16:35:11+00:00,2025-10-17,16:35,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+DC Super Heroes World,Mr. Freeze Fábrica de Hielo,5,True,2025-10-17 16:35:11+00:00,2025-10-17,16:35,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+DC Super Heroes World,Shadows of Arkham,5,True,2025-10-17 16:35:11+00:00,2025-10-17,16:35,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+DC Super Heroes World,Superman La Atracción de Acero,10,True,2025-10-17 16:35:11+00:00,2025-10-17,16:35,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+DC Super Heroes World,The Joker Coches de Choque,5,True,2025-10-17 16:35:11+00:00,2025-10-17,16:35,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Movie World Studios,Cine Tour,5,True,2025-10-17 16:35:11+00:00,2025-10-17,16:35,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Movie World Studios,Hotel Embrujado,5,True,2025-10-17 16:35:11+00:00,2025-10-17,16:35,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Movie World Studios,Stunt Fall,5,True,2025-10-17 16:35:11+00:00,2025-10-17,16:35,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Old West Territory,Coaster Express,10,True,2025-10-17 16:35:11+00:00,2025-10-17,16:35,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Old West Territory,Los Carros de la Mina,5,True,2025-10-17 16:35:11+00:00,2025-10-17,16:35,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Cartoon Village,A Toda Máquina,10,True,2025-10-17 16:50:10+00:00,2025-10-17,16:50,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Cartoon Village,Cartoon Carousel,5,True,2025-10-17 16:50:10+00:00,2025-10-17,16:50,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Cartoon Village,Correcaminos Bip Bip,5,True,2025-10-17 16:50:10+00:00,2025-10-17,16:50,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Cartoon Village,La Aventura de Scooby-Doo,10,True,2025-10-17 16:50:10+00:00,2025-10-17,16:50,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Cartoon Village,La Captura de Gossamer,5,True,2025-10-17 16:50:10+00:00,2025-10-17,16:50,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Cartoon Village,Looney Tunes Correo Aéreo,5,True,2025-10-17 16:50:10+00:00,2025-10-17,16:50,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Cartoon Village,Tom & Jerry Picnic en el Parque,5,True,2025-10-17 16:50:10+00:00,2025-10-17,16:50,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+DC Super Heroes World,Batman Gotham City Escape,5,True,2025-10-17 16:50:10+00:00,2025-10-17,16:50,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+DC Super Heroes World,La Venganza del Enigma,10,True,2025-10-17 16:55:09+00:00,2025-10-17,16:55,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+DC Super Heroes World,Mr. Freeze Fábrica de Hielo,5,True,2025-10-17 16:50:10+00:00,2025-10-17,16:50,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+DC Super Heroes World,Shadows of Arkham,5,True,2025-10-17 16:50:10+00:00,2025-10-17,16:50,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+DC Super Heroes World,Superman La Atracción de Acero,5,True,2025-10-17 16:50:10+00:00,2025-10-17,16:50,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+DC Super Heroes World,The Joker Coches de Choque,5,True,2025-10-17 16:50:10+00:00,2025-10-17,16:50,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Movie World Studios,Cine Tour,5,True,2025-10-17 16:50:10+00:00,2025-10-17,16:50,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Movie World Studios,Hotel Embrujado,5,True,2025-10-17 16:50:10+00:00,2025-10-17,16:50,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Movie World Studios,Stunt Fall,5,True,2025-10-17 16:50:10+00:00,2025-10-17,16:50,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Old West Territory,Coaster Express,10,True,2025-10-17 16:50:10+00:00,2025-10-17,16:50,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Old West Territory,Los Carros de la Mina,5,True,2025-10-17 16:50:10+00:00,2025-10-17,16:50,Viernes,10.0,0.0,24.2,38.0,23.5,0.0,alta
+Cartoon Village,A Toda Máquina,10,True,2025-10-17 17:05:10+00:00,2025-10-17,17:05,Viernes,10.0,0.0,23.5,39.0,22.6,0.0,alta
+Cartoon Village,Cartoon Carousel,5,True,2025-10-17 17:05:10+00:00,2025-10-17,17:05,Viernes,10.0,0.0,23.5,39.0,22.6,0.0,alta
+Cartoon Village,Correcaminos Bip Bip,15,True,2025-10-17 17:05:10+00:00,2025-10-17,17:05,Viernes,10.0,0.0,23.5,39.0,22.6,0.0,alta
+Cartoon Village,La Aventura de Scooby-Doo,15,True,2025-10-17 17:05:10+00:00,2025-10-17,17:05,Viernes,10.0,0.0,23.5,39.0,22.6,0.0,alta
+Cartoon Village,La Captura de Gossamer,5,True,2025-10-17 17:05:10+00:00,2025-10-17,17:05,Viernes,10.0,0.0,23.5,39.0,22.6,0.0,alta
+Cartoon Village,Looney Tunes Correo Aéreo,5,True,2025-10-17 17:05:10+00:00,2025-10-17,17:05,Viernes,10.0,0.0,23.5,39.0,22.6,0.0,alta
+Cartoon Village,Tom & Jerry Picnic en el Parque,5,True,2025-10-17 17:05:10+00:00,2025-10-17,17:05,Viernes,10.0,0.0,23.5,39.0,22.6,0.0,alta
+DC Super Heroes World,Batman Gotham City Escape,20,True,2025-10-17 17:05:10+00:00,2025-10-17,17:05,Viernes,10.0,0.0,23.5,39.0,22.6,0.0,alta
+DC Super Heroes World,La Venganza del Enigma,15,True,2025-10-17 17:05:10+00:00,2025-10-17,17:05,Viernes,10.0,0.0,23.5,39.0,22.6,0.0,alta
+DC Super Heroes World,Mr. Freeze Fábrica de Hielo,5,True,2025-10-17 17:05:10+00:00,2025-10-17,17:05,Viernes,10.0,0.0,23.5,39.0,22.6,0.0,alta
+DC Super Heroes World,Shadows of Arkham,5,True,2025-10-17 17:05:10+00:00,2025-10-17,17:05,Viernes,10.0,0.0,23.5,39.0,22.6,0.0,alta
+DC Super Heroes World,The Joker Coches de Choque,15,True,2025-10-17 17:05:10+00:00,2025-10-17,17:05,Viernes,10.0,0.0,23.5,39.0,22.6,0.0,alta
+Movie World Studios,Cine Tour,15,True,2025-10-17 17:05:10+00:00,2025-10-17,17:05,Viernes,10.0,0.0,23.5,39.0,22.6,0.0,alta
+Movie World Studios,Hotel Embrujado,5,True,2025-10-17 17:05:10+00:00,2025-10-17,17:05,Viernes,10.0,0.0,23.5,39.0,22.6,0.0,alta
+Movie World Studios,Stunt Fall,5,True,2025-10-17 17:05:10+00:00,2025-10-17,17:05,Viernes,10.0,0.0,23.5,39.0,22.6,0.0,alta
+Old West Territory,Coaster Express,10,True,2025-10-17 17:05:10+00:00,2025-10-17,17:05,Viernes,10.0,0.0,23.5,39.0,22.6,0.0,alta
+Old West Territory,Los Carros de la Mina,5,True,2025-10-17 17:05:10+00:00,2025-10-17,17:05,Viernes,10.0,0.0,23.5,39.0,22.6,0.0,alta
+Cartoon Village,A Toda Máquina,10,True,2025-10-17 17:20:10+00:00,2025-10-17,17:20,Viernes,10.0,0.0,23.5,39.0,22.6,0.0,alta
+Cartoon Village,Cartoon Carousel,5,True,2025-10-17 17:20:10+00:00,2025-10-17,17:20,Viernes,10.0,0.0,23.5,39.0,22.6,0.0,alta
+Cartoon Village,Correcaminos Bip Bip,15,True,2025-10-17 17:20:10+00:00,2025-10-17,17:20,Viernes,10.0,0.0,23.5,39.0,22.6,0.0,alta
+Cartoon Village,La Aventura de Scooby-Doo,15,True,2025-10-17 17:20:10+00:00,2025-10-17,17:20,Viernes,10.0,0.0,23.5,39.0,22.6,0.0,alta
+Cartoon Village,La Captura de Gossamer,5,True,2025-10-17 17:20:10+00:00,2025-10-17,17:20,Viernes,10.0,0.0,23.5,39.0,22.6,0.0,alta
+Cartoon Village,Looney Tunes Correo Aéreo,5,True,2025-10-17 17:20:10+00:00,2025-10-17,17:20,Viernes,10.0,0.0,23.5,39.0,22.6,0.0,alta
+Cartoon Village,Tom & Jerry Picnic en el Parque,5,True,2025-10-17 17:20:10+00:00,2025-10-17,17:20,Viernes,10.0,0.0,23.5,39.0,22.6,0.0,alta
+DC Super Heroes World,Batman Gotham City Escape,20,True,2025-10-17 17:20:10+00:00,2025-10-17,17:20,Viernes,10.0,0.0,23.5,39.0,22.6,0.0,alta
+DC Super Heroes World,La Venganza del Enigma,15,True,2025-10-17 17:20:10+00:00,2025-10-17,17:20,Viernes,10.0,0.0,23.5,39.0,22.6,0.0,alta
+DC Super Heroes World,Mr. Freeze Fábrica de Hielo,5,True,2025-10-17 17:20:10+00:00,2025-10-17,17:20,Viernes,10.0,0.0,23.5,39.0,22.6,0.0,alta
+DC Super Heroes World,Shadows of Arkham,5,True,2025-10-17 17:20:10+00:00,2025-10-17,17:20,Viernes,10.0,0.0,23.5,39.0,22.6,0.0,alta
+DC Super Heroes World,The Joker Coches de Choque,15,True,2025-10-17 17:20:10+00:00,2025-10-17,17:20,Viernes,10.0,0.0,23.5,39.0,22.6,0.0,alta
+Movie World Studios,Cine Tour,10,True,2025-10-17 17:20:10+00:00,2025-10-17,17:20,Viernes,10.0,0.0,23.5,39.0,22.6,0.0,alta
+Movie World Studios,Hotel Embrujado,5,True,2025-10-17 17:20:10+00:00,2025-10-17,17:20,Viernes,10.0,0.0,23.5,39.0,22.6,0.0,alta
+Movie World Studios,Stunt Fall,5,True,2025-10-17 17:20:10+00:00,2025-10-17,17:20,Viernes,10.0,0.0,23.5,39.0,22.6,0.0,alta
+Old West Territory,Coaster Express,10,True,2025-10-17 17:20:10+00:00,2025-10-17,17:20,Viernes,10.0,0.0,23.5,39.0,22.6,0.0,alta
+Old West Territory,Los Carros de la Mina,5,True,2025-10-17 17:20:10+00:00,2025-10-17,17:20,Viernes,10.0,0.0,23.5,39.0,22.6,0.0,alta
+Cartoon Village,Cartoon Carousel,5,True,2025-10-18 11:15:08+00:00,2025-10-18,11:15,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+Cartoon Village,Correcaminos Bip Bip,30,True,2025-10-18 11:15:08+00:00,2025-10-18,11:15,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+Cartoon Village,La Aventura de Scooby-Doo,60,True,2025-10-18 11:15:08+00:00,2025-10-18,11:15,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+Cartoon Village,La Captura de Gossamer,40,True,2025-10-18 11:15:08+00:00,2025-10-18,11:15,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+Cartoon Village,Looney Tunes Correo Aéreo,30,True,2025-10-18 11:15:08+00:00,2025-10-18,11:15,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+Cartoon Village,Tom & Jerry Picnic en el Parque,30,True,2025-10-18 11:15:08+00:00,2025-10-18,11:15,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+DC Super Heroes World,Batman Gotham City Escape,60,True,2025-10-18 11:15:08+00:00,2025-10-18,11:15,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+DC Super Heroes World,La Venganza del Enigma,30,True,2025-10-18 11:15:08+00:00,2025-10-18,11:15,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+DC Super Heroes World,Mr. Freeze Fábrica de Hielo,20,True,2025-10-18 11:15:08+00:00,2025-10-18,11:15,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+DC Super Heroes World,Shadows of Arkham,50,True,2025-10-18 11:15:08+00:00,2025-10-18,11:15,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+DC Super Heroes World,Superman La Atracción de Acero,45,True,2025-10-18 11:15:08+00:00,2025-10-18,11:15,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+DC Super Heroes World,The Joker Coches de Choque,20,True,2025-10-18 11:15:08+00:00,2025-10-18,11:15,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+Movie World Studios,Cine Tour,10,True,2025-10-18 11:15:08+00:00,2025-10-18,11:15,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+Movie World Studios,Hotel Embrujado,20,True,2025-10-18 11:15:08+00:00,2025-10-18,11:15,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+Movie World Studios,Stunt Fall,40,True,2025-10-18 11:15:08+00:00,2025-10-18,11:15,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+Old West Territory,Coaster Express,35,True,2025-10-18 11:15:08+00:00,2025-10-18,11:15,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+Old West Territory,Los Carros de la Mina,15,True,2025-10-18 11:15:08+00:00,2025-10-18,11:15,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+Cartoon Village,Cartoon Carousel,10,True,2025-10-18 11:30:11+00:00,2025-10-18,11:30,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+Cartoon Village,Correcaminos Bip Bip,75,True,2025-10-18 11:30:11+00:00,2025-10-18,11:30,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+Cartoon Village,La Aventura de Scooby-Doo,90,True,2025-10-18 11:30:11+00:00,2025-10-18,11:30,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+Cartoon Village,La Captura de Gossamer,40,True,2025-10-18 11:30:11+00:00,2025-10-18,11:30,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+Cartoon Village,Looney Tunes Correo Aéreo,30,True,2025-10-18 11:30:11+00:00,2025-10-18,11:30,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+Cartoon Village,Tom & Jerry Picnic en el Parque,40,True,2025-10-18 11:30:11+00:00,2025-10-18,11:30,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+DC Super Heroes World,Batman Gotham City Escape,80,True,2025-10-18 11:30:11+00:00,2025-10-18,11:30,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+DC Super Heroes World,La Venganza del Enigma,40,True,2025-10-18 11:30:11+00:00,2025-10-18,11:30,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+DC Super Heroes World,Mr. Freeze Fábrica de Hielo,20,True,2025-10-18 11:30:11+00:00,2025-10-18,11:30,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+DC Super Heroes World,Shadows of Arkham,50,True,2025-10-18 11:30:11+00:00,2025-10-18,11:30,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+DC Super Heroes World,Superman La Atracción de Acero,45,True,2025-10-18 11:30:11+00:00,2025-10-18,11:30,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+DC Super Heroes World,The Joker Coches de Choque,20,True,2025-10-18 11:30:11+00:00,2025-10-18,11:30,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+Movie World Studios,Cine Tour,20,True,2025-10-18 11:30:11+00:00,2025-10-18,11:30,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+Movie World Studios,Hotel Embrujado,30,True,2025-10-18 11:30:11+00:00,2025-10-18,11:30,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+Movie World Studios,Stunt Fall,30,True,2025-10-18 11:30:11+00:00,2025-10-18,11:30,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+Old West Territory,Coaster Express,50,True,2025-10-18 11:30:11+00:00,2025-10-18,11:30,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+Old West Territory,Los Carros de la Mina,20,True,2025-10-18 11:30:11+00:00,2025-10-18,11:30,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+Cartoon Village,Cartoon Carousel,10,True,2025-10-18 11:45:09+00:00,2025-10-18,11:45,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+Cartoon Village,Correcaminos Bip Bip,80,True,2025-10-18 11:45:09+00:00,2025-10-18,11:45,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+Cartoon Village,La Aventura de Scooby-Doo,90,True,2025-10-18 11:45:09+00:00,2025-10-18,11:45,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+Cartoon Village,La Captura de Gossamer,50,True,2025-10-18 11:45:09+00:00,2025-10-18,11:45,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+Cartoon Village,Looney Tunes Correo Aéreo,30,True,2025-10-18 11:45:09+00:00,2025-10-18,11:45,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+Cartoon Village,Tom & Jerry Picnic en el Parque,40,True,2025-10-18 11:45:09+00:00,2025-10-18,11:45,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+DC Super Heroes World,Batman Gotham City Escape,80,True,2025-10-18 11:45:09+00:00,2025-10-18,11:45,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+DC Super Heroes World,La Venganza del Enigma,40,True,2025-10-18 11:45:09+00:00,2025-10-18,11:45,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+DC Super Heroes World,Mr. Freeze Fábrica de Hielo,20,True,2025-10-18 11:45:09+00:00,2025-10-18,11:45,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+DC Super Heroes World,Shadows of Arkham,50,True,2025-10-18 11:45:09+00:00,2025-10-18,11:45,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+DC Super Heroes World,Superman La Atracción de Acero,45,True,2025-10-18 11:45:09+00:00,2025-10-18,11:45,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+DC Super Heroes World,The Joker Coches de Choque,15,True,2025-10-18 11:45:09+00:00,2025-10-18,11:45,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+Movie World Studios,Cine Tour,30,True,2025-10-18 11:45:09+00:00,2025-10-18,11:45,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+Movie World Studios,Hotel Embrujado,30,True,2025-10-18 11:45:09+00:00,2025-10-18,11:45,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+Movie World Studios,Stunt Fall,30,True,2025-10-18 11:45:09+00:00,2025-10-18,11:45,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+Old West Territory,Coaster Express,70,True,2025-10-18 11:45:09+00:00,2025-10-18,11:45,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+Old West Territory,Los Carros de la Mina,25,True,2025-10-18 11:45:09+00:00,2025-10-18,11:45,Sábado,10.0,1.0,18.5,53.0,17.8,0.0,alta
+Cartoon Village,A Toda Máquina,5,True,2025-10-22 10:50:10+00:00,2025-10-22,10:50,Miércoles,10.0,0.0,17.8,75.0,16.6,2.0,alta
+Cartoon Village,Cartoon Carousel,5,True,2025-10-22 10:50:10+00:00,2025-10-22,10:50,Miércoles,10.0,0.0,17.8,75.0,16.6,2.0,alta
+Cartoon Village,Correcaminos Bip Bip,5,True,2025-10-22 10:50:10+00:00,2025-10-22,10:50,Miércoles,10.0,0.0,17.8,75.0,16.6,2.0,alta
+Cartoon Village,La Aventura de Scooby-Doo,20,True,2025-10-22 10:50:10+00:00,2025-10-22,10:50,Miércoles,10.0,0.0,17.8,75.0,16.6,2.0,alta
+Cartoon Village,La Captura de Gossamer,5,True,2025-10-22 10:50:10+00:00,2025-10-22,10:50,Miércoles,10.0,0.0,17.8,75.0,16.6,2.0,alta
+Cartoon Village,Looney Tunes Correo Aéreo,5,True,2025-10-22 10:50:10+00:00,2025-10-22,10:50,Miércoles,10.0,0.0,17.8,75.0,16.6,2.0,alta
+Cartoon Village,Tom & Jerry Picnic en el Parque,5,True,2025-10-22 10:50:10+00:00,2025-10-22,10:50,Miércoles,10.0,0.0,17.8,75.0,16.6,2.0,alta
+DC Super Heroes World,Batman Gotham City Escape,15,True,2025-10-22 10:50:10+00:00,2025-10-22,10:50,Miércoles,10.0,0.0,17.8,75.0,16.6,2.0,alta
+DC Super Heroes World,La Venganza del Enigma,5,True,2025-10-22 10:50:10+00:00,2025-10-22,10:50,Miércoles,10.0,0.0,17.8,75.0,16.6,2.0,alta
+DC Super Heroes World,Mr. Freeze Fábrica de Hielo,5,True,2025-10-22 10:50:10+00:00,2025-10-22,10:50,Miércoles,10.0,0.0,17.8,75.0,16.6,2.0,alta
+DC Super Heroes World,Shadows of Arkham,5,True,2025-10-22 10:50:10+00:00,2025-10-22,10:50,Miércoles,10.0,0.0,17.8,75.0,16.6,2.0,alta
+DC Super Heroes World,Superman La Atracción de Acero,5,True,2025-10-22 10:50:10+00:00,2025-10-22,10:50,Miércoles,10.0,0.0,17.8,75.0,16.6,2.0,alta
+DC Super Heroes World,The Joker Coches de Choque,10,True,2025-10-22 10:50:10+00:00,2025-10-22,10:50,Miércoles,10.0,0.0,17.8,75.0,16.6,2.0,alta
+Movie World Studios,Cine Tour,5,True,2025-10-22 10:50:10+00:00,2025-10-22,10:50,Miércoles,10.0,0.0,17.8,75.0,16.6,2.0,alta
+Movie World Studios,Hotel Embrujado,5,True,2025-10-22 10:50:10+00:00,2025-10-22,10:50,Miércoles,10.0,0.0,17.8,75.0,16.6,2.0,alta
+Old West Territory,Coaster Express,5,True,2025-10-22 10:50:10+00:00,2025-10-22,10:50,Miércoles,10.0,0.0,17.8,75.0,16.6,2.0,alta
+Old West Territory,Los Carros de la Mina,5,True,2025-10-22 10:50:10+00:00,2025-10-22,10:50,Miércoles,10.0,0.0,17.8,75.0,16.6,2.0,alta
+Cartoon Village,A Toda Máquina,5,True,2025-10-22 11:05:13+00:00,2025-10-22,11:05,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Cartoon Village,Cartoon Carousel,5,True,2025-10-22 11:05:13+00:00,2025-10-22,11:05,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Cartoon Village,Correcaminos Bip Bip,5,True,2025-10-22 11:05:13+00:00,2025-10-22,11:05,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Cartoon Village,La Aventura de Scooby-Doo,20,True,2025-10-22 11:05:13+00:00,2025-10-22,11:05,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Cartoon Village,La Captura de Gossamer,5,True,2025-10-22 11:05:13+00:00,2025-10-22,11:05,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Cartoon Village,Looney Tunes Correo Aéreo,5,True,2025-10-22 11:05:13+00:00,2025-10-22,11:05,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Cartoon Village,Tom & Jerry Picnic en el Parque,5,True,2025-10-22 11:05:13+00:00,2025-10-22,11:05,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+DC Super Heroes World,Batman Gotham City Escape,20,True,2025-10-22 11:05:13+00:00,2025-10-22,11:05,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+DC Super Heroes World,La Venganza del Enigma,5,True,2025-10-22 11:05:13+00:00,2025-10-22,11:05,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+DC Super Heroes World,Mr. Freeze Fábrica de Hielo,5,True,2025-10-22 11:05:13+00:00,2025-10-22,11:05,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+DC Super Heroes World,Shadows of Arkham,10,True,2025-10-22 11:05:13+00:00,2025-10-22,11:05,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+DC Super Heroes World,Superman La Atracción de Acero,20,True,2025-10-22 11:05:13+00:00,2025-10-22,11:05,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+DC Super Heroes World,The Joker Coches de Choque,5,True,2025-10-22 11:05:13+00:00,2025-10-22,11:05,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Movie World Studios,Cine Tour,5,True,2025-10-22 11:05:13+00:00,2025-10-22,11:05,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Movie World Studios,Hotel Embrujado,5,True,2025-10-22 11:05:13+00:00,2025-10-22,11:05,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Movie World Studios,Stunt Fall,5,True,2025-10-22 11:05:13+00:00,2025-10-22,11:05,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Old West Territory,Coaster Express,5,True,2025-10-22 11:05:13+00:00,2025-10-22,11:05,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Old West Territory,Los Carros de la Mina,5,True,2025-10-22 11:05:13+00:00,2025-10-22,11:05,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Cartoon Village,A Toda Máquina,5,True,2025-10-22 11:20:09+00:00,2025-10-22,11:20,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Cartoon Village,Cartoon Carousel,5,True,2025-10-22 11:20:09+00:00,2025-10-22,11:20,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Cartoon Village,Correcaminos Bip Bip,5,True,2025-10-22 11:20:09+00:00,2025-10-22,11:20,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Cartoon Village,La Aventura de Scooby-Doo,5,True,2025-10-22 11:20:09+00:00,2025-10-22,11:20,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Cartoon Village,La Captura de Gossamer,5,True,2025-10-22 11:20:09+00:00,2025-10-22,11:20,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Cartoon Village,Looney Tunes Correo Aéreo,5,True,2025-10-22 11:20:09+00:00,2025-10-22,11:20,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Cartoon Village,Tom & Jerry Picnic en el Parque,5,True,2025-10-22 11:20:09+00:00,2025-10-22,11:20,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+DC Super Heroes World,Batman Gotham City Escape,20,True,2025-10-22 11:20:09+00:00,2025-10-22,11:20,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+DC Super Heroes World,La Venganza del Enigma,5,True,2025-10-22 11:20:09+00:00,2025-10-22,11:20,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+DC Super Heroes World,Mr. Freeze Fábrica de Hielo,5,True,2025-10-22 11:20:09+00:00,2025-10-22,11:20,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+DC Super Heroes World,Shadows of Arkham,10,True,2025-10-22 11:20:09+00:00,2025-10-22,11:20,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+DC Super Heroes World,Superman La Atracción de Acero,20,True,2025-10-22 11:20:09+00:00,2025-10-22,11:20,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+DC Super Heroes World,The Joker Coches de Choque,5,True,2025-10-22 11:20:09+00:00,2025-10-22,11:20,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Movie World Studios,Cine Tour,5,True,2025-10-22 11:20:09+00:00,2025-10-22,11:20,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Movie World Studios,Hotel Embrujado,5,True,2025-10-22 11:20:09+00:00,2025-10-22,11:20,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Movie World Studios,Stunt Fall,5,True,2025-10-22 11:20:09+00:00,2025-10-22,11:20,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Old West Territory,Coaster Express,5,True,2025-10-22 11:20:09+00:00,2025-10-22,11:20,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Old West Territory,Los Carros de la Mina,5,True,2025-10-22 11:20:09+00:00,2025-10-22,11:20,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Cartoon Village,A Toda Máquina,5,True,2025-10-22 11:35:13+00:00,2025-10-22,11:35,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Cartoon Village,Cartoon Carousel,5,True,2025-10-22 11:35:13+00:00,2025-10-22,11:35,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Cartoon Village,Correcaminos Bip Bip,10,True,2025-10-22 11:35:13+00:00,2025-10-22,11:35,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Cartoon Village,La Aventura de Scooby-Doo,5,True,2025-10-22 11:35:13+00:00,2025-10-22,11:35,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Cartoon Village,La Captura de Gossamer,5,True,2025-10-22 11:35:13+00:00,2025-10-22,11:35,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Cartoon Village,Looney Tunes Correo Aéreo,5,True,2025-10-22 11:35:13+00:00,2025-10-22,11:35,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Cartoon Village,Tom & Jerry Picnic en el Parque,5,True,2025-10-22 11:35:13+00:00,2025-10-22,11:35,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+DC Super Heroes World,Batman Gotham City Escape,25,True,2025-10-22 11:35:13+00:00,2025-10-22,11:35,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+DC Super Heroes World,La Venganza del Enigma,10,True,2025-10-22 11:35:13+00:00,2025-10-22,11:35,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+DC Super Heroes World,Mr. Freeze Fábrica de Hielo,5,True,2025-10-22 11:35:13+00:00,2025-10-22,11:35,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+DC Super Heroes World,Shadows of Arkham,10,True,2025-10-22 11:35:13+00:00,2025-10-22,11:35,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+DC Super Heroes World,Superman La Atracción de Acero,20,True,2025-10-22 11:35:13+00:00,2025-10-22,11:35,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+DC Super Heroes World,The Joker Coches de Choque,5,True,2025-10-22 11:35:13+00:00,2025-10-22,11:35,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Movie World Studios,Cine Tour,5,True,2025-10-22 11:35:13+00:00,2025-10-22,11:35,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Movie World Studios,Hotel Embrujado,5,True,2025-10-22 11:35:13+00:00,2025-10-22,11:35,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Movie World Studios,Stunt Fall,5,True,2025-10-22 11:35:13+00:00,2025-10-22,11:35,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Old West Territory,Coaster Express,5,True,2025-10-22 11:35:13+00:00,2025-10-22,11:35,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Old West Territory,Los Carros de la Mina,5,True,2025-10-22 11:35:13+00:00,2025-10-22,11:35,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Cartoon Village,A Toda Máquina,5,True,2025-10-22 11:50:09+00:00,2025-10-22,11:50,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Cartoon Village,Cartoon Carousel,5,True,2025-10-22 11:50:09+00:00,2025-10-22,11:50,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Cartoon Village,Correcaminos Bip Bip,10,True,2025-10-22 11:50:09+00:00,2025-10-22,11:50,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Cartoon Village,La Aventura de Scooby-Doo,5,True,2025-10-22 11:50:09+00:00,2025-10-22,11:50,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Cartoon Village,La Captura de Gossamer,5,True,2025-10-22 11:50:09+00:00,2025-10-22,11:50,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Cartoon Village,Looney Tunes Correo Aéreo,5,True,2025-10-22 11:50:09+00:00,2025-10-22,11:50,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Cartoon Village,Tom & Jerry Picnic en el Parque,5,True,2025-10-22 11:50:09+00:00,2025-10-22,11:50,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+DC Super Heroes World,La Venganza del Enigma,5,True,2025-10-22 11:50:09+00:00,2025-10-22,11:50,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+DC Super Heroes World,Mr. Freeze Fábrica de Hielo,5,True,2025-10-22 11:50:09+00:00,2025-10-22,11:50,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+DC Super Heroes World,Shadows of Arkham,10,True,2025-10-22 11:50:09+00:00,2025-10-22,11:50,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+DC Super Heroes World,Superman La Atracción de Acero,20,True,2025-10-22 11:50:09+00:00,2025-10-22,11:50,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+DC Super Heroes World,The Joker Coches de Choque,5,True,2025-10-22 11:50:09+00:00,2025-10-22,11:50,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Movie World Studios,Cine Tour,5,True,2025-10-22 11:50:09+00:00,2025-10-22,11:50,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Movie World Studios,Hotel Embrujado,5,True,2025-10-22 11:50:09+00:00,2025-10-22,11:50,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Movie World Studios,Stunt Fall,5,True,2025-10-22 11:50:09+00:00,2025-10-22,11:50,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Old West Territory,Coaster Express,10,True,2025-10-22 11:50:09+00:00,2025-10-22,11:50,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Old West Territory,Los Carros de la Mina,5,True,2025-10-22 11:50:09+00:00,2025-10-22,11:50,Miércoles,10.0,0.0,18.8,68.0,17.3,2.0,alta
+Cartoon Village,A Toda Máquina,5,True,2025-10-22 12:05:14+00:00,2025-10-22,12:05,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Cartoon Village,Cartoon Carousel,5,True,2025-10-22 12:05:14+00:00,2025-10-22,12:05,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Cartoon Village,Correcaminos Bip Bip,10,True,2025-10-22 12:05:14+00:00,2025-10-22,12:05,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Cartoon Village,La Aventura de Scooby-Doo,5,True,2025-10-22 12:05:14+00:00,2025-10-22,12:05,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Cartoon Village,La Captura de Gossamer,5,True,2025-10-22 12:05:14+00:00,2025-10-22,12:05,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Cartoon Village,Looney Tunes Correo Aéreo,5,True,2025-10-22 12:05:14+00:00,2025-10-22,12:05,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Cartoon Village,Tom & Jerry Picnic en el Parque,5,True,2025-10-22 12:05:14+00:00,2025-10-22,12:05,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+DC Super Heroes World,Batman Gotham City Escape,20,True,2025-10-22 12:05:14+00:00,2025-10-22,12:05,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+DC Super Heroes World,La Venganza del Enigma,5,True,2025-10-22 12:05:14+00:00,2025-10-22,12:05,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+DC Super Heroes World,Mr. Freeze Fábrica de Hielo,5,True,2025-10-22 12:05:14+00:00,2025-10-22,12:05,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+DC Super Heroes World,Shadows of Arkham,5,True,2025-10-22 12:05:14+00:00,2025-10-22,12:05,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+DC Super Heroes World,Superman La Atracción de Acero,10,True,2025-10-22 12:05:14+00:00,2025-10-22,12:05,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+DC Super Heroes World,The Joker Coches de Choque,5,True,2025-10-22 12:05:14+00:00,2025-10-22,12:05,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Movie World Studios,Cine Tour,5,True,2025-10-22 12:05:14+00:00,2025-10-22,12:05,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Movie World Studios,Hotel Embrujado,5,True,2025-10-22 12:05:14+00:00,2025-10-22,12:05,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Movie World Studios,Stunt Fall,5,True,2025-10-22 12:05:14+00:00,2025-10-22,12:05,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Old West Territory,Coaster Express,10,True,2025-10-22 12:05:14+00:00,2025-10-22,12:05,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Old West Territory,Los Carros de la Mina,5,True,2025-10-22 12:05:14+00:00,2025-10-22,12:05,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Cartoon Village,A Toda Máquina,5,True,2025-10-22 12:20:16+00:00,2025-10-22,12:20,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Cartoon Village,Cartoon Carousel,5,True,2025-10-22 12:20:16+00:00,2025-10-22,12:20,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Cartoon Village,Correcaminos Bip Bip,10,True,2025-10-22 12:20:16+00:00,2025-10-22,12:20,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Cartoon Village,La Aventura de Scooby-Doo,5,True,2025-10-22 12:20:16+00:00,2025-10-22,12:20,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Cartoon Village,La Captura de Gossamer,5,True,2025-10-22 12:20:16+00:00,2025-10-22,12:20,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Cartoon Village,Looney Tunes Correo Aéreo,5,True,2025-10-22 12:20:16+00:00,2025-10-22,12:20,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Cartoon Village,Tom & Jerry Picnic en el Parque,5,True,2025-10-22 12:20:16+00:00,2025-10-22,12:20,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+DC Super Heroes World,Batman Gotham City Escape,20,True,2025-10-22 12:20:16+00:00,2025-10-22,12:20,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+DC Super Heroes World,La Venganza del Enigma,5,True,2025-10-22 12:20:16+00:00,2025-10-22,12:20,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+DC Super Heroes World,Mr. Freeze Fábrica de Hielo,5,True,2025-10-22 12:20:16+00:00,2025-10-22,12:20,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+DC Super Heroes World,Shadows of Arkham,5,True,2025-10-22 12:20:16+00:00,2025-10-22,12:20,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+DC Super Heroes World,Superman La Atracción de Acero,10,True,2025-10-22 12:20:16+00:00,2025-10-22,12:20,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+DC Super Heroes World,The Joker Coches de Choque,5,True,2025-10-22 12:20:16+00:00,2025-10-22,12:20,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Movie World Studios,Cine Tour,5,True,2025-10-22 12:20:16+00:00,2025-10-22,12:20,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Movie World Studios,Hotel Embrujado,5,True,2025-10-22 12:20:16+00:00,2025-10-22,12:20,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Movie World Studios,Stunt Fall,5,True,2025-10-22 12:20:16+00:00,2025-10-22,12:20,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Old West Territory,Coaster Express,10,True,2025-10-22 12:20:16+00:00,2025-10-22,12:20,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Old West Territory,Los Carros de la Mina,5,True,2025-10-22 12:20:16+00:00,2025-10-22,12:20,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Cartoon Village,A Toda Máquina,5,True,2025-10-22 12:35:30+00:00,2025-10-22,12:35,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Cartoon Village,Cartoon Carousel,5,True,2025-10-22 12:35:30+00:00,2025-10-22,12:35,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Cartoon Village,Correcaminos Bip Bip,10,True,2025-10-22 12:35:30+00:00,2025-10-22,12:35,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Cartoon Village,La Aventura de Scooby-Doo,5,True,2025-10-22 12:35:30+00:00,2025-10-22,12:35,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Cartoon Village,La Captura de Gossamer,5,True,2025-10-22 12:35:30+00:00,2025-10-22,12:35,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Cartoon Village,Looney Tunes Correo Aéreo,5,True,2025-10-22 12:35:30+00:00,2025-10-22,12:35,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Cartoon Village,Tom & Jerry Picnic en el Parque,5,True,2025-10-22 12:35:30+00:00,2025-10-22,12:35,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+DC Super Heroes World,Batman Gotham City Escape,15,True,2025-10-22 12:35:30+00:00,2025-10-22,12:35,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+DC Super Heroes World,La Venganza del Enigma,5,True,2025-10-22 12:35:30+00:00,2025-10-22,12:35,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+DC Super Heroes World,Mr. Freeze Fábrica de Hielo,5,True,2025-10-22 12:35:30+00:00,2025-10-22,12:35,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+DC Super Heroes World,Shadows of Arkham,5,True,2025-10-22 12:35:30+00:00,2025-10-22,12:35,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+DC Super Heroes World,Superman La Atracción de Acero,10,True,2025-10-22 12:35:30+00:00,2025-10-22,12:35,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+DC Super Heroes World,The Joker Coches de Choque,5,True,2025-10-22 12:35:30+00:00,2025-10-22,12:35,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Movie World Studios,Cine Tour,5,True,2025-10-22 12:35:30+00:00,2025-10-22,12:35,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Movie World Studios,Hotel Embrujado,5,True,2025-10-22 12:35:30+00:00,2025-10-22,12:35,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Movie World Studios,Stunt Fall,5,True,2025-10-22 12:35:30+00:00,2025-10-22,12:35,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Old West Territory,Coaster Express,5,True,2025-10-22 12:35:30+00:00,2025-10-22,12:35,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Old West Territory,Los Carros de la Mina,5,True,2025-10-22 12:35:30+00:00,2025-10-22,12:35,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Cartoon Village,A Toda Máquina,5,True,2025-10-22 12:50:11+00:00,2025-10-22,12:50,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Cartoon Village,Cartoon Carousel,5,True,2025-10-22 12:50:11+00:00,2025-10-22,12:50,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Cartoon Village,Correcaminos Bip Bip,10,True,2025-10-22 12:50:11+00:00,2025-10-22,12:50,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Cartoon Village,La Aventura de Scooby-Doo,5,True,2025-10-22 12:50:11+00:00,2025-10-22,12:50,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Cartoon Village,La Captura de Gossamer,5,True,2025-10-22 12:50:11+00:00,2025-10-22,12:50,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Cartoon Village,Looney Tunes Correo Aéreo,5,True,2025-10-22 12:50:11+00:00,2025-10-22,12:50,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Cartoon Village,Tom & Jerry Picnic en el Parque,5,True,2025-10-22 12:50:11+00:00,2025-10-22,12:50,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+DC Super Heroes World,La Venganza del Enigma,5,True,2025-10-22 12:50:11+00:00,2025-10-22,12:50,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+DC Super Heroes World,Mr. Freeze Fábrica de Hielo,5,True,2025-10-22 12:50:11+00:00,2025-10-22,12:50,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+DC Super Heroes World,Shadows of Arkham,5,True,2025-10-22 12:50:11+00:00,2025-10-22,12:50,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+DC Super Heroes World,Superman La Atracción de Acero,10,True,2025-10-22 12:50:11+00:00,2025-10-22,12:50,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+DC Super Heroes World,The Joker Coches de Choque,5,True,2025-10-22 12:50:11+00:00,2025-10-22,12:50,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Movie World Studios,Cine Tour,5,True,2025-10-22 12:50:11+00:00,2025-10-22,12:50,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Movie World Studios,Hotel Embrujado,5,True,2025-10-22 12:50:11+00:00,2025-10-22,12:50,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Movie World Studios,Stunt Fall,5,True,2025-10-22 12:50:11+00:00,2025-10-22,12:50,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Old West Territory,Los Carros de la Mina,5,True,2025-10-22 12:50:11+00:00,2025-10-22,12:50,Miércoles,10.0,0.0,20.2,61.0,18.3,1.0,alta
+Cartoon Village,A Toda Máquina,5,True,2025-10-22 13:05:08+00:00,2025-10-22,13:05,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Cartoon Village,Cartoon Carousel,5,True,2025-10-22 13:05:08+00:00,2025-10-22,13:05,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Cartoon Village,Correcaminos Bip Bip,10,True,2025-10-22 13:05:08+00:00,2025-10-22,13:05,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Cartoon Village,La Aventura de Scooby-Doo,5,True,2025-10-22 13:05:08+00:00,2025-10-22,13:05,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Cartoon Village,La Captura de Gossamer,5,True,2025-10-22 13:05:08+00:00,2025-10-22,13:05,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Cartoon Village,Looney Tunes Correo Aéreo,5,True,2025-10-22 13:05:08+00:00,2025-10-22,13:05,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Cartoon Village,Tom & Jerry Picnic en el Parque,5,True,2025-10-22 13:05:08+00:00,2025-10-22,13:05,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+DC Super Heroes World,Batman Gotham City Escape,15,True,2025-10-22 13:05:08+00:00,2025-10-22,13:05,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+DC Super Heroes World,La Venganza del Enigma,5,True,2025-10-22 13:05:08+00:00,2025-10-22,13:05,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+DC Super Heroes World,Mr. Freeze Fábrica de Hielo,5,True,2025-10-22 13:05:08+00:00,2025-10-22,13:05,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+DC Super Heroes World,Shadows of Arkham,5,True,2025-10-22 13:05:08+00:00,2025-10-22,13:05,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+DC Super Heroes World,Superman La Atracción de Acero,5,True,2025-10-22 13:05:08+00:00,2025-10-22,13:05,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+DC Super Heroes World,The Joker Coches de Choque,5,True,2025-10-22 13:05:08+00:00,2025-10-22,13:05,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Movie World Studios,Cine Tour,5,True,2025-10-22 13:05:08+00:00,2025-10-22,13:05,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Movie World Studios,Hotel Embrujado,5,True,2025-10-22 13:05:08+00:00,2025-10-22,13:05,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Movie World Studios,Stunt Fall,5,True,2025-10-22 13:05:08+00:00,2025-10-22,13:05,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Old West Territory,Coaster Express,5,True,2025-10-22 13:05:08+00:00,2025-10-22,13:05,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Old West Territory,Los Carros de la Mina,5,True,2025-10-22 13:05:08+00:00,2025-10-22,13:05,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Cartoon Village,A Toda Máquina,5,True,2025-10-22 13:20:09+00:00,2025-10-22,13:20,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Cartoon Village,Cartoon Carousel,5,True,2025-10-22 13:20:09+00:00,2025-10-22,13:20,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Cartoon Village,Correcaminos Bip Bip,5,True,2025-10-22 13:20:09+00:00,2025-10-22,13:20,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Cartoon Village,La Aventura de Scooby-Doo,10,True,2025-10-22 13:20:09+00:00,2025-10-22,13:20,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Cartoon Village,La Captura de Gossamer,5,True,2025-10-22 13:20:09+00:00,2025-10-22,13:20,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Cartoon Village,Looney Tunes Correo Aéreo,5,True,2025-10-22 13:20:09+00:00,2025-10-22,13:20,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Cartoon Village,Tom & Jerry Picnic en el Parque,5,True,2025-10-22 13:20:09+00:00,2025-10-22,13:20,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+DC Super Heroes World,Batman Gotham City Escape,5,True,2025-10-22 13:20:09+00:00,2025-10-22,13:20,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+DC Super Heroes World,La Venganza del Enigma,5,True,2025-10-22 13:20:09+00:00,2025-10-22,13:20,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+DC Super Heroes World,Mr. Freeze Fábrica de Hielo,5,True,2025-10-22 13:20:09+00:00,2025-10-22,13:20,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+DC Super Heroes World,Shadows of Arkham,5,True,2025-10-22 13:20:09+00:00,2025-10-22,13:20,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+DC Super Heroes World,Superman La Atracción de Acero,5,True,2025-10-22 13:20:09+00:00,2025-10-22,13:20,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+DC Super Heroes World,The Joker Coches de Choque,5,True,2025-10-22 13:20:09+00:00,2025-10-22,13:20,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Movie World Studios,Cine Tour,5,True,2025-10-22 13:20:09+00:00,2025-10-22,13:20,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Movie World Studios,Hotel Embrujado,5,True,2025-10-22 13:20:09+00:00,2025-10-22,13:20,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Movie World Studios,Stunt Fall,5,True,2025-10-22 13:20:09+00:00,2025-10-22,13:20,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Old West Territory,Coaster Express,5,True,2025-10-22 13:20:09+00:00,2025-10-22,13:20,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Old West Territory,Los Carros de la Mina,5,True,2025-10-22 13:20:09+00:00,2025-10-22,13:20,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Cartoon Village,A Toda Máquina,5,True,2025-10-22 13:35:09+00:00,2025-10-22,13:35,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Cartoon Village,Cartoon Carousel,5,True,2025-10-22 13:35:09+00:00,2025-10-22,13:35,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Cartoon Village,Correcaminos Bip Bip,5,True,2025-10-22 13:35:09+00:00,2025-10-22,13:35,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Cartoon Village,La Aventura de Scooby-Doo,10,True,2025-10-22 13:35:09+00:00,2025-10-22,13:35,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Cartoon Village,La Captura de Gossamer,5,True,2025-10-22 13:35:09+00:00,2025-10-22,13:35,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Cartoon Village,Looney Tunes Correo Aéreo,5,True,2025-10-22 13:35:09+00:00,2025-10-22,13:35,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Cartoon Village,Tom & Jerry Picnic en el Parque,5,True,2025-10-22 13:35:09+00:00,2025-10-22,13:35,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+DC Super Heroes World,Batman Gotham City Escape,5,True,2025-10-22 13:35:09+00:00,2025-10-22,13:35,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+DC Super Heroes World,La Venganza del Enigma,5,True,2025-10-22 13:35:09+00:00,2025-10-22,13:35,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+DC Super Heroes World,Mr. Freeze Fábrica de Hielo,5,True,2025-10-22 13:35:09+00:00,2025-10-22,13:35,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+DC Super Heroes World,Shadows of Arkham,5,True,2025-10-22 13:35:09+00:00,2025-10-22,13:35,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+DC Super Heroes World,Superman La Atracción de Acero,5,True,2025-10-22 13:35:09+00:00,2025-10-22,13:35,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+DC Super Heroes World,The Joker Coches de Choque,5,True,2025-10-22 13:35:09+00:00,2025-10-22,13:35,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Movie World Studios,Cine Tour,5,True,2025-10-22 13:35:09+00:00,2025-10-22,13:35,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Movie World Studios,Hotel Embrujado,5,True,2025-10-22 13:35:09+00:00,2025-10-22,13:35,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Movie World Studios,Stunt Fall,5,True,2025-10-22 13:35:09+00:00,2025-10-22,13:35,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Old West Territory,Coaster Express,5,True,2025-10-22 13:35:09+00:00,2025-10-22,13:35,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Old West Territory,Los Carros de la Mina,5,True,2025-10-22 13:35:09+00:00,2025-10-22,13:35,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Cartoon Village,A Toda Máquina,5,True,2025-10-22 13:50:08+00:00,2025-10-22,13:50,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Cartoon Village,Cartoon Carousel,5,True,2025-10-22 13:50:08+00:00,2025-10-22,13:50,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Cartoon Village,Correcaminos Bip Bip,5,True,2025-10-22 13:50:08+00:00,2025-10-22,13:50,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Cartoon Village,La Aventura de Scooby-Doo,10,True,2025-10-22 13:50:08+00:00,2025-10-22,13:50,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Cartoon Village,La Captura de Gossamer,5,True,2025-10-22 13:50:08+00:00,2025-10-22,13:50,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Cartoon Village,Looney Tunes Correo Aéreo,5,True,2025-10-22 13:50:08+00:00,2025-10-22,13:50,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Cartoon Village,Tom & Jerry Picnic en el Parque,5,True,2025-10-22 13:50:08+00:00,2025-10-22,13:50,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+DC Super Heroes World,La Venganza del Enigma,5,True,2025-10-22 13:50:08+00:00,2025-10-22,13:50,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+DC Super Heroes World,Mr. Freeze Fábrica de Hielo,5,True,2025-10-22 13:50:08+00:00,2025-10-22,13:50,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+DC Super Heroes World,Shadows of Arkham,5,True,2025-10-22 13:50:08+00:00,2025-10-22,13:50,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+DC Super Heroes World,Superman La Atracción de Acero,5,True,2025-10-22 13:50:08+00:00,2025-10-22,13:50,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+DC Super Heroes World,The Joker Coches de Choque,5,True,2025-10-22 13:50:08+00:00,2025-10-22,13:50,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Movie World Studios,Cine Tour,5,True,2025-10-22 13:50:08+00:00,2025-10-22,13:50,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Movie World Studios,Hotel Embrujado,5,True,2025-10-22 13:50:08+00:00,2025-10-22,13:50,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Movie World Studios,Stunt Fall,5,True,2025-10-22 13:50:08+00:00,2025-10-22,13:50,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Old West Territory,Coaster Express,5,True,2025-10-22 13:50:08+00:00,2025-10-22,13:50,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Old West Territory,Los Carros de la Mina,5,True,2025-10-22 13:50:08+00:00,2025-10-22,13:50,Miércoles,10.0,0.0,20.9,58.0,19.3,1.0,alta
+Cartoon Village,Cartoon Carousel,5,True,2025-10-22 14:05:09+00:00,2025-10-22,14:05,Miércoles,10.0,0.0,21.7,51.0,19.2,2.0,alta
+Cartoon Village,Correcaminos Bip Bip,5,True,2025-10-22 14:05:09+00:00,2025-10-22,14:05,Miércoles,10.0,0.0,21.7,51.0,19.2,2.0,alta
+Cartoon Village,La Aventura de Scooby-Doo,5,True,2025-10-22 14:05:09+00:00,2025-10-22,14:05,Miércoles,10.0,0.0,21.7,51.0,19.2,2.0,alta
+Cartoon Village,La Captura de Gossamer,5,True,2025-10-22 14:05:09+00:00,2025-10-22,14:05,Miércoles,10.0,0.0,21.7,51.0,19.2,2.0,alta
+Cartoon Village,Looney Tunes Correo Aéreo,5,True,2025-10-22 14:05:09+00:00,2025-10-22,14:05,Miércoles,10.0,0.0,21.7,51.0,19.2,2.0,alta
+Cartoon Village,Tom & Jerry Picnic en el Parque,5,True,2025-10-22 14:05:09+00:00,2025-10-22,14:05,Miércoles,10.0,0.0,21.7,51.0,19.2,2.0,alta
+DC Super Heroes World,La Venganza del Enigma,5,True,2025-10-22 14:05:09+00:00,2025-10-22,14:05,Miércoles,10.0,0.0,21.7,51.0,19.2,2.0,alta
+DC Super Heroes World,Mr. Freeze Fábrica de Hielo,5,True,2025-10-22 14:05:09+00:00,2025-10-22,14:05,Miércoles,10.0,0.0,21.7,51.0,19.2,2.0,alta
+DC Super Heroes World,Shadows of Arkham,5,True,2025-10-22 14:05:09+00:00,2025-10-22,14:05,Miércoles,10.0,0.0,21.7,51.0,19.2,2.0,alta
+DC Super Heroes World,Superman La Atracción de Acero,5,True,2025-10-22 14:05:09+00:00,2025-10-22,14:05,Miércoles,10.0,0.0,21.7,51.0,19.2,2.0,alta
+DC Super Heroes World,The Joker Coches de Choque,10,True,2025-10-22 14:05:09+00:00,2025-10-22,14:05,Miércoles,10.0,0.0,21.7,51.0,19.2,2.0,alta
+Movie World Studios,Cine Tour,5,True,2025-10-22 14:05:09+00:00,2025-10-22,14:05,Miércoles,10.0,0.0,21.7,51.0,19.2,2.0,alta
+Movie World Studios,Hotel Embrujado,5,True,2025-10-22 14:05:09+00:00,2025-10-22,14:05,Miércoles,10.0,0.0,21.7,51.0,19.2,2.0,alta
+Movie World Studios,Stunt Fall,10,True,2025-10-22 14:05:09+00:00,2025-10-22,14:05,Miércoles,10.0,0.0,21.7,51.0,19.2,2.0,alta
+Old West Territory,Coaster Express,5,True,2025-10-22 14:05:09+00:00,2025-10-22,14:05,Miércoles,10.0,0.0,21.7,51.0,19.2,2.0,alta
+Old West Territory,Los Carros de la Mina,5,True,2025-10-22 14:05:09+00:00,2025-10-22,14:05,Miércoles,10.0,0.0,21.7,51.0,19.2,2.0,alta
 Cartoon Village,A Toda Máquina,5,True,2025-10-16 11:40:09+00:00,,,,,,,,,,
 Cartoon Village,Cartoon Carousel,5,True,2025-10-16 11:40:09+00:00,,,,,,,,,,
 Cartoon Village,Convoy de Camiones,5,True,2025-10-16 11:40:09+00:00,,,,,,,,,,
@@ -1066,3 +1656,151 @@ Movie World Studios,Hotel Embrujado,25,,2025-11-08 15:45:11+00:00,2025-11-08,16:
 Movie World Studios,Stunt Fall,20,,2025-11-08 15:45:11+00:00,2025-11-08,16:47,Saturday,,,,,,,
 Old West Territory,Coaster Express,15,,2025-11-08 15:45:11+00:00,2025-11-08,16:47,Saturday,,,,,,,
 Old West Territory,Los Carros de la Mina,5,,2025-11-08 15:45:11+00:00,2025-11-08,16:47,Saturday,,,,,,,
+Cartoon Village,A Toda Máquina,5,,2025-11-15 14:30:13+00:00,2025-11-15,15:32,Saturday,,,,,,,
+Cartoon Village,Cartoon Carousel,5,,2025-11-15 14:30:13+00:00,2025-11-15,15:32,Saturday,,,,,,,
+Cartoon Village,Correcaminos Bip Bip,5,,2025-11-15 14:30:13+00:00,2025-11-15,15:32,Saturday,,,,,,,
+Cartoon Village,La Aventura de Scooby-Doo,5,,2025-11-15 14:30:13+00:00,2025-11-15,15:32,Saturday,,,,,,,
+Cartoon Village,La Captura de Gossamer,5,,2025-11-15 14:30:13+00:00,2025-11-15,15:32,Saturday,,,,,,,
+Cartoon Village,Looney Tunes Correo Aéreo,5,,2025-11-15 14:30:13+00:00,2025-11-15,15:32,Saturday,,,,,,,
+DC Super Heroes World,Batman Gotham City Escape,5,,2025-11-15 14:30:13+00:00,2025-11-15,15:32,Saturday,,,,,,,
+DC Super Heroes World,La Venganza del Enigma,5,,2025-11-15 14:30:13+00:00,2025-11-15,15:32,Saturday,,,,,,,
+DC Super Heroes World,Mr. Freeze Fábrica de Hielo,5,,2025-11-15 14:30:13+00:00,2025-11-15,15:32,Saturday,,,,,,,
+DC Super Heroes World,Shadows of Arkham,5,,2025-11-15 14:30:13+00:00,2025-11-15,15:32,Saturday,,,,,,,
+DC Super Heroes World,Superman La Atracción de Acero,5,,2025-11-15 14:30:13+00:00,2025-11-15,15:32,Saturday,,,,,,,
+DC Super Heroes World,The Joker Coches de Choque,5,,2025-11-15 14:30:13+00:00,2025-11-15,15:32,Saturday,,,,,,,
+Movie World Studios,Cine Tour,5,,2025-11-15 14:30:13+00:00,2025-11-15,15:32,Saturday,,,,,,,
+Movie World Studios,Hotel Embrujado,5,,2025-11-15 14:30:13+00:00,2025-11-15,15:32,Saturday,,,,,,,
+Movie World Studios,Stunt Fall,5,,2025-11-15 14:30:13+00:00,2025-11-15,15:32,Saturday,,,,,,,
+Old West Territory,Coaster Express,5,,2025-11-15 14:30:13+00:00,2025-11-15,15:32,Saturday,,,,,,,
+Old West Territory,Los Carros de la Mina,5,,2025-11-15 14:30:13+00:00,2025-11-15,15:32,Saturday,,,,,,,
+Cartoon Village,A Toda Máquina,5,,2025-11-15 14:45:10+00:00,2025-11-15,15:47,Saturday,,,,,,,
+Cartoon Village,Cartoon Carousel,5,,2025-11-15 14:45:10+00:00,2025-11-15,15:47,Saturday,,,,,,,
+Cartoon Village,Correcaminos Bip Bip,5,,2025-11-15 14:45:10+00:00,2025-11-15,15:47,Saturday,,,,,,,
+Cartoon Village,La Aventura de Scooby-Doo,5,,2025-11-15 14:45:10+00:00,2025-11-15,15:47,Saturday,,,,,,,
+Cartoon Village,La Captura de Gossamer,5,,2025-11-15 14:45:10+00:00,2025-11-15,15:47,Saturday,,,,,,,
+Cartoon Village,Looney Tunes Correo Aéreo,5,,2025-11-15 14:45:10+00:00,2025-11-15,15:47,Saturday,,,,,,,
+DC Super Heroes World,Batman Gotham City Escape,5,,2025-11-15 14:45:10+00:00,2025-11-15,15:47,Saturday,,,,,,,
+DC Super Heroes World,La Venganza del Enigma,5,,2025-11-15 14:45:10+00:00,2025-11-15,15:47,Saturday,,,,,,,
+DC Super Heroes World,Mr. Freeze Fábrica de Hielo,5,,2025-11-15 14:45:10+00:00,2025-11-15,15:47,Saturday,,,,,,,
+DC Super Heroes World,Shadows of Arkham,5,,2025-11-15 14:45:10+00:00,2025-11-15,15:47,Saturday,,,,,,,
+DC Super Heroes World,Superman La Atracción de Acero,5,,2025-11-15 14:45:10+00:00,2025-11-15,15:47,Saturday,,,,,,,
+DC Super Heroes World,The Joker Coches de Choque,5,,2025-11-15 14:45:10+00:00,2025-11-15,15:47,Saturday,,,,,,,
+Movie World Studios,Cine Tour,5,,2025-11-15 14:45:10+00:00,2025-11-15,15:47,Saturday,,,,,,,
+Movie World Studios,Hotel Embrujado,5,,2025-11-15 14:45:10+00:00,2025-11-15,15:47,Saturday,,,,,,,
+Movie World Studios,Stunt Fall,5,,2025-11-15 14:45:10+00:00,2025-11-15,15:47,Saturday,,,,,,,
+Old West Territory,Coaster Express,5,,2025-11-15 14:45:10+00:00,2025-11-15,15:47,Saturday,,,,,,,
+Old West Territory,Los Carros de la Mina,5,,2025-11-15 14:45:10+00:00,2025-11-15,15:47,Saturday,,,,,,,
+Cartoon Village,A Toda Máquina,5,,2025-11-15 15:00:12+00:00,2025-11-15,16:02,Saturday,,,,,,,
+Cartoon Village,Cartoon Carousel,5,,2025-11-15 15:00:12+00:00,2025-11-15,16:02,Saturday,,,,,,,
+Cartoon Village,Correcaminos Bip Bip,5,,2025-11-15 15:00:12+00:00,2025-11-15,16:02,Saturday,,,,,,,
+Cartoon Village,La Aventura de Scooby-Doo,5,,2025-11-15 15:00:12+00:00,2025-11-15,16:02,Saturday,,,,,,,
+Cartoon Village,La Captura de Gossamer,5,,2025-11-15 15:00:12+00:00,2025-11-15,16:02,Saturday,,,,,,,
+Cartoon Village,Looney Tunes Correo Aéreo,5,,2025-11-15 15:00:12+00:00,2025-11-15,16:02,Saturday,,,,,,,
+DC Super Heroes World,Batman Gotham City Escape,5,,2025-11-15 15:00:12+00:00,2025-11-15,16:02,Saturday,,,,,,,
+DC Super Heroes World,La Venganza del Enigma,5,,2025-11-15 15:00:12+00:00,2025-11-15,16:02,Saturday,,,,,,,
+DC Super Heroes World,Mr. Freeze Fábrica de Hielo,5,,2025-11-15 15:00:12+00:00,2025-11-15,16:02,Saturday,,,,,,,
+DC Super Heroes World,Shadows of Arkham,5,,2025-11-15 15:00:12+00:00,2025-11-15,16:02,Saturday,,,,,,,
+DC Super Heroes World,Superman La Atracción de Acero,5,,2025-11-15 15:00:12+00:00,2025-11-15,16:02,Saturday,,,,,,,
+DC Super Heroes World,The Joker Coches de Choque,5,,2025-11-15 15:00:12+00:00,2025-11-15,16:02,Saturday,,,,,,,
+Movie World Studios,Cine Tour,5,,2025-11-15 15:00:12+00:00,2025-11-15,16:02,Saturday,,,,,,,
+Movie World Studios,Hotel Embrujado,5,,2025-11-15 15:00:12+00:00,2025-11-15,16:02,Saturday,,,,,,,
+Movie World Studios,Stunt Fall,5,,2025-11-15 15:00:12+00:00,2025-11-15,16:02,Saturday,,,,,,,
+Old West Territory,Coaster Express,5,,2025-11-15 15:00:12+00:00,2025-11-15,16:02,Saturday,,,,,,,
+Old West Territory,Los Carros de la Mina,5,,2025-11-15 15:00:12+00:00,2025-11-15,16:02,Saturday,,,,,,,
+Cartoon Village,A Toda Máquina,5,,2025-11-22 12:30:16+00:00,2025-11-22,13:33,Saturday,,,,,,,
+Cartoon Village,Academia de Pilotos Baby Looney Tunes,15,,2025-11-22 12:30:16+00:00,2025-11-22,13:33,Saturday,,,,,,,
+Cartoon Village,Cartoon Carousel,5,,2025-11-22 12:30:16+00:00,2025-11-22,13:33,Saturday,,,,,,,
+Cartoon Village,Correcaminos Bip Bip,45,,2025-11-22 12:30:16+00:00,2025-11-22,13:33,Saturday,,,,,,,
+Cartoon Village,La Aventura de Scooby-Doo,60,,2025-11-22 12:30:16+00:00,2025-11-22,13:33,Saturday,,,,,,,
+Cartoon Village,La Captura de Gossamer,20,,2025-11-22 12:30:16+00:00,2025-11-22,13:33,Saturday,,,,,,,
+Cartoon Village,Looney Tunes Correo Aéreo,10,,2025-11-22 12:30:16+00:00,2025-11-22,13:33,Saturday,,,,,,,
+DC Super Heroes World,Batman Gotham City Escape,50,,2025-11-22 12:30:16+00:00,2025-11-22,13:33,Saturday,,,,,,,
+DC Super Heroes World,La Venganza del Enigma,20,,2025-11-22 12:30:16+00:00,2025-11-22,13:33,Saturday,,,,,,,
+DC Super Heroes World,Mr. Freeze Fábrica de Hielo,5,,2025-11-22 12:30:16+00:00,2025-11-22,13:33,Saturday,,,,,,,
+DC Super Heroes World,Shadows of Arkham,15,,2025-11-22 12:30:16+00:00,2025-11-22,13:33,Saturday,,,,,,,
+DC Super Heroes World,Superman La Atracción de Acero,35,,2025-11-22 12:30:16+00:00,2025-11-22,13:33,Saturday,,,,,,,
+DC Super Heroes World,The Joker Coches de Choque,15,,2025-11-22 12:30:16+00:00,2025-11-22,13:33,Saturday,,,,,,,
+Movie World Studios,Cine Tour,5,,2025-11-22 12:30:16+00:00,2025-11-22,13:33,Saturday,,,,,,,
+Old West Territory,Coaster Express,15,,2025-11-22 12:30:16+00:00,2025-11-22,13:33,Saturday,,,,,,,
+Old West Territory,Los Carros de la Mina,5,,2025-11-22 12:30:16+00:00,2025-11-22,13:33,Saturday,,,,,,,
+Cartoon Village,A Toda Máquina,5,,2025-11-22 12:45:10+00:00,2025-11-22,13:48,Saturday,,,,,,,
+Cartoon Village,Academia de Pilotos Baby Looney Tunes,5,,2025-11-22 12:45:10+00:00,2025-11-22,13:48,Saturday,,,,,,,
+Cartoon Village,Cartoon Carousel,5,,2025-11-22 12:45:10+00:00,2025-11-22,13:48,Saturday,,,,,,,
+Cartoon Village,Correcaminos Bip Bip,35,,2025-11-22 12:45:10+00:00,2025-11-22,13:48,Saturday,,,,,,,
+Cartoon Village,La Aventura de Scooby-Doo,35,,2025-11-22 12:45:10+00:00,2025-11-22,13:48,Saturday,,,,,,,
+Cartoon Village,La Captura de Gossamer,20,,2025-11-22 12:45:10+00:00,2025-11-22,13:48,Saturday,,,,,,,
+Cartoon Village,Looney Tunes Correo Aéreo,10,,2025-11-22 12:45:10+00:00,2025-11-22,13:48,Saturday,,,,,,,
+DC Super Heroes World,Batman Gotham City Escape,30,,2025-11-22 12:45:10+00:00,2025-11-22,13:48,Saturday,,,,,,,
+DC Super Heroes World,La Venganza del Enigma,30,,2025-11-22 12:45:10+00:00,2025-11-22,13:48,Saturday,,,,,,,
+DC Super Heroes World,Mr. Freeze Fábrica de Hielo,5,,2025-11-22 12:45:10+00:00,2025-11-22,13:48,Saturday,,,,,,,
+DC Super Heroes World,Shadows of Arkham,15,,2025-11-22 12:45:10+00:00,2025-11-22,13:48,Saturday,,,,,,,
+DC Super Heroes World,Superman La Atracción de Acero,35,,2025-11-22 12:45:10+00:00,2025-11-22,13:48,Saturday,,,,,,,
+DC Super Heroes World,The Joker Coches de Choque,5,,2025-11-22 12:45:10+00:00,2025-11-22,13:48,Saturday,,,,,,,
+Movie World Studios,Cine Tour,5,,2025-11-22 12:45:10+00:00,2025-11-22,13:48,Saturday,,,,,,,
+Old West Territory,Coaster Express,15,,2025-11-22 12:45:10+00:00,2025-11-22,13:48,Saturday,,,,,,,
+Old West Territory,Los Carros de la Mina,5,,2025-11-22 12:45:10+00:00,2025-11-22,13:48,Saturday,,,,,,,
+Cartoon Village,A Toda Máquina,5,,2025-11-22 13:00:15+00:00,2025-11-22,14:03,Saturday,,,,,,,
+Cartoon Village,Academia de Pilotos Baby Looney Tunes,10,,2025-11-22 13:00:15+00:00,2025-11-22,14:03,Saturday,,,,,,,
+Cartoon Village,Cartoon Carousel,5,,2025-11-22 13:00:15+00:00,2025-11-22,14:03,Saturday,,,,,,,
+Cartoon Village,Correcaminos Bip Bip,35,,2025-11-22 13:00:15+00:00,2025-11-22,14:03,Saturday,,,,,,,
+Cartoon Village,La Aventura de Scooby-Doo,35,,2025-11-22 13:00:15+00:00,2025-11-22,14:03,Saturday,,,,,,,
+Cartoon Village,La Captura de Gossamer,20,,2025-11-22 13:00:15+00:00,2025-11-22,14:03,Saturday,,,,,,,
+Cartoon Village,Looney Tunes Correo Aéreo,10,,2025-11-22 13:00:15+00:00,2025-11-22,14:03,Saturday,,,,,,,
+DC Super Heroes World,Batman Gotham City Escape,40,,2025-11-22 13:00:15+00:00,2025-11-22,14:03,Saturday,,,,,,,
+DC Super Heroes World,La Venganza del Enigma,20,,2025-11-22 13:00:15+00:00,2025-11-22,14:03,Saturday,,,,,,,
+DC Super Heroes World,Mr. Freeze Fábrica de Hielo,5,,2025-11-22 13:00:15+00:00,2025-11-22,14:03,Saturday,,,,,,,
+DC Super Heroes World,Shadows of Arkham,15,,2025-11-22 13:00:15+00:00,2025-11-22,14:03,Saturday,,,,,,,
+DC Super Heroes World,Superman La Atracción de Acero,35,,2025-11-22 13:00:15+00:00,2025-11-22,14:03,Saturday,,,,,,,
+DC Super Heroes World,The Joker Coches de Choque,5,,2025-11-22 13:00:15+00:00,2025-11-22,14:03,Saturday,,,,,,,
+Movie World Studios,Cine Tour,5,,2025-11-22 13:00:15+00:00,2025-11-22,14:03,Saturday,,,,,,,
+Old West Territory,Coaster Express,20,,2025-11-22 13:00:15+00:00,2025-11-22,14:03,Saturday,,,,,,,
+Old West Territory,Los Carros de la Mina,10,,2025-11-22 13:00:15+00:00,2025-11-22,14:03,Saturday,,,,,,,
+Cartoon Village,A Toda Máquina,5,,2025-11-22 13:15:12+00:00,2025-11-22,14:18,Saturday,,,,,,,
+Cartoon Village,Academia de Pilotos Baby Looney Tunes,5,,2025-11-22 13:15:12+00:00,2025-11-22,14:18,Saturday,,,,,,,
+Cartoon Village,Cartoon Carousel,5,,2025-11-22 13:15:12+00:00,2025-11-22,14:18,Saturday,,,,,,,
+Cartoon Village,Correcaminos Bip Bip,35,,2025-11-22 13:15:12+00:00,2025-11-22,14:18,Saturday,,,,,,,
+Cartoon Village,La Aventura de Scooby-Doo,35,,2025-11-22 13:15:12+00:00,2025-11-22,14:18,Saturday,,,,,,,
+Cartoon Village,La Captura de Gossamer,20,,2025-11-22 13:15:12+00:00,2025-11-22,14:18,Saturday,,,,,,,
+Cartoon Village,Looney Tunes Correo Aéreo,10,,2025-11-22 13:15:12+00:00,2025-11-22,14:18,Saturday,,,,,,,
+DC Super Heroes World,Batman Gotham City Escape,40,,2025-11-22 13:15:12+00:00,2025-11-22,14:18,Saturday,,,,,,,
+DC Super Heroes World,La Venganza del Enigma,20,,2025-11-22 13:15:12+00:00,2025-11-22,14:18,Saturday,,,,,,,
+DC Super Heroes World,Mr. Freeze Fábrica de Hielo,5,,2025-11-22 13:15:12+00:00,2025-11-22,14:18,Saturday,,,,,,,
+DC Super Heroes World,Shadows of Arkham,5,,2025-11-22 13:15:12+00:00,2025-11-22,14:18,Saturday,,,,,,,
+DC Super Heroes World,Superman La Atracción de Acero,35,,2025-11-22 13:15:12+00:00,2025-11-22,14:18,Saturday,,,,,,,
+DC Super Heroes World,The Joker Coches de Choque,5,,2025-11-22 13:15:12+00:00,2025-11-22,14:18,Saturday,,,,,,,
+Movie World Studios,Cine Tour,5,,2025-11-22 13:15:12+00:00,2025-11-22,14:18,Saturday,,,,,,,
+Old West Territory,Coaster Express,20,,2025-11-22 13:15:12+00:00,2025-11-22,14:18,Saturday,,,,,,,
+Old West Territory,Los Carros de la Mina,5,,2025-11-22 13:15:12+00:00,2025-11-22,14:18,Saturday,,,,,,,
+Cartoon Village,A Toda Máquina,5,,2025-11-22 13:30:13+00:00,2025-11-22,14:33,Saturday,,,,,,,
+Cartoon Village,Academia de Pilotos Baby Looney Tunes,5,,2025-11-22 13:30:13+00:00,2025-11-22,14:33,Saturday,,,,,,,
+Cartoon Village,Cartoon Carousel,5,,2025-11-22 13:30:13+00:00,2025-11-22,14:33,Saturday,,,,,,,
+Cartoon Village,Correcaminos Bip Bip,35,,2025-11-22 13:30:13+00:00,2025-11-22,14:33,Saturday,,,,,,,
+Cartoon Village,La Aventura de Scooby-Doo,35,,2025-11-22 13:30:13+00:00,2025-11-22,14:33,Saturday,,,,,,,
+Cartoon Village,La Captura de Gossamer,15,,2025-11-22 13:30:13+00:00,2025-11-22,14:33,Saturday,,,,,,,
+Cartoon Village,Looney Tunes Correo Aéreo,10,,2025-11-22 13:30:13+00:00,2025-11-22,14:33,Saturday,,,,,,,
+DC Super Heroes World,Batman Gotham City Escape,30,,2025-11-22 13:30:13+00:00,2025-11-22,14:33,Saturday,,,,,,,
+DC Super Heroes World,La Venganza del Enigma,20,,2025-11-22 13:30:13+00:00,2025-11-22,14:33,Saturday,,,,,,,
+DC Super Heroes World,Mr. Freeze Fábrica de Hielo,5,,2025-11-22 13:30:13+00:00,2025-11-22,14:33,Saturday,,,,,,,
+DC Super Heroes World,Shadows of Arkham,10,,2025-11-22 13:30:13+00:00,2025-11-22,14:33,Saturday,,,,,,,
+DC Super Heroes World,Superman La Atracción de Acero,35,,2025-11-22 13:30:13+00:00,2025-11-22,14:33,Saturday,,,,,,,
+DC Super Heroes World,The Joker Coches de Choque,15,,2025-11-22 13:30:13+00:00,2025-11-22,14:33,Saturday,,,,,,,
+Movie World Studios,Cine Tour,5,,2025-11-22 13:30:13+00:00,2025-11-22,14:33,Saturday,,,,,,,
+Old West Territory,Coaster Express,20,,2025-11-22 13:30:13+00:00,2025-11-22,14:33,Saturday,,,,,,,
+Old West Territory,Los Carros de la Mina,5,,2025-11-22 13:30:13+00:00,2025-11-22,14:33,Saturday,,,,,,,
+Cartoon Village,A Toda Máquina,5,,2025-11-22 13:45:12+00:00,2025-11-22,14:49,Saturday,,,,,,,
+Cartoon Village,Academia de Pilotos Baby Looney Tunes,5,,2025-11-22 13:45:12+00:00,2025-11-22,14:49,Saturday,,,,,,,
+Cartoon Village,Cartoon Carousel,5,,2025-11-22 13:45:12+00:00,2025-11-22,14:49,Saturday,,,,,,,
+Cartoon Village,Correcaminos Bip Bip,35,,2025-11-22 13:45:12+00:00,2025-11-22,14:49,Saturday,,,,,,,
+Cartoon Village,La Aventura de Scooby-Doo,25,,2025-11-22 13:45:12+00:00,2025-11-22,14:49,Saturday,,,,,,,
+Cartoon Village,La Captura de Gossamer,15,,2025-11-22 13:45:12+00:00,2025-11-22,14:49,Saturday,,,,,,,
+Cartoon Village,Looney Tunes Correo Aéreo,10,,2025-11-22 13:45:12+00:00,2025-11-22,14:49,Saturday,,,,,,,
+DC Super Heroes World,Batman Gotham City Escape,20,,2025-11-22 13:45:12+00:00,2025-11-22,14:49,Saturday,,,,,,,
+DC Super Heroes World,La Venganza del Enigma,10,,2025-11-22 13:45:12+00:00,2025-11-22,14:49,Saturday,,,,,,,
+DC Super Heroes World,Mr. Freeze Fábrica de Hielo,5,,2025-11-22 13:45:12+00:00,2025-11-22,14:49,Saturday,,,,,,,
+DC Super Heroes World,Shadows of Arkham,5,,2025-11-22 13:45:12+00:00,2025-11-22,14:49,Saturday,,,,,,,
+DC Super Heroes World,Superman La Atracción de Acero,20,,2025-11-22 13:45:12+00:00,2025-11-22,14:49,Saturday,,,,,,,
+DC Super Heroes World,The Joker Coches de Choque,10,,2025-11-22 13:45:12+00:00,2025-11-22,14:49,Saturday,,,,,,,
+Movie World Studios,Cine Tour,10,,2025-11-22 13:45:12+00:00,2025-11-22,14:49,Saturday,,,,,,,
+Movie World Studios,Stunt Fall,5,,2025-11-22 13:45:12+00:00,2025-11-22,14:49,Saturday,,,,,,,
+Old West Territory,Coaster Express,20,,2025-11-22 13:45:12+00:00,2025-11-22,14:49,Saturday,,,,,,,
+Old West Territory,Los Carros de la Mina,5,,2025-11-22 13:45:12+00:00,2025-11-22,14:49,Saturday,,,,,,,
