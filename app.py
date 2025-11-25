@@ -11,7 +11,7 @@ warnings.filterwarnings('ignore')
 # Configuración de la página
 st.set_page_config(
     page_title="Predicción afluencia Parque Warner",
-    page_icon="🎢",
+    page_icon="img/logoParklytics.png",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -213,7 +213,7 @@ st.markdown('<p class="sub-header">Predicción inteligente de tiempos de espera 
 st.markdown("""
 <div class="disclaimer">
     <strong>⚠️ Aviso Importante:</strong> Esta aplicación no está afiliada ni respaldada por Parque Warner Madrid. 
-    Es un proyecto independiente con fines informativos.
+    Es un proyecto independiente con fines informativos y educativos.
 </div>
 """, unsafe_allow_html=True)
 
@@ -294,7 +294,7 @@ with st.sidebar:
     hora_int = hora_seleccionada.hour
     if hora_int >= 10 and hora_int < 11:
         tipo_hora = "🟢 Apertura"
-    elif (hora_int >= 11 and hora_int <= 16) or (hora_int == 0 and hora_seleccionada.minute == 0):
+    elif (hora_int >= 12 and hora_int <= 16) or (hora_int == 0 and hora_seleccionada.minute == 0):
         tipo_hora = "🔴 Hora Pico"
     else:
         tipo_hora = "🟡 Hora Valle"
@@ -574,7 +574,7 @@ else:
         - ✅ Incluye condiciones climáticas
         - ✅ Usa históricos granulares por atracción
         - ✅ Detecta eventos especiales (puentes, festivos)
-        - ✅ Optimizado para temporadas altas (octubre, verano)
+        - ✅ Ingesta de datos mediante la API de Queue-Times
         """)
     
     with col2:
@@ -585,7 +585,7 @@ else:
         - 🎢 **Atracción**: Características específicas de cada atracción
         - 🌤️ **Clima**: Temperatura, humedad, condiciones meteorológicas
         - 📈 **Históricos**: Patrones de comportamiento pasados
-        - 🎉 **Eventos**: Puentes, festivos, temporadas especiales
+        - 🎉 **Eventos**: Fines de semana, festivos
         """)
     
     st.markdown("---")
@@ -615,7 +615,7 @@ st.markdown("---")
 st.markdown(
     """
     <div class="footer">
-        🎢 Predicción afluencias Parque Warner | Sistema de Predicción Inteligente | Powered by XGBoost & Streamlit
+        🎢 Predicción afluencias Parque Warner | Sistema de Predicción Inteligente | Hecho por Sergio López
     </div>
     """,
     unsafe_allow_html=True
