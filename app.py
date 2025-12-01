@@ -254,55 +254,41 @@ def render_hero():
                     overflow: hidden;
                 }}
 
-                /* 🔥 Overlay para mejorar contraste del texto */
-                .hero-container::before {{
-                    content: "";
-                    position: absolute;
-                    inset: 0;
-                    background: linear-gradient(
-                        rgba(0, 0, 0, 0.55),
-                        rgba(0, 0, 0, 0.55)
-                    );
-                    z-index: 1;
-                }}
-
                 .hero-content {{
                     position: relative;
-                    z-index: 2;
                     text-align: center;
                     padding: 2rem;
                     width: 100%;
                 }}
 
-                /* 🎨 Colores alineados con un atardecer cálido */
                 .hero-title {{
                     font-size: 4.5rem;
                     font-weight: 800;
                     margin: 0;
-                    color: #FFB347; /* naranja cálido */
-                    text-shadow: 0 3px 10px rgba(0,0,0,0.9);
+                    color: #FF7F50;  /* Coral, resalta sobre la foto */
+                    text-shadow: 0 2px 6px rgba(0,0,0,0.5);
                     line-height: 1.1;
                 }}
 
                 .hero-subtitle {{
                     font-size: 2.2rem;
                     margin: 1.5rem 0 0;
-                    color: #FFECD1; /* crema claro que contrasta perfecto */
+                    color: #FFD700;  /* Amarillo dorado */
                     font-weight: 600;
-                    text-shadow: 0 3px 12px rgba(0,0,0,1);
+                    text-shadow: 0 2px 6px rgba(0,0,0,0.5);
                     line-height: 1.3;
-                    letter-spacing: 0.8px;
+                    letter-spacing: 0.5px;
                 }}
 
                 @media (max-width: 768px) {{
                     .hero-container {{
-                        height: 420px;
+                        height: 400px;
                     }}
                     .hero-title {{
                         font-size: 3rem;
                     }}
                     .hero-subtitle {{
-                        font-size: 1.6rem;
+                        font-size: 1.5rem;
                         margin-top: 1rem;
                     }}
                 }}
@@ -315,28 +301,27 @@ def render_hero():
                 </div>
             </div>
             """, unsafe_allow_html=True)
-
         else:
-            # fallback sin imagen
+            # Fallback si no se encuentra la imagen
             st.markdown("""
             <div style="text-align: center; padding: 2rem 0;">
-                <h1 style="color: #FFB347; margin: 0; font-size: 3rem;">Parklytics</h1>
-                <p style="color: #FFECD1; margin: 1rem 0 0; font-size: 1.8rem; font-weight: 500;">
+                <h1 style="color: #FF7F50; margin: 0; font-size: 3rem;">Parklytics</h1>
+                <p style="color: #FFD700; margin: 1rem 0 0; font-size: 1.8rem; font-weight: 500;">
                     Predicción inteligente de tiempos de espera en Parque Warner
                 </p>
             </div>
             """, unsafe_allow_html=True)
-
     except Exception as e:
         st.warning(f"Error al cargar la imagen: {e}")
         st.markdown("""
         <div style="text-align: center; padding: 2rem 0;">
-            <h1 style="color: #FFB347; margin: 0; font-size: 3rem;">Parklytics</h1>
-            <p style="color: #FFECD1; margin: 1rem 0 0; font-size: 1.8rem; font-weight: 500;">
+            <h1 style="color: #FF7F50; margin: 0; font-size: 3rem;">Parklytics</h1>
+            <p style="color: #FFD700; margin: 1rem 0 0; font-size: 1.8rem; font-weight: 500;">
                 Predicción inteligente de tiempos de espera en Parque Warner
             </p>
         </div>
         """, unsafe_allow_html=True)
+
 
 # -----------------------
 # WEATHER CONTROLS
