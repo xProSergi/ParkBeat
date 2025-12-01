@@ -319,60 +319,228 @@ def main():
                 resultado = predict_wait_time(input_data, artifacts)
                 minutos_pred = resultado.get("minutos_predichos", 0)
                 
+                # Determine prediction style
+                if minutos_pred < 15:
+                    gradient = "linear-gradient(135deg, #16a085 0%, #2ecc71 100%)"
+                    emoji, nivel = "🟢", "Bajo"
+                elif minutos_pred < 30:
+                    gradient = "linear-gradient(135deg, #f6d365 0%, #fda085 100%)"
+                    emoji, nivel = "🟡", "Moderado"
+                elif minutos_pred < 60:
+                    gradient = "linear-gradient(135deg, #f7971e 0%, #ffd200 100%)"
+                    emoji, nivel = "🟠", "Alto"
+                else:
+                    gradient = "linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%)"
+                    emoji, nivel = "🔴", "Muy Alto"
+
                 # Display results
                 st.markdown("## 📊 Resultados de la predicción")
                 
-                # Main prediction card
-                col1, col2 = st.columns([1, 2])
-                
-                with col1:
-                    st.markdown("### Tiempo de espera estimado")
-                    st.markdown(f"""
-                    <div style="text-align: center; padding: 2rem; background: #f8f9fa; 
-                                border-radius: 12px; border-left: 6px solid #2b6ef6; 
-                                margin: 1rem 0;">
-                        <div style="font-size: 3.5rem; font-weight: 800; color: #2b6ef6;">
+                # Main prediction card with theme-aware colors
+                st.markdown(f"""
+                <div style="
+                    background: var(--background-color);
+                    border: 1px solid var(--border-color);
+                    border-radius: 12px;
+                    padding: 1.5rem;
+                    margin: 1rem 0;
+                    box-shadow: 0 4px 20px var(--shadow-color);
+                ">
+                    <div style="
+                        text-align: center;
+                        padding: 1.5rem 1rem;
+                    ">
+                        <div style="
+                            font-size: 1.2rem;
+                            color: var(--text-color);
+                            margin-bottom: 0.5rem;
+                            font-weight: 500;
+                        ">
+                            {emoji} Tiempo de espera estimado
+                        </div>
+                        <div style="
+                            font-size: 3.5rem;
+                            font-weight: 800;
+                            margin: 0.5rem 0;
+                            background: {gradient};
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            background-clip: text;
+                        ">
                             {minutos_pred:.0f} min
                         </div>
-                        <div style="font-size: 1.1rem; color: #4a5568;">
-                            {atraccion_seleccionada}
+                        <div style="
+                            font-size: 1.1rem;
+                            color: var(--text-color);
+                            opacity: 0.9;
+                        ">
+                            {nivel} • {atraccion_seleccionada}
                         </div>
                     </div>
-                    """, unsafe_allow_html=True)
-                
-                with col2:
-                    st.markdown("### Detalles")
-                    st.markdown(f"""
-                    <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 12px;">
-                        <p><strong>📅 Fecha:</strong> {fecha_seleccionada.strftime('%A %d/%m/%Y')}</p>
-                        <p><strong>⏰ Hora:</strong> {hora_seleccionada.strftime('%H:%M')}</p>
-                        <p><strong>🌡️ Temperatura:</strong> {temperatura}°C</p>
-                        <p><strong>💧 Humedad:</strong> {humedad}%</p>
-                    </div>
-                    """, unsafe_allow_html=True)
+                </div>
+                """, unsafe_allow_html=True)
 
-                # Additional details in tabs
-                tab1, tab2 = st.tabs(["📈 Análisis", "💡 Recomendaciones"])
+                # Add tabs for detailed information
+                tab1, tab2, tab3 = st.tabs(["📝 Información", "🔍 Contexto", "💡 Recomendaciones"])
 
                 with tab1:
-                    st.markdown("### 📊 Datos históricos")
-                    # Add your historical data visualization here
-                    st.line_chart(data=pd.DataFrame({
-                        'Hora del día': ['9:00', '12:00', '15:00', '18:00'],
-                        'Tiempo de espera (min)': [15, 45, 60, 30]
-                    }).set_index('Hora del día'))
+                    st.markdown("### 📝 Información de la predicción")
+                    info_cols = st.columns(2)
+                    
+                    with info_cols[0]:
+                        st.markdown("#### 📅 Fecha y hora")
+                        st.markdown(f"""
+                        <div style="
+                            background: var(--background-color);
+                            border: 1px solid var(--border-color);
+                            border-radius: 12px;
+                            padding: 1.25rem;
+                            margin: 0.5rem 0;
+                        ">
+                            <p style="color: var(--text-color); margin: 0.5rem 0;">
+                                <strong>Día de la semana:</strong> {resultado.get('dia_semana', 'N/A')}<br>
+                                <strong>Día del mes:</strong> {resultado.get('dia_mes', 'N/A')}<br>
+                                <strong>Hora seleccionada:</strong> {hora_seleccionada.strftime('%H:%M')}<br>
+                                <strong>Muestra histórica:</strong> {resultado.get('count_historico', 0):,} registros
+                            </p>
+                        </div>
+                        """, unsafe_allow_html=True)
+                    
+                    with info_cols[1]:
+                        weather_emoji = {
+                            1: '☀️ Soleado',
+                            2: '⛅ Parcial',
+                            3: '☁️ Nublado',
+                            4: '🌧️ Lluvia',
+                            5: '⛈️ Tormenta'
+                        }.get(codigo_clima, 'N/A')
+                        
+                        st.markdown("#### 🌦️ Condiciones")
+                        st.markdown(f"""
+                        <div style="
+                            background: var(--background-color);
+                            border: 1px solid var(--border-color);
+                            border-radius: 12px;
+                            padding: 1.25rem;
+                            margin: 0.5rem 0;
+                        ">
+                            <p style="color: var(--text-color); margin: 0.5rem 0;">
+                                <strong>Temperatura:</strong> {temperatura}°C<br>
+                                <strong>Humedad:</strong> {humedad}%<br>
+                                <strong>Sensación térmica:</strong> {sensacion_termica}°C<br>
+                                <strong>Condición:</strong> {weather_emoji}
+                            </p>
+                        </div>
+                        """, unsafe_allow_html=True)
 
                 with tab2:
-                    st.markdown("### 💡 Consejos para tu visita")
-                    st.markdown("""
-                    - Las horas con menos afluencia suelen ser a primera hora de la mañana o última de la tarde
-                    - Los días laborables suelen tener menos visitantes que los fines de semana
-                    - El tiempo de espera puede variar según las condiciones meteorológicas
-                    - Revisa las atracciones con menor tiempo de espera en el parque
-                    """)
+                    st.markdown("### 🔍 Contexto")
+                    
+                    # Context cards
+                    context_items = [
+                        ("📅 Fin de semana", resultado.get('es_fin_de_semana', False)),
+                        ("🌉 Es puente", resultado.get('es_puente', False)),
+                        ("⏰ Hora de apertura", resultado.get('es_hora_apertura', False)),
+                        ("🔥 Hora pico", resultado.get('es_hora_pico', False)),
+                        ("🌿 Hora valle", resultado.get('es_hora_valle', False))
+                    ]
+                    
+                    cols = st.columns(2)
+                    for i, (label, value) in enumerate(context_items):
+                        with cols[i % 2]:
+                            st.markdown(f"""
+                            <div style="
+                                background: var(--background-color);
+                                border: 1px solid var(--border-color);
+                                border-radius: 12px;
+                                padding: 1rem;
+                                margin: 0.5rem 0;
+                            ">
+                                <div style="
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                ">
+                                    <span style="color: var(--text-color);">{label}</span>
+                                    <span style="
+                                        color: {'#16a085' if value else 'var(--text-color)'};
+                                        font-weight: 600;
+                                        opacity: {1 if value else 0.7};
+                                    ">
+                                        {'Sí' if value else 'No'}
+                                    </span>
+                                </div>
+                            </div>
+                            """, unsafe_allow_html=True)
+
+                    # Chart
+                    st.markdown("### 📊 Comparación de predicciones")
+                    valores = {
+                        "Predicción Final": minutos_pred,
+                        "Modelo Base": resultado.get('prediccion_base', 0),
+                        "P75 Histórico": resultado.get('p75_historico', 0),
+                        "Mediana": resultado.get('median_historico', 0)
+                    }
+                    
+                    fig = go.Figure(go.Bar(
+                        x=list(valores.keys()),
+                        y=list(valores.values()),
+                        text=[f"{v:.1f} min" for v in valores.values()],
+                        textposition='auto',
+                        marker_color=['#6c63ff', '#4facfe', '#43e97b', '#f6d365']
+                    ))
+                    
+                    fig.update_layout(
+                        plot_bgcolor='rgba(0,0,0,0)',
+                        paper_bgcolor='rgba(0,0,0,0)',
+                        height=400,
+                        margin=dict(t=20, b=20, l=20, r=20),
+                        yaxis_title="Minutos",
+                        xaxis_title="",
+                        showlegend=False,
+                        font=dict(color='var(--text-color)'),
+                        xaxis=dict(tickfont=dict(color='var(--text-color)')),
+                        yaxis=dict(gridcolor='var(--border-color)')
+                    )
+                    
+                    st.plotly_chart(fig, use_container_width=True)
+
+                with tab3:
+                    st.markdown("### 💡 Recomendaciones")
+                    
+                    recommendations = []
+                    
+                    # Time-based recommendations
+                    if minutos_pred < 15:
+                        recommendations.append(("✅", "Excelente momento", 
+                            f"El tiempo de espera es bajo ({minutos_pred:.1f} min). Aprovecha para subir ahora."))
+                    elif minutos_pred < 30:
+                        recommendations.append(("👍", "Buen momento", 
+                            f"El tiempo de espera es moderado ({minutos_pred:.1f} min). Un buen momento para hacer cola."))
+                    elif minutos_pred < 60:
+                        recommendations.append(("⚠️", "Tiempo de espera alto", 
+                            f"El tiempo de espera es alto ({minutos_pred:.1f} min). Considera planificar para otro momento o usar acceso rápido si está disponible."))
+                    else:
+                        recommendations.append(("🚫", "Tiempo de espera muy alto", 
+                            f"El tiempo de espera es muy alto ({minutos_pred:.1f} min). Te recomendamos cambiar de atracción o volver en otro momento."))
+                    
+                    # Context-based recommendations
+                    if resultado.get('es_hora_pico'):
+                        recommendations.append(("⏰", "Hora pico", 
+                            "Estás en horario de mayor afluencia (11:00-16:00). Las esperas suelen ser más largas."))
+                    
+                    if resultado.get('es_fin_de_semana'):
+                        recommendations.append(("📅", "Fin de semana", 
+                            "Los fines de semana suelen tener más visitantes. Si puedes, considera visitar entre semana."))
+                    
+                    # Display recommendations
+                    for emoji, title, text in recommendations:
+                        with st.expander(f"{emoji} {title}", expanded=True):
+                            st.markdown(f"<div style='padding: 0.5rem 0; color: var(--text-color);'>{text}</div>", unsafe_allow_html=True)
 
             except Exception as e:
                 st.error(f"❌ Error al realizar la predicción: {str(e)}")
+                st.exception(e)  # Show full error for debugging
 
     # How it works section (shown when no prediction has been made)
     if not predecir:
