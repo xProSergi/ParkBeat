@@ -252,9 +252,9 @@ Desde 2007 (primera vez que visité el parque), Parque Warner ha sido una parte 
             
             **Fuente de datos:**
             
-            📅 **Histórico** de tiempos de espera reales  (Ingesta de datos mediante API Queue-Times)
-            🌤️ **Datos meteorológicos** en tiempo real  
-            🎢 **Información** específica de cada atracción  
+             -**Histórico** de tiempos de espera reales  (Ingesta de datos mediante API Queue-Times)
+             -**Datos meteorológicos** en tiempo real  
+             -**Información** específica de cada atracción  
           
             
             **Procesamiento:**
