@@ -130,26 +130,88 @@ st.markdown("""
 def render_hero():
     try:
         hero_image_path = os.path.join("img", "fotoBatman.jpg")
-        hero_image = get_base64_image(hero_image_path)
-        st.markdown(f"""
-        <div class="hero-container">
-            <img src="data:image/jpg;base64,{hero_image}" class="hero-image" alt="Parque Warner Madrid">
-            <div class="hero-overlay"></div>
-            <div class="hero-content">
-                <h1 class="hero-title">ParkBeat</h1>
-                <p class="hero-subtitle">Predicción de tiempos de espera en tiempo real</p>
+        if os.path.exists(hero_image_path):
+            hero_image = get_base64_image(hero_image_path)
+            hero_bg = f"url(data:image/jpg;base64,{hero_image})"
+
+            st.markdown(f"""
+            <style>
+                .hero-container {{
+                    position: relative;
+                    width: 100%;
+                    height: 600px;
+                    background: {hero_bg} no-repeat center center;
+                    background-size: cover;
+                    border-radius: 12px;
+                    overflow: hidden;
+                }}
+
+                .hero-content {{
+                    position: relative;
+                    z-index: 1;
+                    text-align: center;
+                    padding: 2rem;
+                    width: 100%;
+                }}
+
+                .hero-title {{
+                    font-size: 4.5rem;
+                    font-weight: 800;
+                    margin: 0;
+                    color: #FF8C00; 
+                    text-shadow: 0 2px 6px rgba(0,0,0,0.7);
+                    line-height: 1.1;
+                }}
+
+                .hero-subtitle {{
+                    font-size: 3rem;
+                    margin: 2rem 0 0;
+                    color: #FFD54F;
+                    font-weight: 700;
+                    text-shadow: 0 4px 18px rgba(0,0,0,0.85);
+                    line-height: 1.4;
+                    letter-spacing: 0.5px;
+                    display: inline-block;
+                    position: relative;
+                }}
+
+                @media (max-width: 768px) {{
+                    .hero-container {{
+                        height: 400px;
+                    }}
+                    .hero-title {{
+                        font-size: 3rem;
+                    }}
+                    .hero-subtitle {{
+                        font-size: 1.8rem;
+                        margin-top: 1rem;
+                    }}
+                }}
+            </style>
+
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Parklytics</h1>
+                    <p class="hero-subtitle">Predicción inteligente de tiempos de espera en Parque Warner</p>
+                </div>
             </div>
-        </div>
-        """, unsafe_allow_html=True)
+            """, unsafe_allow_html=True)
+
+        else:
+            # fallback si no hay imagen
+            st.markdown("""
+            <div style="text-align: center; padding: 2rem 0;">
+                <h1 style="color: #FF8C00; margin: 0; font-size: 3rem; text-shadow: 0 4px 12px rgba(0,0,0,0.9); display:inline-block; position:relative;">
+                    Parklytics
+                </h1>
+                <p style="color: #FFD54F; margin: 1rem 0 0; font-size: 2rem; font-weight: 700; text-shadow: 0 4px 14px rgba(0,0,0,0.85); display:inline-block; position:relative;">
+                    Predicción inteligente de tiempos de espera en Parque Warner
+                </p>
+            </div>
+            """, unsafe_allow_html=True)
     except Exception as e:
-        st.markdown("""
-        <div style="text-align: center; padding: 3rem 0; background: #f8f9fa; border-radius: 12px; margin-bottom: 2rem;">
-            <h1 style="color: #2b6ef6; margin: 0; font-size: 3rem; font-weight: 800;">ParkBeat</h1>
-            <p style="color: #4a5568; margin: 0.5rem 0 0; font-size: 1.5rem; font-weight: 500;">
-                Predicción de tiempos de espera en tiempo real
-            </p>
-        </div>
-        """, unsafe_allow_html=True)
+        st.warning(f"Error al cargar la imagen: {e}")
+
 
 def main():
     # Hero Section
