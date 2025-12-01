@@ -8,15 +8,15 @@ from predict import load_model_artifacts, predict_wait_time
 import warnings
 import os
 
-# Suppress warnings
+
 warnings.filterwarnings('ignore')
 
 def get_base64_image(image_path):
-    """Convert image to base64 for embedding in HTML"""
+    
     with open(image_path, "rb") as img_file:
         return base64.b64encode(img_file.read()).decode('utf-8')
 
-# Page Configuration
+
 st.set_page_config(
     page_title="ParkBeat — Predicción Parque Warner",
     page_icon="img/logoParklytics.png",
@@ -24,7 +24,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Custom CSS
+
 st.markdown("""
 <style>
     /* Global Overrides */
@@ -164,7 +164,7 @@ def render_hero():
             """, unsafe_allow_html=True)
 
         else:
-            # fallback si no hay imagen
+         
             st.markdown("""
             <div style="text-align: center; padding: 2rem 0; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
                 <h1 style="color: #FF8C00 !important; margin: 0; font-size: 3rem; text-shadow: 0 4px 12px rgba(0,0,0,0.9);">
@@ -178,13 +178,13 @@ def render_hero():
     except Exception as e:
         st.warning(f"Error al cargar la imagen: {e}")
 
-# Sidebar content
+
 def render_sidebar():
     with st.sidebar:
         st.title(" ParkBeat")
         st.markdown("---")
         
-        # Logo
+    
         try:
             logo_path = os.path.join("img", "logoParklytics.png")
             if os.path.exists(logo_path):
@@ -197,18 +197,18 @@ def render_sidebar():
         except:
             pass
         
-        # Navigation
+        
         st.markdown("###  Navegación")
         
         menu_option = st.radio(
             "",
-            ["🏠 Inicio", " ¿Qué es ParkBeat?", " ¿Por qué este proyecto?", " Acerca de los datos"],
+            [" Inicio", " ¿Qué es ParkBeat?", " ¿Por qué este proyecto?", " Acerca de los datos"],
             label_visibility="collapsed"
         )
         
         st.markdown("---")
         
-        # Information based on selection
+    
         if menu_option == " ¿Qué es ParkBeat?":
             st.markdown("""
             ### 🤔 ¿Qué es ParkBeat?
@@ -271,24 +271,25 @@ def render_sidebar():
         
         st.markdown("---")
         
-        # Contact info
+        
         st.markdown("### 📧 Contacto")
         st.markdown("""
         **Desarrollador:** Sergio López  
         **Versión:** 1.0  
         **Estado:** En producción  
-        
-        [📁 Repositorio](#) | [📄 Documentación](#)
+
+        [📁 Repositorio](https://github.com/xProSergi/ParkBeat) | [🔗 LinkedIn](https://www.linkedin.com/in/sergio-lopez-dev/)
         """)
 
+
 def main():
-    # Render sidebar
+   
     render_sidebar()
     
-    # Hero Section
+    
     render_hero()
     
-    # Welcome Section
+    
     st.markdown("""
     ##  Bienvenido a ParkBeat
     
@@ -297,24 +298,24 @@ def main():
     estimación del tiempo de espera esperado.
     """)
     
-    # Load model and data
+
     with st.spinner("Cargando modelo y datos..."):
         try:
             artifacts = load_model_artifacts()
             if not artifacts or "error" in artifacts:
-                st.error("❌ Error al cargar el modelo. Por favor, verifica los archivos del modelo.")
+                st.error(" Error al cargar el modelo. Por favor, verifica los archivos del modelo.")
                 st.stop()
                 
             df = artifacts.get("df_processed", pd.DataFrame())
             if df.empty:
-                st.error("❌ No se encontraron datos de entrenamiento.")
+                st.error(" No se encontraron datos de entrenamiento.")
                 st.stop()
                 
         except Exception as e:
-            st.error(f"❌ Error al cargar el modelo: {str(e)}")
+            st.error(f" Error al cargar el modelo: {str(e)}")
             st.stop()
 
-    # Cached helper functions
+   
     @st.cache_data
     def get_attractions():
         return sorted(df["atraccion"].dropna().astype(str).unique().tolist())
@@ -327,18 +328,18 @@ def main():
         row = df[df["atraccion"] == attraction]
         return row["zona"].iloc[0] if not row.empty else ""
 
-    # Get data
+  
     atracciones = get_attractions()
     zonas = get_zones()
 
-    # Main Controls Section
+   
     st.markdown("##  Configura tu predicción")
     
-    # Create columns for better organization
+  
     col1, col2 = st.columns(2)
     
     with col1:
-        # Attraction selection
+      
         with st.container():
             st.markdown("###  Selecciona una atracción")
             atraccion_seleccionada = st.selectbox(
@@ -349,17 +350,17 @@ def main():
                 key="attraction_select"
             )
             
-            # Auto-detect zone
+            
             zona_auto = get_zone_for_attraction(atraccion_seleccionada)
             if zona_auto:
                 st.info(f" **Zona:** {zona_auto}")
 
     with col2:
-        # Date and time selection
+
         with st.container():
             st.markdown("### 📅 Fecha y hora de visita")
             
-            # Date selection
+           
             fecha_seleccionada = st.date_input(
                 "Selecciona la fecha",
                 value=date.today(),
@@ -368,15 +369,15 @@ def main():
                 key="date_input"
             )
             
-            # Time selection
+         
             hora_seleccionada = st.time_input(
                 "Hora de la visita",
-                value=time(14, 0),  # Default to 2 PM
+                value=time(14, 0), 
                 step=timedelta(minutes=15),
                 key="time_input"
             )
             
-            # Day info
+            
             dia_semana_es = {
                 "Monday": "Lunes", "Tuesday": "Martes", "Wednesday": "Miércoles",
                 "Thursday": "Jueves", "Friday": "Viernes", 
@@ -386,7 +387,7 @@ def main():
             es_fin_semana = fecha_seleccionada.weekday() >= 5
             st.info(f" **Día:** {dia_semana_es.get(dia_nombre, dia_nombre)} - {'Fin de semana' if es_fin_semana else 'Día laborable'}")
 
-    # Weather Section
+  
     with st.expander("🌤️ Configurar condiciones meteorológicas (opcional)", expanded=False):
         col1, col2 = st.columns(2)
         
@@ -431,7 +432,7 @@ def main():
             key="weather_select"
         )
 
-    # Prediction button
+ 
     predecir = st.button(
         " Calcular tiempo de espera",
         type="primary",
@@ -439,9 +440,9 @@ def main():
         key="predict_button_main"
     )
 
-    # PREDICTION RESULTS
+   
     if predecir:
-        # Prepare input data
+       
         hora_str = hora_seleccionada.strftime("%H:%M:%S")
         fecha_str = fecha_seleccionada.strftime("%Y-%m-%d")
         
@@ -456,13 +457,13 @@ def main():
             "codigo_clima": codigo_clima
         }
 
-        # Make prediction
+      
         with st.spinner(" Calculando predicción..."):
             try:
                 resultado = predict_wait_time(input_data, artifacts)
                 minutos_pred = resultado.get("minutos_predichos", 0)
                 
-                # Determine prediction style
+             
                 if minutos_pred < 15:
                     gradient = "linear-gradient(135deg, #16a085 0%, #2ecc71 100%)"
                     emoji, nivel = "🟢", "Bajo"
@@ -476,10 +477,10 @@ def main():
                     gradient = "linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%)"
                     emoji, nivel = "🔴", "Muy Alto"
 
-                # Display results
+              
                 st.markdown("##  Resultados de la predicción")
                 
-                # Main prediction card
+              
                 st.markdown(f"""
                 <div style="
                     background-color: var(--background-color);
@@ -524,7 +525,7 @@ def main():
                 </div>
                 """, unsafe_allow_html=True)
 
-                # Add tabs for detailed information
+            
                 tab1, tab2, tab3 = st.tabs(["📝 Información", "🔍 Contexto", "💡 Recomendaciones"])
 
                 with tab1:
@@ -579,7 +580,7 @@ def main():
                 with tab2:
                     st.markdown("### 🔍 Contexto")
                     
-                    # Context cards
+                
                     context_items = [
                         ("📅 Fin de semana", resultado.get('es_fin_de_semana', False)),
                         ("🌉 Es puente", resultado.get('es_puente', False)),
@@ -615,7 +616,7 @@ def main():
                             </div>
                             """, unsafe_allow_html=True)
 
-                    # Chart
+                
                     st.markdown("### 📊 Comparación de predicciones")
                     valores = {
                         "Predicción Final": minutos_pred,
@@ -652,7 +653,7 @@ def main():
                     
                     recommendations = []
                     
-                    # Time-based recommendations
+                  
                     if minutos_pred < 15:
                         recommendations.append(("✅", "Excelente momento", 
                             f"El tiempo de espera es bajo ({minutos_pred:.1f} min). Aprovecha para subir ahora."))
@@ -666,7 +667,7 @@ def main():
                         recommendations.append(("🚫", "Tiempo de espera muy alto", 
                             f"El tiempo de espera es muy alto ({minutos_pred:.1f} min). Te recomendamos cambiar de atracción o volver en otro momento."))
                     
-                    # Context-based recommendations
+                 
                     if resultado.get('es_hora_pico'):
                         recommendations.append(("⏰", "Hora pico", 
                             "Estás en horario de mayor afluencia (11:00-16:00). Las esperas suelen ser más largas."))
@@ -675,16 +676,16 @@ def main():
                         recommendations.append(("📅", "Fin de semana", 
                             "Los fines de semana suelen tener más visitantes. Si puedes, considera visitar entre semana."))
                     
-                    # Display recommendations
+                    
                     for emoji, title, text in recommendations:
                         with st.expander(f"{emoji} {title}", expanded=True):
                             st.markdown(f"<div style='padding: 0.5rem 0; color: var(--text-color);'>{text}</div>", unsafe_allow_html=True)
 
             except Exception as e:
                 st.error(f"❌ Error al realizar la predicción: {str(e)}")
-                st.exception(e)  # Show full error for debugging
+                st.exception(e)  
 
-    # How it works section (shown when no prediction has been made)
+   
     if not predecir:
         st.markdown("""
         ##  ¿Cómo funciona?
@@ -699,7 +700,7 @@ def main():
         ###  Estadísticas rápidas
         """)
         
-        # Quick stats
+     
         if not df.empty:
             col1, col2, col3 = st.columns(3)
             
@@ -712,7 +713,7 @@ def main():
             with col3:
                 st.metric("Registros históricos", f"{len(df):,}")
 
-    # Footer
+   
     st.markdown("---")
     st.markdown("""
     <div style="text-align: center; color: var(--text-color); opacity: 0.7; padding: 1.5rem 0;">
