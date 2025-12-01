@@ -267,13 +267,13 @@ def render_hero():
         st.warning(f"Could not load hero image: {e}")
         # Fallback to gradient on error
         st.markdown(f"""
-        <div class="hero-container">
-            <div class="hero-image" style="background: {hero_bg}; background-size: cover; background-position: center 30%;"></div>
-            <div class="hero-overlay"></div>
-            <div class="hero-content">
-            <h1 class="hero-title" style="background: linear-gradient(90deg, #FFD700, #FF8C00, #E25822); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">Parklytics</h1>
-            <p class="hero-subtitle" style="color: #FFE4B5; font-weight: 500; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">Predicción inteligente de tiempos de espera en Parque Warner</p>
-        </div>
+<div class="hero-container">
+    <div class="hero-image" style="background: {hero_bg}; background-size: cover; background-position: center 30%;"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1 class="hero-title" style="background: linear-gradient(90deg, #FFD700, #FF8C00, #E25822); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">Parklytics</h1>
+        <p class="hero-subtitle" style="color: #FFE4B5; font-weight: 500; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">Predicción inteligente de tiempos de espera en Parque Warner</p>
+    </div>
 </div>
 """, unsafe_allow_html=True)
 
