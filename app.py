@@ -243,38 +243,98 @@ def render_hero():
             hero_bg = f"url(data:image/jpg;base64,{hero_image})"
             
             st.markdown(f"""
-            <div class="hero-container">
-                <div class="hero-image" style="background: {hero_bg}; background-size: cover; background-position: center 30%;"></div>
-                <div class="hero-overlay"></div>
-                <div class="hero-content">
-                    <h1 class="hero-title" style="background: linear-gradient(90deg, #FFD700, #FF8C00, #E25822); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">Parklytics</h1>
-                    <p class="hero-subtitle" style="color: #FFE4B5; font-weight: 500; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">Predicción inteligente de tiempos de espera en Parque Warner</p>
+            <style>
+                .hero-image {{
+                    position: relative;
+                    width: 100%;
+                    height: 500px;
+                    background: {hero_bg} no-repeat center center;
+                    background-size: cover;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 12px;
+                    overflow: hidden;
+                    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+                }}
+                .hero-text {{
+                    background: rgba(0, 0, 0, 0.5);
+                    padding: 2rem 3rem;
+                    border-radius: 12px;
+                    text-align: center;
+                    backdrop-filter: blur(5px);
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                }}
+                .hero-title {{
+                    font-size: 3.5rem;
+                    font-weight: 800;
+                    margin: 0;
+                    color: #FFD700;
+                    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+                    letter-spacing: 1px;
+                }}
+                .hero-subtitle {{
+                    font-size: 1.4rem;
+                    margin: 1rem 0 0;
+                    color: #FFFFFF;
+                    font-weight: 400;
+                    max-width: 700px;
+                    line-height: 1.5;
+                    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+                }}
+                @media (max-width: 768px) {{
+                    .hero-image {{
+                        height: 350px;
+                    }}
+                    .hero-title {{
+                        font-size: 2.5rem;
+                    }}
+                    .hero-subtitle {{
+                        font-size: 1.1rem;
+                    }}
+                }}
+            </style>
+            <div class="hero-image">
+                <div class="hero-text">
+                    <h1 class="hero-title">Parklytics</h1>
+                    <p class="hero-subtitle">Predicción inteligente de tiempos de espera en Parque Warner</p>
                 </div>
             </div>
             """, unsafe_allow_html=True)
         else:
-            # Fallback to gradient if image not found
+            # Fallback si no se encuentra la imagen
             st.markdown(f"""
-            <div class="hero-container" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                <div class="hero-content">
-                    <h1 class="hero-title" style="background: linear-gradient(90deg, #FFD700, #FF8C00, #E25822); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">Parklytics</h1>
-                    <p class="hero-subtitle" style="color: #FFE4B5; font-weight: 500; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">Predicción inteligente de tiempos de espera en Parque Warner</p>
-                </div>
+            <div style="
+                background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+                padding: 3rem 2rem;
+                border-radius: 12px;
+                text-align: center;
+                margin-bottom: 2rem;
+            ">
+                <h1 style="color: white; font-size: 3rem; margin: 0;">Parklytics</h1>
+                <p style="color: rgba(255,255,255,0.9); font-size: 1.3rem; margin: 1rem 0 0;">
+                    Predicción inteligente de tiempos de espera en Parque Warner
+                </p>
             </div>
             """, unsafe_allow_html=True)
             
     except Exception as e:
-        st.warning(f"Could not load hero image: {e}")
-        # Fallback to gradient on error
+        st.warning(f"Error al cargar la imagen: {e}")
+        # Fallback en caso de error
         st.markdown(f"""
-        <div class="hero-container" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-            <div class="hero-content">
-                <h1 class="hero-title" style="background: linear-gradient(90deg, #FFD700, #FF8C00, #E25822); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">Parklytics</h1>
-                <p class="hero-subtitle" style="color: #FFE4B5; font-weight: 500; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">Predicción inteligente de tiempos de espera en Parque Warner</p>
-            </div>
+        <div style="
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            padding: 3rem 2rem;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 2rem;
+        ">
+            <h1 style="color: white; font-size: 3rem; margin: 0;">Parklytics</h1>
+            <p style="color: rgba(255,255,255,0.9); font-size: 1.3rem; margin: 1rem 0 0;">
+                Predicción inteligente de tiempos de espera en Parque Warner
+            </p>
         </div>
         """, unsafe_allow_html=True)
-
 
 # -----------------------
 # WEATHER CONTROLS
