@@ -278,7 +278,10 @@ def render_sidebar():
         **Versión:** 1.0  
         **Estado:** En producción  
 
-        [📁 Repositorio](https://github.com/xProSergi/ParkBeat) | [🔗 LinkedIn](https://www.linkedin.com/in/sergio-lopez-dev/)
+       
+       
+        [🔗 LinkedIn](https://www.linkedin.com/in/sergio-lopez-dev/)         
+        [📁 Repositorio](https://github.com/xProSergi/ParkBeat) | 
         """)
 
 
