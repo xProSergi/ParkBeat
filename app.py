@@ -21,7 +21,7 @@ st.set_page_config(
     page_title="ParkBeat — Predicción Parque Warner",
     page_icon="img/logoParklytics.png",
     layout="wide",
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="collapsed"
 )
 
 # Custom CSS
@@ -38,99 +38,6 @@ st.markdown("""
     .main .block-container {
         padding: 0 !important;
         max-width: 100% !important;
-    }
-    
-    /* Theme variables */
-    :root {
-        /* Light theme (default) */
-        --primary: #2b6ef6;
-        --primary-hover: #1d4ed8;
-        --text: #1e293b;
-        --text-muted: #64748b;
-        --bg: #ffffff;
-        --card-bg: #ffffff;
-        --card-hover: #f8fafc;
-        --border: #e2e8f0;
-        --shadow: rgba(0, 0, 0, 0.1);
-        --sidebar-bg: #f8f9fa;
-        --success: #10b981;
-        --warning: #f59e0b;
-        --error: #ef4444;
-        --info: #3b82f6;
-    }
-    
-    /* Dark theme overrides */
-    [data-theme="dark"],
-    @media (prefers-color-scheme: dark) {
-        :root:not([data-theme="light"]) {
-            --text: #e2e8f0;
-            --text-muted: #94a3b8;
-            --bg: #0f172a;
-            --card-bg: #1e293b;
-            --card-hover: #2d3748;
-            --border: #334155;
-            --shadow: rgba(0, 0, 0, 0.3);
-            --sidebar-bg: #1e293b;
-            --success: #10b981;
-            --warning: #f59e0b;
-            --error: #ef4444;
-            --info: #60a5fa;
-        }
-    }
-    
-    /* Base styles that work in both themes */
-    body {
-        color: var(--text);
-        background-color: var(--bg);
-    }
-    
-    /* Fix text colors */
-    .stMarkdown, .stMarkdown p, .stMarkdown li, .stMarkdown strong,
-    .stAlert, .stAlert p, .stAlert strong,
-    .stExpander .streamlit-expanderHeader,
-    .stExpander .streamlit-expanderContent,
-    .stExpander .streamlit-expanderContent p,
-    .stExpander .streamlit-expanderContent li,
-    .stSelectbox label, .stSlider label, .stDateInput label, .stTimeInput label,
-    .stButton > button,
-    .stMarkdown code,
-    .stMarkdown pre,
-    .stMarkdown pre code {
-        color: var(--text) !important;
-    }
-    
-    /* Fix sidebar */
-    .sidebar .sidebar-content {
-        background-color: var(--sidebar-bg) !important;
-        color: var(--text) !important;
-    }
-    
-    /* Fix cards and containers */
-    .stAlert, .stExpander, .stMarkdown > div, .stTabs [data-baseweb="tab"] {
-        background-color: var(--card-bg) !important;
-        border-color: var(--border) !important;
-        color: var(--text) !important;
-    }
-    
-    /* Fix input fields */
-    .stTextInput input, .stSelectbox select, .stSlider .stSlider,
-    .stDateInput input, .stTimeInput input {
-        background-color: var(--bg) !important;
-        color: var(--text) !important;
-        border-color: var(--border) !important;
-    }
-    
-    /* Fix hover states */
-    .stTabs [data-baseweb="tab"]:hover {
-        background-color: var(--primary) !important;
-        color: white !important;
-    }
-    
-    /* Fix active tab */
-    .stTabs [aria-selected="true"] {
-        background-color: var(--primary) !important;
-        color: white !important;
-    }
     }
     
     /* Hero Section */
@@ -235,48 +142,37 @@ def render_hero():
                     height: 600px;
                     background: {hero_bg} no-repeat center center;
                     background-size: cover;
+                    border-radius: 12px;
                     overflow: hidden;
-                    border-radius: 0px; /* sin bordes */
-                }}
-
-                .hero-overlay {{
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    background: rgba(0,0,0,0.4); /* para contraste */
-                    z-index: 0;
                 }}
 
                 .hero-content {{
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    text-align: center;
+                    position: relative;
                     z-index: 1;
-                    padding: 0 1rem;
+                    text-align: center;
+                    padding: 2rem;
+                    width: 100%;
                 }}
 
                 .hero-title {{
                     font-size: 4.5rem;
                     font-weight: 800;
                     margin: 0;
-                    color: #FF8C00 !important; /* fuerza el color */
-                    text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+                    color: #FF8C00; 
+                    text-shadow: 0 2px 6px rgba(0,0,0,0.7);
                     line-height: 1.1;
-                    font-family: 'Poppins', sans-serif;
                 }}
 
                 .hero-subtitle {{
-                    font-size: 2rem;
-                    margin-top: 1rem;
-                    color: #FFD54F !important;
+                    font-size: 3rem;
+                    margin: 2rem 0 0;
+                    color: #FFD54F;
                     font-weight: 700;
-                    text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
-                    line-height: 1.3;
-                    font-family: 'Poppins', sans-serif;
+                    text-shadow: 0 4px 18px rgba(0,0,0,0.85);
+                    line-height: 1.4;
+                    letter-spacing: 0.5px;
+                    display: inline-block;
+                    position: relative;
                 }}
 
                 @media (max-width: 768px) {{
@@ -287,13 +183,13 @@ def render_hero():
                         font-size: 3rem;
                     }}
                     .hero-subtitle {{
-                        font-size: 1.5rem;
+                        font-size: 1.8rem;
+                        margin-top: 1rem;
                     }}
                 }}
             </style>
 
             <div class="hero-container">
-                <div class="hero-overlay"></div>
                 <div class="hero-content">
                     <h1 class="hero-title">Parklytics</h1>
                     <p class="hero-subtitle">Predicción inteligente de tiempos de espera en Parque Warner</p>
@@ -302,133 +198,22 @@ def render_hero():
             """, unsafe_allow_html=True)
 
         else:
+            # fallback si no hay imagen
             st.markdown("""
-            <div style="text-align: center; padding: 3rem 0; background:#000;">
-                <h1 style="color:#FF8C00; font-size:3rem; font-weight:800; text-shadow:2px 2px 10px rgba(0,0,0,0.7); font-family:Poppins,sans-serif;">
+            <div style="text-align: center; padding: 2rem 0;">
+                <h1 style="color: #FF8C00; margin: 0; font-size: 3rem; text-shadow: 0 4px 12px rgba(0,0,0,0.9); display:inline-block; position:relative;">
                     Parklytics
                 </h1>
-                <p style="color:#FFD54F; font-size:1.5rem; font-weight:700; text-shadow:2px 2px 10px rgba(0,0,0,0.7); font-family:Poppins,sans-serif;">
+                <p style="color: #FFD54F; margin: 1rem 0 0; font-size: 2rem; font-weight: 700; text-shadow: 0 4px 14px rgba(0,0,0,0.85); display:inline-block; position:relative;">
                     Predicción inteligente de tiempos de espera en Parque Warner
                 </p>
             </div>
             """, unsafe_allow_html=True)
-
     except Exception as e:
         st.warning(f"Error al cargar la imagen: {e}")
 
 
-def render_sidebar():
-    # Add logo at the top of the sidebar
-    try:
-        logo_path = os.path.join("img", "logoParklytics.png")
-        if os.path.exists(logo_path):
-            logo_image = get_base64_image(logo_path)
-            st.sidebar.markdown(f"""
-            <div style="text-align: center; margin-bottom: 2rem;">
-                <img src="data:image/png;base64,{logo_image}" style="max-width: 100%; height: auto;">
-            </div>
-            """, unsafe_allow_html=True)
-    except Exception as e:
-        st.sidebar.warning(f"Error al cargar el logo: {e}")
-    
-    # Add sections with expandable content
-    with st.sidebar.expander("ℹ️ ¿Qué es ParkBeat?", expanded=False):
-        st.markdown("""
-        **ParkBeat** es una herramienta de predicción inteligente que te ayuda a planificar tu visita al Parque Warner Madrid.
-        
-        Con nuestra tecnología avanzada de machine learning, podrás:
-        - Predecir los tiempos de espera en tiempo real
-        - Planificar tu ruta óptima por el parque
-        - Ahorrar tiempo y disfrutar al máximo de tu visita
-        """)
-    
-    with st.sidebar.expander("❓ ¿Por qué este proyecto?", expanded=False):
-        st.markdown("""
-        Este proyecto nace con el objetivo de mejorar la experiencia de los visitantes del Parque Warner Madrid mediante:
-        
-        - **Tecnología avanzada**: Utilizando modelos predictivos para estimar tiempos de espera
-        - **Datos en tiempo real**: Analizando patrones históricos y condiciones actuales
-        - **Experiencia personalizada**: Ofreciendo recomendaciones basadas en tus preferencias
-        
-        ¡Porque tu tiempo es valioso y mereces aprovecharlo al máximo!
-        """)
-    
-    # Add some styling to the sidebar
-    st.sidebar.markdown("""
-    <style>
-        /* Sidebar base styles */
-        .sidebar .sidebar-content {
-            background-color: var(--sidebar-bg) !important;
-            color: var(--text) !important;
-        }
-        
-        /* Expander styles */
-        .stExpander {
-            background-color: var(--card-bg) !important;
-            border: 1px solid var(--border) !important;
-            border-radius: 8px !important;
-            padding: 0.5rem !important;
-            margin-bottom: 1rem !important;
-            box-shadow: 0 1px 3px var(--shadow) !important;
-        }
-        
-        .stExpander .streamlit-expanderHeader {
-            font-weight: 600 !important;
-            color: var(--text) !important;
-            background-color: transparent !important;
-        }
-        
-        .stExpander .streamlit-expanderContent {
-            color: var(--text) !important;
-            background-color: transparent !important;
-        }
-        
-        /* Fix for weather expander */
-        [data-testid="stExpander"] {
-            background-color: var(--card-bg) !important;
-            border: 1px solid var(--border) !important;
-            border-radius: 8px !important;
-            margin-bottom: 1rem !important;
-        }
-        
-        [data-testid="stExpander"] > div {
-            background-color: transparent !important;
-        }
-        
-        [data-testid="stExpander"] .stMarkdown p {
-            color: var(--text) !important;
-        }
-        
-        /* Fix for recommendation cards */
-        .stMarkdown > div {
-            background-color: var(--card-bg) !important;
-            border: 1px solid var(--border) !important;
-            border-radius: 8px !important;
-            padding: 1rem !important;
-            margin-bottom: 1rem !important;
-            color: var(--text) !important;
-        }
-        
-        /* Fix for metric cards */
-        .stMetric {
-            background-color: var(--card-bg) !important;
-            border: 1px solid var(--border) !important;
-            border-radius: 8px !important;
-            padding: 1rem !important;
-            margin-bottom: 1rem !important;
-        }
-        
-        /* Fix for footer */
-        footer {
-            color: var(--text-muted) !important;
-        }
-    </style>
-    """, unsafe_allow_html=True)
-
 def main():
-    # Render sidebar first
-    render_sidebar()
-    
     # Hero Section
     render_hero()
     
@@ -660,52 +445,7 @@ def main():
                 </div>
                 """, unsafe_allow_html=True)
 
-                # Add tabs for detailed information with custom styling
-                st.markdown("""
-                <style>
-                    /* Style for tabs */
-                    .stTabs [data-baseweb="tab-list"] {
-                        gap: 8px;
-                        margin-bottom: 1.5rem;
-                    }
-                    
-                    .stTabs [data-baseweb="tab"] {
-                        background-color: var(--card-bg) !important;
-                        color: var(--text) !important;
-                        border: 1px solid var(--border) !important;
-                        border-radius: 8px !important;
-                        padding: 0.5rem 1rem !important;
-                        margin-right: 0 !important;
-                        transition: all 0.2s ease;
-                    }
-                    
-                    .stTabs [data-baseweb="tab"]:hover {
-                        background-color: var(--primary) !important;
-                        color: white !important;
-                    }
-                    
-                    .stTabs [aria-selected="true"] {
-                        background-color: var(--primary) !important;
-                        color: white !important;
-                        font-weight: 600;
-                    }
-                    
-                    /* Style for tab content */
-                    [data-testid="stTabs"] > div > div:last-child > div {
-                        background-color: transparent !important;
-                        padding: 0 !important;
-                    }
-                    
-                    /* Fix for recommendation cards in dark mode */
-                    [data-testid="stExpander"] .stMarkdown > div {
-                        background-color: transparent !important;
-                        border: none !important;
-                        padding: 0 !important;
-                        margin: 0 !important;
-                    }
-                </style>
-                """, unsafe_allow_html=True)
-                
+                # Add tabs for detailed information
                 tab1, tab2, tab3 = st.tabs(["📝 Información", "🔍 Contexto", "💡 Recomendaciones"])
 
                 with tab1:
@@ -895,8 +635,8 @@ def main():
 
     # Footer
     st.markdown("---")
-    st.markdown(f"""
-    <div style="text-align: center; color: var(--text-muted); padding: 1.5rem 0;">
+    st.markdown("""
+    <div style="text-align: center; color: #6b7280; padding: 1.5rem 0;">
         🎢 ParkBeat — Predicción de tiempos de espera en tiempo real<br>
         <small>Desarrollado con ❤️ por Sergio López | v2.0</small>
     </div>
