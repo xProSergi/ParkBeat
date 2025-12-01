@@ -238,25 +238,46 @@ html, body, .stApp {
 def render_hero():
     try:
         hero_image_path = os.path.join("img", "fotoBatman.jpg")
-        if os.path.exists(hero_image_path):
-            hero_image = get_base64_image(hero_image_path)
+        
+        # 1. Intentar cargar la imagen
+        hero_bg = "none" # Valor predeterminado si no se carga
+        hero_image = get_base64_image(hero_image_path)
+        
+        if hero_image:
             hero_bg = f"url(data:image/jpg;base64,{hero_image})"
-
-            st.markdown(f"""
+        
+        # 2. Renderizar el HTML/CSS
+        st.markdown(f"""
             <style>
                 .hero-container {{
                     position: relative;
                     width: 100%;
                     height: 600px;
+                    /* Usar hero_bg cargado o 'none' */
                     background: {hero_bg} no-repeat center center;
                     background-size: cover;
                     border-radius: 12px;
                     overflow: hidden;
+                    display: flex;
+                    align-items: center; /* Centrado vertical */
+                    justify-content: center; /* Centrado horizontal */
+                }}
+
+                /* Nuevo: Superposición para oscurecer la imagen y mejorar la legibilidad */
+                .hero-container::before {{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    background-color: rgba(0, 0, 0, 0.4); /* Capa negra semi-transparente */
+                    z-index: 0;
                 }}
 
                 .hero-content {{
                     position: relative;
-                    z-index: 1;
+                    z-index: 1; /* Asegura que el contenido esté sobre la superposición */
                     text-align: center;
                     padding: 2rem;
                     width: 100%;
@@ -266,7 +287,8 @@ def render_hero():
                     font-size: 4.5rem;
                     font-weight: 800;
                     margin: 0;
-                    color: #FF8C00;  /* Changed to darker orange for better visibility */
+                    /* CORRECCIÓN: Usamos !important para asegurar el color naranja */
+                    color: #FF8C00 !important; 
                     text-shadow: 0 2px 6px rgba(0,0,0,0.7);
                     line-height: 1.1;
                 }}
@@ -305,20 +327,19 @@ def render_hero():
             </div>
             """, unsafe_allow_html=True)
 
-        else:
-            # fallback si no hay imagen
-            st.markdown("""
-            <div style="text-align: center; padding: 2rem 0;">
-                <h1 style="color: #FF8C00; margin: 0; font-size: 3rem; text-shadow: 0 4px 12px rgba(0,0,0,0.9); display:inline-block; position:relative;">
-                    Parklytics
+    except Exception as e:
+        # Fallback si falla la carga o renderización
+        st.warning(f"Error al renderizar el hero: {e}")
+        st.markdown("""
+            <div style="text-align: center; padding: 2rem 0; background-color: #333; border-radius: 12px;">
+                <h1 style="color: #FF8C00; margin: 0; font-size: 3rem; text-shadow: 0 4px 12px rgba(0,0,0,0.9);">
+                    Parklytics (Fallback)
                 </h1>
-                <p style="color: #FFD54F; margin: 1rem 0 0; font-size: 2rem; font-weight: 700; text-shadow: 0 4px 14px rgba(0,0,0,0.85); display:inline-block; position:relative;">
+                <p style="color: #FFD54F; margin: 1rem 0 0; font-size: 2rem; font-weight: 700; text-shadow: 0 4px 14px rgba(0,0,0,0.85);">
                     Predicción inteligente de tiempos de espera en Parque Warner
                 </p>
             </div>
             """, unsafe_allow_html=True)
-    except Exception as e:
-        st.warning(f"Error al cargar la imagen: {e}")
 
 
 
