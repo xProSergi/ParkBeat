@@ -19,12 +19,11 @@ st.set_page_config(
 )
 
 # -----------------------
-# CSS personalizado (modo claro forzado + UI mejorada)
+# CSS PERSONALIZADO
 # -----------------------
 st.markdown(
     """
     <style>
-    /* --- Variables de tema (modo claro) --- */
     :root{
         --primary: #2b6ef6;
         --accent: #6c63ff;
@@ -33,27 +32,22 @@ st.markdown(
         --card: #f8fafc;
         --border: #e6e9ee;
         --text: #111827;
-        --glass: rgba(255,255,255,0.6);
     }
 
-    /* Forzamos modo claro (si el usuario tiene preferencia oscuro, lo ignoramos para esta app) */
     html, body, .css-18e3th9 {
         background: var(--bg) !important;
         color: var(--text) !important;
     }
 
-    /* Fuente y espaciado */
     body, .block-container {
-        font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        font-family: Inter, system-ui;
         line-height: 1.45;
     }
 
-    /* Cabecera */
     .main-header {
         font-size: 2.4rem;
         font-weight: 700;
         color: var(--primary);
-        margin: 0.25rem 0 0.2rem 0;
     }
     .sub-header {
         color: var(--muted);
@@ -61,7 +55,6 @@ st.markdown(
         font-size: 1rem;
     }
 
-    /* Imagen cabecera */
     .header-row {
         display:flex;
         align-items:center;
@@ -74,7 +67,6 @@ st.markdown(
         box-shadow: 0 6px 18px rgba(43,110,246,0.12);
     }
 
-    /* Tarjeta de predicción */
     .prediction-box{
         border-radius:14px;
         padding:1.2rem;
@@ -82,20 +74,17 @@ st.markdown(
         box-shadow: 0 12px 30px rgba(16,24,40,0.06);
         text-align:center;
     }
-    .prediction-value { font-size:3.2rem; font-weight:800; line-height:1; }
+    .prediction-value { font-size:3.2rem; font-weight:800; }
     .prediction-label { font-size:1rem; opacity:0.95; margin-top:0.25rem; }
 
-    /* Boxes info/metric */
-    .info-box, .metric-box {
+    .info-box {
         background: var(--card);
         border: 1px solid var(--border);
         border-radius:10px;
         padding:0.9rem;
         margin-bottom:0.6rem;
     }
-    .info-box strong { color: var(--text); }
 
-    /* Disclaimer */
     .disclaimer {
         background: linear-gradient(180deg, #fff8e6, #fffdf6);
         color: #5c3d00;
@@ -104,118 +93,77 @@ st.markdown(
         border-radius:10px;
     }
 
-    /* Footer */
-    .footer { color:var(--muted); text-align:center; padding:0.75rem 0; margin-top:1.25rem; border-top:1px solid var(--border); }
-
-    /* Selectores y inputs - forzamos modo claro y texto oscuro */
-    /* Selectbox container */
-    div[data-baseweb="select"] > div {
-        background: var(--bg) !important;
-        color: var(--text) !important;
-        border: 1px solid var(--border) !important;
-        border-radius: 8px !important;
-    }
-    /* internal input of select (searchable) */
-    div[data-baseweb="select"] input {
-        color: var(--text) !important;
-        background: transparent !important;
-    }
-    /* TimeInput */
-    .stTimeInput>div>div>input, input[type="time"] {
-        color: var(--text) !important;
-        background: transparent !important;
-    }
-    /* Slider labels */
-    .stSlider > label, .stRangeSlider > label {
-        color: var(--text) !important;
+    .footer {
+        color:var(--muted);
+        text-align:center;
+        padding:0.75rem 0;
+        margin-top:1.25rem;
+        border-top:1px solid var(--border);
     }
 
-    /* Botón principal */
     .stButton>button {
         background: linear-gradient(90deg, var(--primary), var(--accent)) !important;
         color: white !important;
         border: none !important;
         padding: 0.6rem 1rem !important;
         border-radius: 10px !important;
-        box-shadow: 0 8px 20px rgba(43,110,246,0.12);
         font-weight: 700;
     }
-    .stButton>button:hover { transform: translateY(-2px); transition: all 0.12s ease; }
-
-    /* Table / metrics */
-    .stMetric > div {
-        background: transparent !important;
-    }
-
-    /* Small responsive tweaks */
-    @media (max-width: 900px) {
-        .prediction-value { font-size:2.2rem; }
-        .main-header { font-size:1.6rem; }
-    }
-
-    /* Focus visible for accessibility */
-    :focus { outline: 3px solid rgba(43,110,246,0.12); outline-offset:2px; }
-
     </style>
     """,
     unsafe_allow_html=True,
 )
 
 # -----------------------
-# Utilidades / helpers corregidas y cacheadas
+# CACHE y UTILIDADES
 # -----------------------
 @st.cache_resource
 def load_model():
-    """Carga el modelo y los artefactos (wrapper seguro)."""
     try:
         return load_model_artifacts()
     except Exception as e:
         return {"error": str(e)}
 
 @st.cache_data
-def get_attractions_list(_artifacts):
-    """Obtiene la lista única de atracciones"""
-    if not _artifacts or "error" in _artifacts:
+def get_attractions_list(artifacts):
+    if not artifacts or "error" in artifacts:
         return []
-    df = _artifacts["df_processed"]
-    atracciones = sorted(df["atraccion"].dropna().unique().tolist())
-    return atracciones
+    df = artifacts["df_processed"]
+    return sorted(df["atraccion"].dropna().unique().tolist())
 
 @st.cache_data
-def get_zones_list(_artifacts):
-    """Obtiene las zonas únicas"""
-    if not _artifacts or "error" in _artifacts:
+def get_zones_list(artifacts):
+    if not artifacts or "error" in artifacts:
         return []
-    df = _artifacts["df_processed"]
-    zonas = sorted(df["zona"].dropna().unique().tolist())
-    return zonas
+    df = artifacts["df_processed"]
+    return sorted(df["zona"].dropna().unique().tolist())
 
 @st.cache_data
-def get_zone_for_attraction(_artifacts, atraccion):
-    """Obtiene la zona asociada a una atracción (si existe)"""
-    if not _artifacts or "error" in _artifacts:
+def get_zone_for_attraction(artifacts, atraccion):
+    if not artifacts or "error" in artifacts:
         return ""
-    df = _artifacts["df_processed"]
-    subset = df[df["atraccion"] == atraccion]
-    if subset.empty:
+    df = artifacts["df_processed"]
+    row = df[df["atraccion"] == atraccion]
+    if row.empty:
         return ""
-    return str(subset["zona"].iloc[0])
+    return str(row["zona"].iloc[0])
+
 
 # -----------------------
-# Cabecera visual (logo + título)
+# CABECERA
 # -----------------------
-# Puedes cambiar la ruta "img/header_illustration.png" por la que tengas
-header_col1, header_col2 = st.columns([0.12, 0.88])
-with header_col1:
-    # Si no existe la imagen, Streamlit levanta error; si es opcional, puedes
-    # envolver en try/except o usar st.image con allow_emoji
+col1, col2 = st.columns([0.12, 0.88])
+with col1:
     try:
-        st.image("img/fotoBatman.jpg", width=64, output_format="PNG")
-    except Exception:
-        st.markdown("<div style='width:64px;height:64px;border-radius:12px;background:linear-gradient(90deg,#e6f0ff,#f3eefe);'></div>", unsafe_allow_html=True)
+        st.image("img/fotoBatman.jpg", width=64)
+    except:
+        pass
 
-with header_col2:
-    st.markdown('<div class="header-row"><div><h1 class="main-header">Parklytics</h1><div class="sub-header">Predicción inteligente de tiempos de espera — Parque Warner</div></div></div>', unsafe_allow_html=True)
+with col2:
+    st.markdown(
+        '<div class="header-row"><div><h1 class="main-header">Parklytics</h1><div class="sub-header">Predicción inteligente de tiempos de espera — Parque Warner</div></div></div>',
+        unsafe_allow_html=True
+    )
 
 # Disclaimer
 st.markdown("""
