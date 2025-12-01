@@ -19,13 +19,6 @@ def get_base64_image(image_path):
     with open(image_path, "rb") as img_file:
         return base64.b64encode(img_file.read()).decode('utf-8')
 
-def is_dark_theme():
-    """Check if the app is in dark mode"""
-    try:
-        return st._config.get_option("theme.base") == "dark"
-    except:
-        return False
-
 # -----------------------
 # PAGE CONFIGURATION
 # -----------------------
@@ -39,235 +32,205 @@ st.set_page_config(
 # -----------------------
 # CSS STYLING
 # -----------------------
-def load_css():
-    dark_mode = is_dark_theme()
-    
-    # Base colors
-    if dark_mode:
-        bg_color = "#0E1117"
-        card_bg = "#1E293B"
-        text_color = "#F8FAFC"
-        border_color = "#2D3748"
-        muted_color = "#94A3B8"
-    else:
-        bg_color = "#FFFFFF"
-        card_bg = "#F8FAFC"
-        text_color = "#111827"
-        border_color = "#E2E8F0"
-        muted_color = "#64748B"
-    
-    css = f"""
-    <style>
-    :root {{
-        --primary: #2b6ef6;
-        --accent: #6c63ff;
-        --success: #10B981;
-        --warning: #F59E0B;
-        --danger: #EF4444;
-        --muted: {muted_color};
-        --bg: {bg_color};
-        --text: {text_color};
-        --card: {card_bg};
-        --border: {border_color};
-        --shadow: {'rgba(0, 0, 0, 0.1)' if not dark_mode else 'rgba(0, 0, 0, 0.3)'};
-    }}
+st.markdown("""
+<style>
+:root {
+    --primary: #2b6ef6;
+    --accent: #6c63ff;
+    --success: #10B981;
+    --warning: #F59E0B;
+    --danger: #EF4444;
+    --muted: #6b7280;
+    --bg: #ffffff;
+    --card: #f8fafc;
+    --text: #111827;
+    --border: #e6e9ee;
+    --shadow: rgba(0, 0, 0, 0.1);
+}
 
-    /* Base Styles */
-    html, body, .stApp {{
-        background: var(--bg) !important;
-        color: var(--text) !important;
-        font-family: 'Inter', system-ui, -apple-system, sans-serif !important;
-        transition: background-color 0.3s ease, color 0.3s ease;
-    }}
+/* Base Styles */
+html, body, .stApp {
+    background: var(--bg) !important;
+    color: var(--text) !important;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif !important;
+}
 
-    /* Hero Section */
-    .hero-container {{
-        position: relative;
-        width: 100%;
-        height: 400px;
-        border-radius: 16px;
-        overflow: hidden;
-        margin-bottom: 2rem;
-        box-shadow: 0 10px 25px var(--shadow);
-    }}
+/* Hero Section - Updated for full image display */
+.hero-container {
+    position: relative;
+    width: 100%;
+    min-height: 500px;  /* Increased minimum height */
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 25px var(--shadow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-    .hero-image {{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center 30%;
-    }}
+.hero-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;  /* Changed from 'cover' to 'contain' */
+    object-position: center;
+    z-index: 1;
+}
 
-    .hero-overlay {{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(
-            to bottom,
-            rgba(0, 0, 0, 0.2) 0%,
-            rgba(0, 0, 0, 0.7) 100%
-        );
-    }}
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.1) 0%,
+        rgba(0, 0, 0, 0.5) 50%,
+        rgba(0, 0, 0, 0.9) 100%
+    );
+    z-index: 2;
+}
 
-    .hero-content {{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        text-align: center;
-        padding: 2rem;
-        z-index: 2;
-    }}
+.hero-content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-    .hero-title {{
-        font-size: 3.2rem;
-        font-weight: 800;
-        margin: 0;
-        text-shadow: 0 2px 10px rgba(0,0,0,0.3);
-        line-height: 1.1;
-    }}
+.hero-title {
+    font-size: 3.2rem;
+    font-weight: 800;
+    margin: 0;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    line-height: 1.1;
+}
 
-    .hero-subtitle {{
-        font-size: 1.3rem;
-        margin: 0.8rem 0 0;
-        font-weight: 400;
-        max-width: 700px;
-        text-shadow: 0 2px 8px rgba(0,0,0,0.3);
-        opacity: 0.95;
-    }}
+.hero-subtitle {
+    font-size: 1.3rem;
+    margin: 0.8rem 0 0;
+    font-weight: 400;
+    max-width: 700px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    opacity: 0.95;
+}
 
-    /* Prediction Card */
-    .prediction-card {{
-        background: var(--card);
-        border: 1px solid var(--border);
-        border-radius: 14px;
-        padding: 2rem;
-        margin: 1.5rem 0;
-        box-shadow: 0 4px 20px var(--shadow);
-        transition: all 0.3s ease;
-    }}
+/* Prediction Card */
+.prediction-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 2rem;
+    margin: 1.5rem 0;
+    box-shadow: 0 4px 20px var(--shadow);
+    transition: all 0.3s ease;
+}
 
-    .prediction-card:hover {{
-        transform: translateY(-3px);
-        box-shadow: 0 8px 30px var(--shadow);
-    }}
+.prediction-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px var(--shadow);
+}
 
-    .prediction-value {{
-        font-size: 3.5rem;
-        font-weight: 800;
-        line-height: 1;
-        margin: 0.5rem 0;
-        background: var(--gradient);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }}
+.prediction-value {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1;
+    margin: 0.5rem 0;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
-    .prediction-label {{
-        font-size: 1.1rem;
-        color: var(--muted);
-        margin-top: 0.5rem;
-    }}
+.prediction-label {
+    font-size: 1.1rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+}
 
-    /* Info Cards */
-    .info-card {{
-        background: var(--card);
-        border: 1px solid var(--border);
-        border-radius: 12px;
-        padding: 1.25rem;
-        margin-bottom: 1rem;
-        transition: all 0.2s ease;
-    }}
+/* Info Cards */
+.info-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    transition: all 0.2s ease;
+}
 
-    .info-card:hover {{
-        border-color: var(--primary);
-        box-shadow: 0 5px 15px var(--shadow);
-    }}
+.info-card:hover {
+    border-color: var(--primary);
+    box-shadow: 0 5px 15px var(--shadow);
+}
 
-    /* Form Elements */
-    .stSelectbox, .stSlider, .stDateInput, .stTimeInput {{
-        background: var(--card);
-        border-radius: 8px;
-        padding: 8px;
-        border: 1px solid var(--border);
-    }}
+/* Buttons */
+.stButton>button {
+    background: linear-gradient(90deg, var(--primary), var(--accent)) !important;
+    color: white !important;
+    border: none !important;
+    padding: 0.7rem 1.5rem !important;
+    border-radius: 10px !important;
+    font-weight: 600 !important;
+    font-size: 1rem !important;
+    transition: all 0.2s ease !important;
+    width: 100%;
+}
 
-    .stSlider .stSliderThumb {{
-        background: var(--primary) !important;
-    }}
+.stButton>button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(43, 110, 246, 0.3) !important;
+}
 
-    .stSlider .stSliderTrack {{
-        background: var(--border) !important;
-    }}
+/* Sliders */
+.stSlider .stSliderThumb {
+    background: var(--primary) !important;
+}
 
-    /* Buttons */
-    .stButton>button {{
-        background: linear-gradient(90deg, var(--primary), var(--accent)) !important;
-        color: white !important;
-        border: none !important;
-        padding: 0.7rem 1.5rem !important;
-        border-radius: 10px !important;
-        font-weight: 600 !important;
-        font-size: 1rem !important;
-        transition: all 0.2s ease !important;
-        width: 100%;
-    }}
+/* Tabs */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 8px;
+}
 
-    .stButton>button:hover {{
-        transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(43, 110, 246, 0.3) !important;
-    }}
+.stTabs [data-baseweb="tab"] {
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.2s;
+}
 
-    /* Tabs */
-    .stTabs [data-baseweb="tab-list"] {{
-        gap: 8px;
-    }}
+.stTabs [aria-selected="true"] {
+    background: var(--primary);
+    color: white !important;
+}
 
-    .stTabs [data-baseweb="tab"] {{
-        padding: 10px 20px;
-        border-radius: 8px;
-        transition: all 0.2s;
-        background: var(--card) !important;
-        color: var(--text) !important;
-    }}
+/* Footer */
+.footer {
+    color: var(--muted);
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.9rem;
+}
 
-    .stTabs [aria-selected="true"] {{
-        background: var(--primary) !important;
-        color: white !important;
-    }}
-
-    /* Footer */
-    .footer {{
-        color: var(--muted);
-        text-align: center;
-        padding: 1.5rem 0;
-        margin-top: 3rem;
-        border-top: 1px solid var(--border);
-        font-size: 0.9rem;
-    }}
-
-    /* Responsive Design */
-    @media (max-width: 768px) {{
-        .hero-container {{
-            height: 300px;
-        }}
-        .hero-title {{
-            font-size: 2.5rem;
-        }}
-        .prediction-value {{
-            font-size: 2.8rem;
-        }}
-    }}
-    </style>
-    """
-    st.markdown(css, unsafe_allow_html=True)
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-container {
+        height: 300px;
+    }
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    .prediction-value {
+        font-size: 2.8rem;
+    }
+}
+</style>
+""", unsafe_allow_html=True)
 
 # -----------------------
 # HERO SECTION
@@ -276,24 +239,48 @@ def render_hero():
     try:
         hero_image_path = os.path.join("img", "fotoBatman.jpg")
         if os.path.exists(hero_image_path):
+            # Get image dimensions to set the container height
+            from PIL import Image
+            img = Image.open(hero_image_path)
+            img_width, img_height = img.size
+            aspect_ratio = img_height / img_width
+            container_height = f"min(100vh - 100px, {img_height}px)"  # Cap at viewport height minus some space
+            
             hero_image = get_base64_image(hero_image_path)
             hero_bg = f"url(data:image/jpg;base64,{hero_image})"
+            
+            st.markdown(f"""
+            <div class="hero-container" style="height: {container_height};">
+                <div class="hero-image" style="background: {hero_bg}; background-size: contain; background-repeat: no-repeat; background-position: center;"></div>
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1 class="hero-title">Parklytics</h1>
+                    <p class="hero-subtitle">Predicción inteligente de tiempos de espera en Parque Warner</p>
+                </div>
+            </div>
+            """, unsafe_allow_html=True)
         else:
-            hero_bg = "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
+            # Fallback to gradient if image not found
+            st.markdown(f"""
+            <div class="hero-container" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                <div class="hero-content">
+                    <h1 class="hero-title">Parklytics</h1>
+                    <p class="hero-subtitle">Predicción inteligente de tiempos de espera en Parque Warner</p>
+                </div>
+            </div>
+            """, unsafe_allow_html=True)
+            
     except Exception as e:
         st.warning(f"Could not load hero image: {e}")
-        hero_bg = "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
-
-    st.markdown(f"""
-    <div class="hero-container">
-        <div class="hero-image" style="background: {hero_bg}; background-size: cover; background-position: center;"></div>
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1 class="hero-title">Parklytics</h1>
-            <p class="hero-subtitle">Predicción inteligente de tiempos de espera en Parque Warner</p>
+        # Fallback to gradient on error
+        st.markdown(f"""
+        <div class="hero-container" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+            <div class="hero-content">
+                <h1 class="hero-title">Parklytics</h1>
+                <p class="hero-subtitle">Predicción inteligente de tiempos de espera en Parque Warner</p>
+            </div>
         </div>
-    </div>
-    """, unsafe_allow_html=True)
+        """, unsafe_allow_html=True)
 
 # -----------------------
 # WEATHER CONTROLS
@@ -351,18 +338,13 @@ def render_weather_controls():
 # MAIN APP
 # -----------------------
 def main():
-    # Load CSS first
-    load_css()
-    
     # Render hero section
     render_hero()
 
     # Disclaimer
     st.markdown("""
-    <div style="background: var(--card); color: var(--text); 
-                padding: 1rem; border-radius: 12px; 
-                border-left: 4px solid var(--warning);
-                margin-bottom: 2rem; border: 1px solid var(--border);">
+    <div style="background: #fff8e6; color: #5c3d00; padding: 1rem; border-radius: 12px; 
+                border-left: 4px solid #ffc107; margin-bottom: 2rem;">
         <strong>⚠️ Aviso:</strong> Esta aplicación es independiente y educativa. 
         No está afiliada a Parque Warner.
     </div>
@@ -568,7 +550,6 @@ def main():
                         """, unsafe_allow_html=True)
                     
                     with info_cols[1]:
-                        st.markdown("#### 🌦️ Condiciones")
                         weather_emoji = {
                             1: '☀️ Soleado',
                             2: '⛅ Parcial',
@@ -577,6 +558,7 @@ def main():
                             5: '⛈️ Tormenta'
                         }.get(codigo_clima, 'N/A')
                         
+                        st.markdown("#### 🌦️ Condiciones")
                         st.markdown(f"""
                         <div class="info-card">
                             <strong>Temperatura:</strong> {temperatura}°C<br>
@@ -733,7 +715,7 @@ def main():
     st.markdown("""
     <div class="footer">
         🎢 Parklytics — Predicción de tiempos de espera en tiempo real<br>
-        <small>Desarrollado con ❤️ por Sergio López | v2.1</small>
+        <small>Desarrollado con ❤️ por Sergio López | v2.0</small>
     </div>
     """, unsafe_allow_html=True)
 
