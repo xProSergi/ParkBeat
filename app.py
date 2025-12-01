@@ -264,18 +264,18 @@ def render_hero():
                     font-size: 4.5rem;
                     font-weight: 800;
                     margin: 0;
-                    color: #FFA500;
+                    color: #FF8C00;  /* Changed to darker orange for better visibility */
                     text-shadow: 0 2px 6px rgba(0,0,0,0.7);
                     line-height: 1.1;
                 }}
                 .hero-subtitle {{
                     font-size: 2.2rem;
                     margin: 1.5rem 0 0;
-                    color: #FFF8DC;  /* Un blanco roto más suave */
-                    font-weight: 600;  /* Texto un poco más grueso */
-                    text-shadow: 0 2px 8px rgba(0,0,0,0.8);  /* Sombra más pronunciada */
-                    line-height: 1.3;  /* Mejor espaciado entre líneas */
-                    letter-spacing: 0.5px;  /* Un poco más de espacio entre letras */
+                    color: #FFD700;  /* Changed to gold for better contrast */
+                    font-weight: 600;
+                    text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+                    line-height: 1.3;
+                    letter-spacing: 0.5px;
                 }}
                 @media (max-width: 768px) {{
                     .hero-container {{
@@ -319,7 +319,6 @@ def render_hero():
             </p>
         </div>
         """, unsafe_allow_html=True)
-
 # -----------------------
 # WEATHER CONTROLS
 # -----------------------
