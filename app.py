@@ -24,36 +24,14 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Custom CSS with theme-aware colors
+# Custom CSS
 st.markdown("""
 <style>
-    :root {
-        --primary-color: #FF8C00;
-        --secondary-color: #FFD54F;
-        --dark-bg: #1a1a1a;
-        --light-bg: #ffffff;
-        --dark-text: #f0f0f0;
-        --light-text: #2d3748;
-        --dark-card: #2d2d2d;
-        --light-card: #f8f9fa;
-        --dark-border: #404040;
-        --light-border: #e6e9ee;
-        --dark-shadow: rgba(0,0,0,0.3);
-        --light-shadow: rgba(0,0,0,0.05);
-    }
-    
     /* Global Overrides */
     html, body, #root, .stApp {
         margin: 0 !important;
         padding: 0 !important;
         max-width: 100% !important;
-        transition: background-color 0.3s ease;
-    }
-    
-    /* Theme-aware background and text */
-    .stApp {
-        background-color: var(--background-color);
-        color: var(--text-color);
     }
     
     /* Main content container */
@@ -66,27 +44,9 @@ st.markdown("""
     .hero-container {
         position: relative;
         width: 100%;
-        height: 400px;
         overflow: hidden;
         margin: 0;
         padding: 0;
-        border-radius: 0 0 12px 12px;
-    }
-    
-    .hero-image {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center 30%;
-    }
-    
-    .hero-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 100%);
     }
     
     .hero-content {
@@ -101,109 +61,42 @@ st.markdown("""
     }
     
     .hero-title {
-        font-size: 3.5rem;
-        font-weight: 700;
+        font-size: 4.5rem;
+        font-weight: 800;
         margin: 0;
-        color: var(--primary-color) !important;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        color: #FF8C00;
+        text-shadow: 0 4px 12px rgba(0,0,0,0.9);
+        line-height: 1.1;
     }
     
     .hero-subtitle {
-        font-size: 1.5rem;
-        margin: 1rem 0 0;
-        color: var(--secondary-color) !important;
-        font-weight: 400;
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        font-size: 3rem;
+        margin: 2rem 0 0;
+        color: #FFD54F;
+        font-weight: 700;
+        text-shadow: 0 4px 18px rgba(0,0,0,0.85);
+        line-height: 1.4;
+        letter-spacing: 0.5px;
     }
     
     /* Card Styles */
     .card {
-        background: var(--card-background);
+        background-color: var(--background-color);
         border-radius: 12px;
         padding: 1.5rem;
         margin-bottom: 1.5rem;
-        box-shadow: 0 4px 6px var(--shadow-color);
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         border: 1px solid var(--border-color);
-        color: var(--text-color);
-    }
-    
-    .card-title {
-        font-size: 1.25rem;
-        font-weight: 600;
-        margin-bottom: 1rem;
-        color: var(--text-color);
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-    }
-    
-    /* Metric cards */
-    [data-testid="stMetric"] {
-        background: var(--card-background);
-        border: 1px solid var(--border-color);
-        border-radius: 10px;
-        padding: 1rem;
-    }
-    
-    [data-testid="stMetricLabel"] {
-        color: var(--text-color) !important;
-    }
-    
-    [data-testid="stMetricValue"] {
-        color: var(--primary-color) !important;
-    }
-    
-    [data-testid="stMetricDelta"] {
-        color: var(--text-color) !important;
-    }
-    
-    /* Sidebar styling */
-    .css-1d391kg, .css-1lcbmhc {
-        background-color: var(--sidebar-background) !important;
-    }
-    
-    .css-1aumxhk {
-        color: var(--text-color) !important;
-    }
-    
-    /* Expander styling */
-    .streamlit-expanderHeader {
-        background-color: var(--card-background) !important;
-        color: var(--text-color) !important;
-        border: 1px solid var(--border-color) !important;
-    }
-    
-    /* Button styling */
-    .stButton button {
-        background: linear-gradient(135deg, var(--primary-color) 0%, #FFA500 100%);
-        color: white;
-        border: none;
-    }
-    
-    .stButton button:hover {
-        background: linear-gradient(135deg, #FFA500 0%, var(--primary-color) 100%);
-    }
-    
-    /* Selectbox and input styling */
-    .stSelectbox, .stDateInput, .stTimeInput, .stSlider {
-        color: var(--text-color) !important;
-    }
-    
-    .stSelectbox div[data-baseweb="select"] {
-        background-color: var(--card-background) !important;
-        color: var(--text-color) !important;
     }
     
     /* Responsive Design */
     @media (max-width: 768px) {
-        .hero-container {
-            height: 350px;
-        }
         .hero-title {
-            font-size: 2.5rem;
+            font-size: 3rem;
         }
         .hero-subtitle {
-            font-size: 1.2rem;
+            font-size: 1.8rem;
+            margin-top: 1rem;
         }
     }
 </style>
@@ -214,7 +107,6 @@ def render_hero():
         hero_image_path = os.path.join("img", "fotoBatman.jpg")
         if os.path.exists(hero_image_path):
             hero_image = get_base64_image(hero_image_path)
-            hero_bg = f"url(data:image/jpg;base64,{hero_image})"
 
             st.markdown(f"""
             <style>
@@ -222,48 +114,10 @@ def render_hero():
                     position: relative;
                     width: 100%;
                     height: 600px;
-                    background: {hero_bg} no-repeat center center;
+                    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.4)), 
+                                url("data:image/jpg;base64,{hero_image}") no-repeat center center;
                     background-size: cover;
-                    border-radius: 12px;
                     overflow: hidden;
-                }}
-                
-                .hero-overlay {{
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    background: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 100%);
-                }}
-                
-                .hero-content {{
-                    position: relative;
-                    z-index: 1;
-                    text-align: center;
-                    padding: 2rem;
-                    width: 100%;
-                }}
-                
-                .hero-title {{
-                    font-size: 4.5rem;
-                    font-weight: 800;
-                    margin: 0;
-                    color: #FF8C00 !important; 
-                    text-shadow: 0 4px 12px rgba(0,0,0,0.9);
-                    line-height: 1.1;
-                }}
-                
-                .hero-subtitle {{
-                    font-size: 3rem;
-                    margin: 2rem 0 0;
-                    color: #FFD54F !important;
-                    font-weight: 700;
-                    text-shadow: 0 4px 18px rgba(0,0,0,0.85);
-                    line-height: 1.4;
-                    letter-spacing: 0.5px;
-                    display: inline-block;
-                    position: relative;
                 }}
                 
                 @media (max-width: 768px) {{
@@ -281,7 +135,6 @@ def render_hero():
             </style>
             
             <div class="hero-container">
-                <div class="hero-overlay"></div>
                 <div class="hero-content">
                     <h1 class="hero-title">Parklytics</h1>
                     <p class="hero-subtitle">Predicción inteligente de tiempos de espera en Parque Warner</p>
@@ -292,11 +145,11 @@ def render_hero():
         else:
             # fallback si no hay imagen
             st.markdown("""
-            <div style="text-align: center; padding: 2rem 0;">
-                <h1 style="color: #FF8C00 !important; margin: 0; font-size: 3rem; text-shadow: 0 4px 12px rgba(0,0,0,0.9); display:inline-block; position:relative;">
+            <div style="text-align: center; padding: 2rem 0; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                <h1 style="color: #FF8C00; margin: 0; font-size: 3rem; text-shadow: 0 4px 12px rgba(0,0,0,0.9);">
                     Parklytics
                 </h1>
-                <p style="color: #FFD54F !important; margin: 1rem 0 0; font-size: 2rem; font-weight: 700; text-shadow: 0 4px 14px rgba(0,0,0,0.85); display:inline-block; position:relative;">
+                <p style="color: #FFD54F; margin: 1rem 0 0; font-size: 2rem; font-weight: 700; text-shadow: 0 4px 14px rgba(0,0,0,0.85);">
                     Predicción inteligente de tiempos de espera en Parque Warner
                 </p>
             </div>
@@ -397,17 +250,6 @@ def render_sidebar():
         
         st.markdown("---")
         
-        # Theme selector
-        st.markdown("### 🎨 Tema")
-        theme = st.radio(
-            "Selecciona el tema:",
-            ["🌙 Oscuro", "☀️ Claro"],
-            index=0,
-            horizontal=True
-        )
-        
-        st.markdown("---")
-        
         # Contact info
         st.markdown("### 📧 Contacto")
         st.markdown("""
@@ -419,80 +261,20 @@ def render_sidebar():
         """)
 
 def main():
-    # Apply theme based on selection
-    theme = st.session_state.get('theme', '🌙 Oscuro') if 'theme' in st.session_state else '🌙 Oscuro'
-    
-    # Set CSS variables based on theme
-    if theme == '☀️ Claro':
-        theme_css = """
-        <style>
-            :root {
-                --background-color: #ffffff;
-                --sidebar-background: #f8f9fa;
-                --text-color: #2d3748;
-                --card-background: #ffffff;
-                --border-color: #e6e9ee;
-                --shadow-color: rgba(0,0,0,0.05);
-            }
-            .hero-title {
-                color: #FF8C00 !important;
-            }
-            .hero-subtitle {
-                color: #FF6B00 !important;
-            }
-        </style>
-        """
-    else:
-        theme_css = """
-        <style>
-            :root {
-                --background-color: #1a1a1a;
-                --sidebar-background: #2d2d2d;
-                --text-color: #f0f0f0;
-                --card-background: #2d2d2d;
-                --border-color: #404040;
-                --shadow-color: rgba(0,0,0,0.3);
-            }
-            .hero-title {
-                color: #FF8C00 !important;
-            }
-            .hero-subtitle {
-                color: #FFD54F !important;
-            }
-        </style>
-        """
-    
-    st.markdown(theme_css, unsafe_allow_html=True)
-    
     # Render sidebar
     render_sidebar()
     
-    # Main content
-    col1, col2 = st.columns([0.85, 0.15])
+    # Hero Section
+    render_hero()
     
-    with col1:
-        # Hero Section
-        render_hero()
-        
-        # Welcome Section
-        st.markdown("""
-        ## 🎢 Bienvenido a ParkBeat
-        
-        Predice los tiempos de espera en las atracciones del Parque Warner Madrid con precisión. 
-        Simplemente selecciona una atracción, la fecha y la hora de tu visita, y te mostraremos una 
-        estimación del tiempo de espera esperado.
-        """)
+    # Welcome Section
+    st.markdown("""
+    ## 🎢 Bienvenido a ParkBeat
     
-    with col2:
-        st.markdown("### 🎨")
-        theme = st.radio(
-            "Tema:",
-            ["🌙 Oscuro", "☀️ Claro"],
-            index=0 if theme == '🌙 Oscuro' else 1,
-            label_visibility="collapsed",
-            key='theme_selector'
-        )
-        st.session_state.theme = theme
+    Predice los tiempos de espera en las atracciones del Parque Warner Madrid con precisión. 
+    Simplemente selecciona una atracción, la fecha y la hora de tu visita, y te mostraremos una 
+    estimación del tiempo de espera esperado.
+    """)
     
     # Load model and data
     with st.spinner("Cargando modelo y datos..."):
@@ -679,12 +461,12 @@ def main():
                 # Main prediction card
                 st.markdown(f"""
                 <div style="
-                    background: var(--card-background);
+                    background-color: var(--background-color);
                     border: 2px solid var(--border-color);
                     border-radius: 15px;
                     padding: 2rem;
                     margin: 1rem 0;
-                    box-shadow: 0 8px 25px var(--shadow-color);
+                    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
                 ">
                     <div style="
                         text-align: center;
@@ -732,7 +514,7 @@ def main():
                         st.markdown("#### 📅 Fecha y hora")
                         st.markdown(f"""
                         <div style="
-                            background: var(--card-background);
+                            background-color: var(--background-color);
                             border: 1px solid var(--border-color);
                             border-radius: 12px;
                             padding: 1.25rem;
@@ -758,7 +540,7 @@ def main():
                         st.markdown("#### 🌦️ Condiciones")
                         st.markdown(f"""
                         <div style="
-                            background: var(--card-background);
+                            background-color: var(--background-color);
                             border: 1px solid var(--border-color);
                             border-radius: 12px;
                             padding: 1.25rem;
@@ -789,7 +571,7 @@ def main():
                         with cols[i % 2]:
                             st.markdown(f"""
                             <div style="
-                                background: var(--card-background);
+                                background-color: var(--background-color);
                                 border: 1px solid var(--border-color);
                                 border-radius: 12px;
                                 padding: 1rem;
@@ -821,37 +603,25 @@ def main():
                         "Mediana": resultado.get('median_historico', 0)
                     }
                     
-                    # Adjust colors based on theme
-                    if theme == '☀️ Claro':
-                        colors = ['#6c63ff', '#4facfe', '#43e97b', '#f6d365']
-                    else:
-                        colors = ['#8a84ff', '#6fc3fe', '#5aed8d', '#ffe066']
-                    
                     fig = go.Figure(go.Bar(
                         x=list(valores.keys()),
                         y=list(valores.values()),
                         text=[f"{v:.1f} min" for v in valores.values()],
                         textposition='auto',
-                        marker_color=colors
+                        marker_color=['#6c63ff', '#4facfe', '#43e97b', '#f6d365']
                     ))
                     
                     fig.update_layout(
-                        plot_bgcolor='var(--card-background)',
-                        paper_bgcolor='var(--background-color)',
+                        plot_bgcolor='rgba(0,0,0,0)',
+                        paper_bgcolor='rgba(0,0,0,0)',
                         height=400,
                         margin=dict(t=20, b=20, l=20, r=20),
                         yaxis_title="Minutos",
                         xaxis_title="",
                         showlegend=False,
                         font=dict(color='var(--text-color)'),
-                        xaxis=dict(
-                            tickfont=dict(color='var(--text-color)'),
-                            gridcolor='var(--border-color)'
-                        ),
-                        yaxis=dict(
-                            gridcolor='var(--border-color)',
-                            tickfont=dict(color='var(--text-color)')
-                        )
+                        xaxis=dict(tickfont=dict(color='var(--text-color)')),
+                        yaxis=dict(gridcolor='var(--border-color)')
                     )
                     
                     st.plotly_chart(fig, use_container_width=True)
