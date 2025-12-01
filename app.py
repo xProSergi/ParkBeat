@@ -11,17 +11,12 @@ import os
 # Suppress warnings
 warnings.filterwarnings('ignore')
 
-# -----------------------
-# HELPER FUNCTIONS
-# -----------------------
 def get_base64_image(image_path):
     """Convert image to base64 for embedding in HTML"""
     with open(image_path, "rb") as img_file:
         return base64.b64encode(img_file.read()).decode('utf-8')
 
-# -----------------------
-# PAGE CONFIGURATION
-# -----------------------
+# Page Configuration
 st.set_page_config(
     page_title="ParkBeat — Predicción Parque Warner",
     page_icon="img/logoParklytics.png",
@@ -29,313 +24,143 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# -----------------------
-# CSS STYLING - UPDATED FOR DARK MODE
-# -----------------------
+# Custom CSS
 st.markdown("""
 <style>
-:root {
-    --primary: #2b6ef6;
-    --accent: #6c63ff;
-    --success: #10B981;
-    --warning: #F59E0B;
-    --danger: #EF4444;
-    --muted: #6b7280;
-    --bg: var(--background-color);
-    --card: var(--card-background-color);
-    --text: var(--text-color);
-    --border: var(--border-color);
-    --shadow: var(--shadow-color);
-}
-
-/* Base Styles */
-html, body, .stApp {
-    background: var(--bg) !important;
-    color: var(--text) !important;
-    font-family: 'Inter', system-ui, -apple-system, sans-serif !important;
-}
-
-/* Card Styles */
-.stTabs [data-baseweb="tab-panel"] {
-    background: var(--card) !important;
-    border-radius: 0 0 8px 8px !important;
-    border: 1px solid var(--border) !important;
-    border-top: none !important;
-    padding: 1rem !important;
-}
-
-/* Input Fields */
-.stTextInput>div>div>input, 
-.stNumberInput>div>div>input,
-.stSelectbox>div>div>div>div>div,
-.stSlider>div>div>div>div>div>div>div {
-    background-color: var(--card) !important;
-    color: var(--text) !important;
-    border-color: var(--border) !important;
-}
-
-/* Hero Section */
-.hero-container {
-    position: relative;
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-    margin: 0 0 2rem 0;
-    padding: 0;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px var(--shadow);
-}
-
-.hero-image {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center 30%;
-    z-index: 1;
-}
-
-.hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0.2) 0%,
-        rgba(255, 69, 0, 0.2) 30%,
-        rgba(255, 165, 0, 0.15) 60%,
-        rgba(0, 0, 0, 0.6) 100%
-    );
-    z-index: 2;
-}
-
-.hero-content {
-    position: relative;
-    z-index: 3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    text-align: center;
-    color: white;
-    padding: 0 1rem;
-}
-
-.hero-title {
-    font-size: 3.2rem;
-    font-weight: 800;
-    margin: 0;
-    color: #FF8C00 !important;
-    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
-    line-height: 1.1;
-}
-
-.hero-subtitle {
-    font-size: 1.8rem;
-    margin: 1rem 0 0;
-    color: #FFD54F;
-    font-weight: 700;
-    text-shadow: 0 4px 18px rgba(0,0,0,0.85);
-    line-height: 1.4;
-}
-
-/* Prediction Card */
-.prediction-card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 2rem;
-    margin: 1.5rem 0;
-    box-shadow: 0 4px 20px var(--shadow);
-    transition: all 0.3s ease;
-}
-
-.prediction-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 30px var(--shadow);
-}
-
-.prediction-value {
-    font-size: 3.5rem;
-    font-weight: 800;
-    line-height: 1;
-    margin: 0.5rem 0;
-    background: linear-gradient(135deg, var(--primary), var(--accent));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.prediction-label {
-    font-size: 1.1rem;
-    color: var(--muted);
-    margin-top: 0.5rem;
-}
-
-/* Info Cards */
-.info-card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 1.25rem;
-    margin-bottom: 1rem;
-    transition: all 0.2s ease;
-}
-
-.info-card:hover {
-    border-color: var(--primary);
-    box-shadow: 0 5px 15px var(--shadow);
-}
-
-/* Form Controls */
-.control-section {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.control-section h3 {
-    margin-top: 0;
-    color: var(--primary);
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
+    /* Base Styles */
     .hero-container {
-        height: 300px;
+        position: relative;
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+        margin: 0 0 2rem 0;
+        padding: 0;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     }
+    
+    .hero-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 30%;
+    }
+    
+    .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.2) 0%,
+            rgba(255, 69, 0, 0.2) 30%,
+            rgba(255, 165, 0, 0.15) 60%,
+            rgba(0, 0, 0, 0.6) 100%
+        );
+    }
+    
+    .hero-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        width: 100%;
+        padding: 0 1rem;
+    }
+    
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 4rem;
+        font-weight: 800;
+        margin: 0;
+        color: #FF8C00;
+        text-shadow: 0 2px 10px rgba(0,0,0,0.3);
     }
+    
     .hero-subtitle {
-        font-size: 1.4rem;
+        font-size: 2rem;
+        margin: 1rem 0 0;
+        color: #FFD54F;
+        font-weight: 700;
+        text-shadow: 0 4px 18px rgba(0,0,0,0.85);
     }
-    .prediction-value {
-        font-size: 2.8rem;
+    
+    /* Card Styles */
+    .card {
+        background: white;
+        border-radius: 12px;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        border: 1px solid #e6e9ee;
     }
-}
-
-/* Dark mode specific overrides */
-[data-theme="dark"] {
-    --card: #1e1e1e;
-    --border: #333;
-    --shadow: rgba(0, 0, 0, 0.3);
-}
-
-[data-theme="light"] {
-    --card: #ffffff;
-    --border: #e6e9ee;
-    --shadow: rgba(0, 0, 0, 0.1);
-}
+    
+    .card-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: #2d3748;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .hero-container {
+            height: 350px;
+        }
+        .hero-title {
+            font-size: 2.5rem;
+        }
+        .hero-subtitle {
+            font-size: 1.5rem;
+        }
+    }
 </style>
 """, unsafe_allow_html=True)
 
-# -----------------------
-# HERO SECTION
-# -----------------------
 def render_hero():
     try:
         hero_image_path = os.path.join("img", "fotoBatman.jpg")
         hero_image = get_base64_image(hero_image_path)
         
         st.markdown(f"""
-        <div class="hero-container" style="background: url(data:image/jpg;base64,{hero_image}) no-repeat center center; background-size: cover;">
+        <div class="hero-container">
+            <img src="data:image/jpg;base64,{hero_image}" class="hero-image" alt="Parque Warner Madrid">
             <div class="hero-overlay"></div>
             <div class="hero-content">
                 <h1 class="hero-title">ParkBeat</h1>
-                <p class="hero-subtitle">Predicción inteligente de tiempos de espera en Parque Warner</p>
+                <p class="hero-subtitle">Predicción de tiempos de espera en tiempo real</p>
             </div>
         </div>
         """, unsafe_allow_html=True)
-
     except Exception as e:
         st.markdown("""
-        <div style="text-align: center; padding: 2rem 0; background: var(--card); border-radius: 12px; margin-bottom: 2rem;">
-            <h1 style="color: var(--primary); margin: 0; font-size: 3rem; font-weight: 800;">
-                ParkBeat
-            </h1>
-            <p style="color: var(--muted); margin: 0.5rem 0 0; font-size: 1.5rem; font-weight: 500;">
-                Predicción inteligente de tiempos de espera en Parque Warner
+        <div style="text-align: center; padding: 3rem 0; background: #f8f9fa; border-radius: 12px; margin-bottom: 2rem;">
+            <h1 style="color: #2b6ef6; margin: 0; font-size: 3rem; font-weight: 800;">ParkBeat</h1>
+            <p style="color: #4a5568; margin: 0.5rem 0 0; font-size: 1.5rem; font-weight: 500;">
+                Predicción de tiempos de espera en tiempo real
             </p>
         </div>
         """, unsafe_allow_html=True)
 
-# -----------------------
-# WEATHER CONTROLS
-# -----------------------
-def render_weather_controls():
-    st.markdown("#### 🌤️ Condiciones meteorológicas")
-    
-    col1, col2 = st.columns(2)
-    with col1:
-        temperatura = st.slider(
-            "Temperatura (°C)", 
-            min_value=-5, 
-            max_value=45, 
-            value=22,
-            help="Temperatura en grados Celsius",
-            key="temp_slider"
-        )
-    with col2:
-        humedad = st.slider(
-            "Humedad (%)", 
-            min_value=0, 
-            max_value=100, 
-            value=60,
-            key="humidity_slider"
-        )
-
-    st.markdown("<div style='margin: 1.5rem 0;'></div>", unsafe_allow_html=True)
-    
-    sensacion_termica = st.slider(
-        "Sensación térmica (°C)", 
-        min_value=-10, 
-        max_value=50, 
-        value=temperatura,
-        key="feels_like_slider"
-    )
-
-    st.markdown("<div style='margin: 0.5rem 0;'></div>", unsafe_allow_html=True)
-    
-    codigo_clima = st.selectbox(
-        "Condición meteorológica",
-        options=[1, 2, 3, 4, 5],
-        index=2,
-        format_func=lambda x: {
-            1: "☀️ Soleado - Excelente",
-            2: "⛅ Parcialmente nublado - Bueno",
-            3: "☁️ Nublado - Normal",
-            4: "🌧️ Lluvia ligera - Malo",
-            5: "⛈️ Lluvia fuerte/Tormenta - Muy malo"
-        }[x]
-    )
-    
-    return temperatura, humedad, sensacion_termica, codigo_clima
-
-# -----------------------
-# MAIN APP
-# -----------------------
 def main():
-    # Render hero section
+    # Hero Section
     render_hero()
-
-    # Disclaimer
+    
+    # Welcome Section
     st.markdown("""
-    <div style="background: var(--card); color: var(--text); padding: 1rem; 
-                border-radius: 12px; border-left: 4px solid var(--warning); 
-                margin-bottom: 2rem; border: 1px solid var(--border);">
-        <strong>⚠️ Aviso:</strong> Esta aplicación es independiente y educativa. 
-        No está afiliada a Parque Warner.
-    </div>
-    """, unsafe_allow_html=True)
-
+    ## 🎢 Bienvenido a ParkBeat
+    
+    Predice los tiempos de espera en las atracciones del Parque Warner Madrid con precisión. 
+    Simplemente selecciona una atracción, la fecha y la hora de tu visita, y te mostraremos una 
+    estimación del tiempo de espera esperado.
+    """)
+    
     # Load model and data
     with st.spinner("Cargando modelo y datos..."):
         try:
@@ -370,22 +195,21 @@ def main():
     atracciones = get_attractions()
     zonas = get_zones()
 
-    # Main controls section
-    st.markdown("## ⚙️ Configuración de la predicción")
+    # Main Controls Section
+    st.markdown("## ⚙️ Configura tu predicción")
     
-    # Create columns for layout
-    col1, col2 = st.columns([2, 1])
+    # Create columns for better organization
+    col1, col2 = st.columns(2)
     
     with col1:
         # Attraction selection
         with st.container():
-            st.markdown("### 🎢 Selección de atracción")
+            st.markdown("### 🎢 Selecciona una atracción")
             atraccion_seleccionada = st.selectbox(
-                "Selecciona una atracción",
+                "Elige una atracción de la lista",
                 options=atracciones,
                 index=0,
-                help="Selecciona la atracción que deseas consultar",
-                key="attraction_select"
+                help="Selecciona la atracción que deseas consultar"
             )
             
             # Auto-detect zone
@@ -394,15 +218,23 @@ def main():
                 st.info(f"📍 **Zona:** {zona_auto}")
 
     with col2:
-        # Date selection
+        # Date and time selection
         with st.container():
-            st.markdown("### 📅 Fecha de visita")
+            st.markdown("### 📅 Fecha y hora de visita")
+            
+            # Date selection
             fecha_seleccionada = st.date_input(
                 "Selecciona la fecha",
                 value=date.today(),
                 min_value=date.today(),
-                format="DD/MM/YYYY",
-                key="date_input"
+                format="DD/MM/YYYY"
+            )
+            
+            # Time selection
+            hora_seleccionada = st.time_input(
+                "Hora de la visita",
+                value=time(14, 0),  # Default to 2 PM
+                step=timedelta(minutes=15)
             )
             
             # Day info
@@ -413,36 +245,48 @@ def main():
             }
             dia_nombre = fecha_seleccionada.strftime("%A")
             es_fin_semana = fecha_seleccionada.weekday() >= 5
-            st.info(f"📅 **Día:** {dia_semana_es.get(dia_nombre, dia_nombre)}\n\n"
-                   f"🌞 **Tipo de día:** {'Fin de semana' if es_fin_semana else 'Día laborable'}")
+            st.info(f"📆 **Día:** {dia_semana_es.get(dia_nombre, dia_nombre)} - {'Fin de semana' if es_fin_semana else 'Día laborable'}")
 
-    # Time and weather controls
-    st.markdown("### ⏰ Hora y condiciones")
-    
-    time_col, weather_col = st.columns([1, 2])
-    
-    with time_col:
-        # Time selection
-        hora_seleccionada = st.time_input(
-            "Hora de visita",
-            value=time(14, 0),  # Default to 2 PM
-            step=timedelta(minutes=15),
-            key="time_input"
-        )
+    # Weather Section
+    with st.expander("🌤️ Configurar condiciones meteorológicas (opcional)", expanded=False):
+        col1, col2 = st.columns(2)
         
-        # Time of day classification
-        hora_int = hora_seleccionada.hour
-        if 12 <= hora_int <= 16:
-            tipo_hora = "🔴 Hora Pico"
-        elif 10 <= hora_int < 12:
-            tipo_hora = "🟡 Hora Media"
-        else:
-            tipo_hora = "🟢 Hora Tranquila"
-        st.info(f"⏱️ **Momento del día:** {tipo_hora}")
+        with col1:
+            temperatura = st.slider(
+                "Temperatura (°C)", 
+                min_value=-5, 
+                max_value=45, 
+                value=22,
+                help="Temperatura en grados Celsius"
+            )
+            
+        with col2:
+            humedad = st.slider(
+                "Humedad (%)", 
+                min_value=0, 
+                max_value=100, 
+                value=60
+            )
 
-    with weather_col:
-        # Weather settings
-        temperatura, humedad, sensacion_termica, codigo_clima = render_weather_controls()
+        sensacion_termica = st.slider(
+            "Sensación térmica (°C)", 
+            min_value=-10, 
+            max_value=50, 
+            value=22
+        )
+
+        codigo_clima = st.selectbox(
+            "Condición meteorológica",
+            options=[1, 2, 3, 4, 5],
+            index=2,
+            format_func=lambda x: {
+                1: "☀️ Soleado - Excelente",
+                2: "⛅ Parcialmente nublado - Bueno",
+                3: "☁️ Nublado - Normal",
+                4: "🌧️ Lluvia ligera - Malo",
+                5: "⛈️ Lluvia fuerte/Tormenta - Muy malo"
+            }[x]
+        )
 
     # Prediction button
     predecir = st.button(
@@ -475,233 +319,93 @@ def main():
                 resultado = predict_wait_time(input_data, artifacts)
                 minutos_pred = resultado.get("minutos_predichos", 0)
                 
-                # Determine prediction style
-                if minutos_pred < 15:
-                    gradient = "linear-gradient(135deg, #16a085 0%, #2ecc71 100%)"
-                    emoji, nivel = "🟢", "Bajo"
-                elif minutos_pred < 30:
-                    gradient = "linear-gradient(135deg, #f6d365 0%, #fda085 100%)"
-                    emoji, nivel = "🟡", "Moderado"
-                elif minutos_pred < 60:
-                    gradient = "linear-gradient(135deg, #f7971e 0%, #ffd200 100%)"
-                    emoji, nivel = "🟠", "Alto"
-                else:
-                    gradient = "linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%)"
-                    emoji, nivel = "🔴", "Muy Alto"
-
                 # Display results
                 st.markdown("## 📊 Resultados de la predicción")
                 
                 # Main prediction card
-                st.markdown(f"""
-                <div class="prediction-card" style="--gradient: {gradient};">
-                    <div style="text-align: center; padding: 1.5rem 1rem;">
-                        <div style="font-size: 1.2rem; color: var(--muted); margin-bottom: 0.5rem;">
-                            {emoji} Tiempo de espera estimado
+                col1, col2 = st.columns([1, 2])
+                
+                with col1:
+                    st.markdown("### Tiempo de espera estimado")
+                    st.markdown(f"""
+                    <div style="text-align: center; padding: 2rem; background: #f8f9fa; 
+                                border-radius: 12px; border-left: 6px solid #2b6ef6; 
+                                margin: 1rem 0;">
+                        <div style="font-size: 3.5rem; font-weight: 800; color: #2b6ef6;">
+                            {minutos_pred:.0f} min
                         </div>
-                        <div class="prediction-value" style="background: {gradient}; -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
-                            {minutos_pred:.1f} min
-                        </div>
-                        <div class="prediction-label">
-                            {nivel} • {atraccion_seleccionada}
+                        <div style="font-size: 1.1rem; color: #4a5568;">
+                            {atraccion_seleccionada}
                         </div>
                     </div>
-                </div>
-                """, unsafe_allow_html=True)
-
-                # Metrics
-                st.markdown("### 📈 Métricas clave")
-                col1, col2, col3, col4 = st.columns(4)
+                    """, unsafe_allow_html=True)
                 
-                metrics = [
-                    ("📊 Predicción Base", f"{resultado.get('prediccion_base', 0):.1f} min"),
-                    ("📈 P75 Histórico", f"{resultado.get('p75_historico', 0):.1f} min"),
-                    ("📉 Mediana", f"{resultado.get('median_historico', 0):.1f} min"),
-                    ("🎯 Especificidad", resultado.get('especificidad_historico', 'N/A').replace('_', ' ').title())
-                ]
-                
-                for (col, (label, value)) in zip([col1, col2, col3, col4], metrics):
-                    with col:
-                        st.metric(label, value)
+                with col2:
+                    st.markdown("### Detalles")
+                    st.markdown(f"""
+                    <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 12px;">
+                        <p><strong>📅 Fecha:</strong> {fecha_seleccionada.strftime('%A %d/%m/%Y')}</p>
+                        <p><strong>⏰ Hora:</strong> {hora_seleccionada.strftime('%H:%M')}</p>
+                        <p><strong>🌡️ Temperatura:</strong> {temperatura}°C</p>
+                        <p><strong>💧 Humedad:</strong> {humedad}%</p>
+                    </div>
+                    """, unsafe_allow_html=True)
 
-                # Tabs for detailed information
-                tab1, tab2, tab3 = st.tabs(["📝 Información", "🔍 Contexto", "💡 Recomendaciones"])
+                # Additional details in tabs
+                tab1, tab2 = st.tabs(["📈 Análisis", "💡 Recomendaciones"])
 
                 with tab1:
-                    st.markdown("### 📝 Información de la predicción")
-                    info_cols = st.columns(2)
-                    
-                    with info_cols[0]:
-                        st.markdown("#### 📅 Fecha y hora")
-                        st.markdown(f"""
-                        <div class="info-card">
-                            <strong>Día de la semana:</strong> {resultado.get('dia_semana', 'N/A')}<br>
-                            <strong>Día del mes:</strong> {resultado.get('dia_mes', 'N/A')}<br>
-                            <strong>Hora seleccionada:</strong> {hora_seleccionada.strftime('%H:%M')}<br>
-                            <strong>Muestra histórica:</strong> {resultado.get('count_historico', 0):,} registros
-                        </div>
-                        """, unsafe_allow_html=True)
-                    
-                    with info_cols[1]:
-                        weather_emoji = {
-                            1: '☀️ Soleado',
-                            2: '⛅ Parcial',
-                            3: '☁️ Nublado',
-                            4: '🌧️ Lluvia',
-                            5: '⛈️ Tormenta'
-                        }.get(codigo_clima, 'N/A')
-                        
-                        st.markdown("#### 🌦️ Condiciones")
-                        st.markdown(f"""
-                        <div class="info-card">
-                            <strong>Temperatura:</strong> {temperatura}°C<br>
-                            <strong>Humedad:</strong> {humedad}%<br>
-                            <strong>Sensación térmica:</strong> {sensacion_termica}°C<br>
-                            <strong>Condición:</strong> {weather_emoji}
-                        </div>
-                        """, unsafe_allow_html=True)
+                    st.markdown("### 📊 Datos históricos")
+                    # Add your historical data visualization here
+                    st.line_chart(data=pd.DataFrame({
+                        'Hora del día': ['9:00', '12:00', '15:00', '18:00'],
+                        'Tiempo de espera (min)': [15, 45, 60, 30]
+                    }).set_index('Hora del día'))
 
                 with tab2:
-                    st.markdown("### 🔍 Contexto")
-                    
-                    # Context cards
-                    context_items = [
-                        ("📅 Fin de semana", resultado.get('es_fin_de_semana', False)),
-                        ("🌉 Es puente", resultado.get('es_puente', False)),
-                        ("⏰ Hora de apertura", resultado.get('es_hora_apertura', False)),
-                        ("🔥 Hora pico", resultado.get('es_hora_pico', False)),
-                        ("🌿 Hora valle", resultado.get('es_hora_valle', False))
-                    ]
-                    
-                    cols = st.columns(2)
-                    for i, (label, value) in enumerate(context_items):
-                        with cols[i % 2]:
-                            st.markdown(f"""
-                            <div class="info-card">
-                                <div style="display: flex; justify-content: space-between; align-items: center;">
-                                    <span>{label}</span>
-                                    <span style="color: {'#16a085' if value else '#6b7280'}; 
-                                                font-weight: 600;">
-                                        {'Sí' if value else 'No'}
-                                    </span>
-                                </div>
-                            </div>
-                            """, unsafe_allow_html=True)
-
-                    # Chart
-                    st.markdown("### 📊 Comparación de predicciones")
-                    valores = {
-                        "Predicción Final": minutos_pred,
-                        "Modelo Base": resultado.get('prediccion_base', 0),
-                        "P75 Histórico": resultado.get('p75_historico', 0),
-                        "Mediana": resultado.get('median_historico', 0)
-                    }
-                    
-                    fig = go.Figure(go.Bar(
-                        x=list(valores.keys()),
-                        y=list(valores.values()),
-                        text=[f"{v:.1f} min" for v in valores.values()],
-                        textposition='auto',
-                        marker_color=['#6c63ff', '#4facfe', '#43e97b', '#f6d365']
-                    ))
-                    
-                    fig.update_layout(
-                        plot_bgcolor='rgba(0,0,0,0)',
-                        paper_bgcolor='rgba(0,0,0,0)',
-                        height=400,
-                        margin=dict(t=20, b=20, l=20, r=20),
-                        yaxis_title="Minutos",
-                        xaxis_title="",
-                        showlegend=False
-                    )
-                    
-                    st.plotly_chart(fig, use_container_width=True)
-
-                with tab3:
-                    st.markdown("### 💡 Recomendaciones")
-                    
-                    recommendations = []
-                    
-                    # Time-based recommendations
-                    if minutos_pred < 15:
-                        recommendations.append(("✅", "Excelente momento", 
-                            f"El tiempo de espera es bajo ({minutos_pred:.1f} min). Aprovecha para subir ahora."))
-                    elif minutos_pred < 30:
-                        recommendations.append(("👍", "Buen momento", 
-                            f"El tiempo de espera es moderado ({minutos_pred:.1f} min). Un buen momento para hacer cola."))
-                    elif minutos_pred < 60:
-                        recommendations.append(("⚠️", "Tiempo de espera alto", 
-                            f"El tiempo de espera es alto ({minutos_pred:.1f} min). Considera planificar para otro momento o usar acceso rápido si está disponible."))
-                    else:
-                        recommendations.append(("🚫", "Tiempo de espera muy alto", 
-                            f"El tiempo de espera es muy alto ({minutos_pred:.1f} min). Te recomendamos cambiar de atracción o volver en otro momento."))
-                    
-                    # Context-based recommendations
-                    if resultado.get('es_hora_pico'):
-                        recommendations.append(("⏰", "Hora pico", 
-                            "Estás en horario de mayor afluencia (11:00-16:00). Las esperas suelen ser más largas."))
-                    
-                    if resultado.get('es_fin_de_semana'):
-                        recommendations.append(("📅", "Fin de semana", 
-                            "Los fines de semana suelen tener más visitantes. Si puedes, considera visitar entre semana."))
-                    
-                    # Display recommendations
-                    for emoji, title, text in recommendations:
-                        with st.expander(f"{emoji} {title}", expanded=True):
-                            st.markdown(f"<div style='padding: 0.5rem 0;'>{text}</div>", unsafe_allow_html=True)
+                    st.markdown("### 💡 Consejos para tu visita")
+                    st.markdown("""
+                    - Las horas con menos afluencia suelen ser a primera hora de la mañana o última de la tarde
+                    - Los días laborables suelen tener menos visitantes que los fines de semana
+                    - El tiempo de espera puede variar según las condiciones meteorológicas
+                    - Revisa las atracciones con menor tiempo de espera en el parque
+                    """)
 
             except Exception as e:
                 st.error(f"❌ Error al realizar la predicción: {str(e)}")
-                st.exception(e)  # Show full error for debugging
 
-    else:
-        # Initial state - show welcome and instructions
+    # How it works section (shown when no prediction has been made)
+    if not predecir:
         st.markdown("""
-        ## 🎢 Bienvenido a ParkBeat
+        ## 🎯 ¿Cómo funciona?
         
-        Utiliza el panel de configuración superior para obtener una predicción del tiempo de espera en las atracciones de Parque Warner.
-        
-        ### Cómo funciona:
-        1. Selecciona una atracción de la lista
-        2. Elige la fecha y hora de tu visita
-        3. Ajusta las condiciones meteorológicas
+        1. **Selecciona una atracción** de la lista desplegable
+        2. **Elige la fecha y hora** de tu visita
+        3. **Ajusta las condiciones meteorológicas** si lo deseas
         4. Haz clic en **Calcular tiempo de espera**
         
+        ¡Obtendrás una predicción precisa basada en datos históricos y condiciones actuales!
+        
         ### 📊 Estadísticas rápidas
-        """, unsafe_allow_html=True)
+        """)
         
         # Quick stats
         if not df.empty:
-            col1, col2, col3, col4 = st.columns(4)
+            col1, col2, col3 = st.columns(3)
             
             with col1:
-                st.metric("Atracciones", len(atracciones))
+                st.metric("Atracciones disponibles", len(atracciones))
             
             with col2:
-                st.metric("Zonas", len(zonas))
+                st.metric("Zonas del parque", len(zonas))
             
             with col3:
                 st.metric("Registros históricos", f"{len(df):,}")
-            
-            with col4:
-                avg_wait = df["tiempo_espera"].mean() if "tiempo_espera" in df.columns else 0
-                st.metric("Tiempo medio", f"{avg_wait:.1f} min")
-        
-        st.markdown("---")
-        
-        # Tips section
-        st.markdown("""
-        ### 💡 Consejos para tu visita
-        - Las horas con menos afluencia suelen ser a primera hora de la mañana o última de la tarde
-        - Los días laborables suelen tener menos visitantes que los fines de semana
-        - El tiempo de espera puede variar según las condiciones meteorológicas
-        - Revisa las atracciones con menor tiempo de espera en el parque
-        """)
 
     # Footer
     st.markdown("---")
     st.markdown("""
-    <div style="text-align: center; color: var(--muted); padding: 1.5rem 0; border-top: 1px solid var(--border); margin-top: 3rem;">
+    <div style="text-align: center; color: #6b7280; padding: 1.5rem 0;">
         🎢 ParkBeat — Predicción de tiempos de espera en tiempo real<br>
         <small>Desarrollado con ❤️ por Sergio López | v2.0</small>
     </div>
