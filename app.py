@@ -293,7 +293,7 @@ def main():
     
     
     st.markdown("""
-    ##  Bienvenido a ParkBeat
+    ##  Bienvenido a ParkBeat.
     
     Predice los tiempos de espera en las atracciones del Parque Warner Madrid con precisión. 
     Simplemente selecciona una atracción, la fecha y la hora de tu visita, y te mostraremos una 
