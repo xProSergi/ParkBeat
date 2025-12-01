@@ -265,18 +265,18 @@ def render_hero():
                     font-size: 4.5rem;
                     font-weight: 800;
                     margin: 0;
-                    color: #FF7F50;  /* Coral, resalta sobre la foto */
-                    text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+                    color: #FF7F50;  /* Coral */
+                    text-shadow: 0 4px 12px rgba(0,0,0,0.7);
                     line-height: 1.1;
                 }}
 
                 .hero-subtitle {{
-                    font-size: 2.2rem;
-                    margin: 1.5rem 0 0;
-                    color: #FFD700;  /* Amarillo dorado */
+                    font-size: 2.4rem;
+                    margin: 1.8rem 0 0;
+                    color: #FFF176;  /* Amarillo claro, más contrastante */
                     font-weight: 600;
-                    text-shadow: 0 2px 6px rgba(0,0,0,0.5);
-                    line-height: 1.3;
+                    text-shadow: 0 4px 12px rgba(0,0,0,0.8);
+                    line-height: 1.4;
                     letter-spacing: 0.5px;
                 }}
 
@@ -288,7 +288,7 @@ def render_hero():
                         font-size: 3rem;
                     }}
                     .hero-subtitle {{
-                        font-size: 1.5rem;
+                        font-size: 1.6rem;
                         margin-top: 1rem;
                     }}
                 }}
@@ -302,11 +302,10 @@ def render_hero():
             </div>
             """, unsafe_allow_html=True)
         else:
-            # Fallback si no se encuentra la imagen
             st.markdown("""
             <div style="text-align: center; padding: 2rem 0;">
                 <h1 style="color: #FF7F50; margin: 0; font-size: 3rem;">Parklytics</h1>
-                <p style="color: #FFD700; margin: 1rem 0 0; font-size: 1.8rem; font-weight: 500;">
+                <p style="color: #FFF176; margin: 1rem 0 0; font-size: 1.8rem; font-weight: 500;">
                     Predicción inteligente de tiempos de espera en Parque Warner
                 </p>
             </div>
@@ -316,7 +315,7 @@ def render_hero():
         st.markdown("""
         <div style="text-align: center; padding: 2rem 0;">
             <h1 style="color: #FF7F50; margin: 0; font-size: 3rem;">Parklytics</h1>
-            <p style="color: #FFD700; margin: 1rem 0 0; font-size: 1.8rem; font-weight: 500;">
+            <p style="color: #FFF176; margin: 1rem 0 0; font-size: 1.8rem; font-weight: 500;">
                 Predicción inteligente de tiempos de espera en Parque Warner
             </p>
         </div>
