@@ -142,37 +142,48 @@ def render_hero():
                     height: 600px;
                     background: {hero_bg} no-repeat center center;
                     background-size: cover;
-                    border-radius: 12px;
                     overflow: hidden;
+                    border-radius: 0px; /* sin bordes */
+                }}
+
+                .hero-overlay {{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0,0,0,0.4); /* para contraste */
+                    z-index: 0;
                 }}
 
                 .hero-content {{
-                    position: relative;
-                    z-index: 1;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
                     text-align: center;
-                    padding: 2rem;
-                    width: 100%;
+                    z-index: 1;
+                    padding: 0 1rem;
                 }}
 
                 .hero-title {{
                     font-size: 4.5rem;
                     font-weight: 800;
                     margin: 0;
-                    color: #FF8C00; 
-                    text-shadow: 0 2px 6px rgba(0,0,0,0.7);
+                    color: #FF8C00 !important; /* fuerza el color */
+                    text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
                     line-height: 1.1;
+                    font-family: 'Poppins', sans-serif;
                 }}
 
                 .hero-subtitle {{
-                    font-size: 3rem;
-                    margin: 2rem 0 0;
-                    color: #FFD54F;
+                    font-size: 2rem;
+                    margin-top: 1rem;
+                    color: #FFD54F !important;
                     font-weight: 700;
-                    text-shadow: 0 4px 18px rgba(0,0,0,0.85);
-                    line-height: 1.4;
-                    letter-spacing: 0.5px;
-                    display: inline-block;
-                    position: relative;
+                    text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+                    line-height: 1.3;
+                    font-family: 'Poppins', sans-serif;
                 }}
 
                 @media (max-width: 768px) {{
@@ -183,34 +194,35 @@ def render_hero():
                         font-size: 3rem;
                     }}
                     .hero-subtitle {{
-                        font-size: 1.8rem;
-                        margin-top: 1rem;
+                        font-size: 1.5rem;
                     }}
                 }}
             </style>
 
             <div class="hero-container">
+                <div class="hero-overlay"></div>
                 <div class="hero-content">
-                    <h1 class="hero-title">Parklytics</h1>
+                    <h1 class="hero-title">ParkBeat</h1>
                     <p class="hero-subtitle">Predicción inteligente de tiempos de espera en Parque Warner</p>
                 </div>
             </div>
             """, unsafe_allow_html=True)
 
         else:
-            # fallback si no hay imagen
             st.markdown("""
-            <div style="text-align: center; padding: 2rem 0;">
-                <h1 style="color: #FF8C00; margin: 0; font-size: 3rem; text-shadow: 0 4px 12px rgba(0,0,0,0.9); display:inline-block; position:relative;">
-                    Parklytics
+            <div style="text-align: center; padding: 3rem 0; background:#000;">
+                <h1 style="color:#FF8C00; font-size:3rem; font-weight:800; text-shadow:2px 2px 10px rgba(0,0,0,0.7); font-family:Poppins,sans-serif;">
+                    ParkBeat
                 </h1>
-                <p style="color: #FFD54F; margin: 1rem 0 0; font-size: 2rem; font-weight: 700; text-shadow: 0 4px 14px rgba(0,0,0,0.85); display:inline-block; position:relative;">
+                <p style="color:#FFD54F; font-size:1.5rem; font-weight:700; text-shadow:2px 2px 10px rgba(0,0,0,0.7); font-family:Poppins,sans-serif;">
                     Predicción inteligente de tiempos de espera en Parque Warner
                 </p>
             </div>
             """, unsafe_allow_html=True)
+
     except Exception as e:
         st.warning(f"Error al cargar la imagen: {e}")
+
 
 
 def main():
@@ -219,7 +231,7 @@ def main():
     
     # Welcome Section
     st.markdown("""
-    ## 🎢 Bienvenido a ParkBeat
+    ##  Bienvenido a ParkBeat
     
     Predice los tiempos de espera en las atracciones del Parque Warner Madrid con precisión. 
     Simplemente selecciona una atracción, la fecha y la hora de tu visita, y te mostraremos una 
@@ -261,7 +273,7 @@ def main():
     zonas = get_zones()
 
     # Main Controls Section
-    st.markdown("## ⚙️ Configura tu predicción")
+    st.markdown("##  Configura tu predicción")
     
     # Create columns for better organization
     col1, col2 = st.columns(2)
