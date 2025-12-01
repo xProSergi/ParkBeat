@@ -24,7 +24,7 @@ def get_base64_image(image_path):
 # -----------------------
 st.set_page_config(
     page_title="Parklytics — Predicción Parque Warner",
-    page_icon="🎢",
+    page_icon="img/logoParklytics.png",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -59,7 +59,7 @@ html, body, .stApp {
 .hero-container {
     position: relative;
     width: 100%;
-    height: 700px;  /* Fixed height for a more compact look */
+    height: 600px;  /* Fixed height for a more compact look */
     overflow: hidden;
     margin: 0 0 2rem 0;
     padding: 0;
@@ -377,7 +377,7 @@ def main():
 
     # SIDEBAR
     with st.sidebar:
-        st.image("https://via.placeholder.com/150x60.png?text=Parklytics", use_column_width=True)
+        st.image("img/logoParklytics.png", use_column_width=True)
         st.markdown("---")
         st.markdown("### ⚙️ Configuración")
         st.markdown("Ajusta los parámetros para obtener una predicción precisa.")
