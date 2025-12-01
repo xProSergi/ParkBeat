@@ -244,7 +244,7 @@ def render_hero():
             
             st.markdown(f"""
             <style>
-                .hero-image {{
+                .hero-container {{
                     position: relative;
                     width: 100%;
                     height: 500px;
@@ -255,36 +255,27 @@ def render_hero():
                     justify-content: center;
                     border-radius: 12px;
                     overflow: hidden;
-                    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
                 }}
-                .hero-text {{
-                    background: rgba(0, 0, 0, 0.5);
-                    padding: 2rem 3rem;
-                    border-radius: 12px;
+                .hero-content {{
                     text-align: center;
-                    backdrop-filter: blur(5px);
-                    border: 1px solid rgba(255, 255, 255, 0.1);
                 }}
                 .hero-title {{
-                    font-size: 3.5rem;
+                    font-size: 4rem;
                     font-weight: 800;
                     margin: 0;
-                    color: #FFD700;
+                    color: #FFA500;  /* Naranja dorado que combina con el atardecer */
                     text-shadow: 0 2px 4px rgba(0,0,0,0.5);
-                    letter-spacing: 1px;
                 }}
                 .hero-subtitle {{
-                    font-size: 1.4rem;
+                    font-size: 1.5rem;
                     margin: 1rem 0 0;
-                    color: #FFFFFF;
-                    font-weight: 400;
-                    max-width: 700px;
-                    line-height: 1.5;
+                    color: #FFD700;  /* Dorado para el subtítulo */
+                    font-weight: 500;
                     text-shadow: 0 2px 4px rgba(0,0,0,0.5);
                 }}
                 @media (max-width: 768px) {{
-                    .hero-image {{
-                        height: 350px;
+                    .hero-container {{
+                        height: 300px;
                     }}
                     .hero-title {{
                         font-size: 2.5rem;
@@ -294,8 +285,8 @@ def render_hero():
                     }}
                 }}
             </style>
-            <div class="hero-image">
-                <div class="hero-text">
+            <div class="hero-container">
+                <div class="hero-content">
                     <h1 class="hero-title">Parklytics</h1>
                     <p class="hero-subtitle">Predicción inteligente de tiempos de espera en Parque Warner</p>
                 </div>
@@ -303,16 +294,10 @@ def render_hero():
             """, unsafe_allow_html=True)
         else:
             # Fallback si no se encuentra la imagen
-            st.markdown(f"""
-            <div style="
-                background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-                padding: 3rem 2rem;
-                border-radius: 12px;
-                text-align: center;
-                margin-bottom: 2rem;
-            ">
-                <h1 style="color: white; font-size: 3rem; margin: 0;">Parklytics</h1>
-                <p style="color: rgba(255,255,255,0.9); font-size: 1.3rem; margin: 1rem 0 0;">
+            st.markdown("""
+            <div style="text-align: center; padding: 2rem 0;">
+                <h1 style="color: #FF8C00; margin: 0;">Parklytics</h1>
+                <p style="color: #FFA500; margin: 0.5rem 0 0; font-size: 1.2rem;">
                     Predicción inteligente de tiempos de espera en Parque Warner
                 </p>
             </div>
@@ -321,16 +306,10 @@ def render_hero():
     except Exception as e:
         st.warning(f"Error al cargar la imagen: {e}")
         # Fallback en caso de error
-        st.markdown(f"""
-        <div style="
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            padding: 3rem 2rem;
-            border-radius: 12px;
-            text-align: center;
-            margin-bottom: 2rem;
-        ">
-            <h1 style="color: white; font-size: 3rem; margin: 0;">Parklytics</h1>
-            <p style="color: rgba(255,255,255,0.9); font-size: 1.3rem; margin: 1rem 0 0;">
+        st.markdown("""
+        <div style="text-align: center; padding: 2rem 0;">
+            <h1 style="color: #FF8C00; margin: 0;">Parklytics</h1>
+            <p style="color: #FFA500; margin: 0.5rem 0 0; font-size: 1.2rem;">
                 Predicción inteligente de tiempos de espera en Parque Warner
             </p>
         </div>
