@@ -33,10 +33,10 @@ st.markdown("""
         width: 100%;
         height: 500px;
         overflow: hidden;
-        margin: 0 0 2rem 0;
+        margin: -1rem 0 2rem 0;
         padding: 0;
-        border-radius: 12px;
-        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        max-width: 100%;
+        border-radius: 0;
     }
     
     .hero-image {
@@ -154,7 +154,7 @@ def main():
     
     # Welcome Section
     st.markdown("""
-    ## 🎢 Bienvenido a ParkBeat
+    ##  Bienvenido a ParkBeat
     
     Predice los tiempos de espera en las atracciones del Parque Warner Madrid con precisión. 
     Simplemente selecciona una atracción, la fecha y la hora de tu visita, y te mostraremos una 
@@ -196,7 +196,7 @@ def main():
     zonas = get_zones()
 
     # Main Controls Section
-    st.markdown("## ⚙️ Configura tu predicción")
+    st.markdown("##  Configura tu predicción")
     
     # Create columns for better organization
     col1, col2 = st.columns(2)
@@ -400,8 +400,7 @@ def main():
                             <p style="color: var(--text-color); margin: 0.5rem 0;">
                                 <strong>Día de la semana:</strong> {resultado.get('dia_semana', 'N/A')}<br>
                                 <strong>Día del mes:</strong> {resultado.get('dia_mes', 'N/A')}<br>
-                                <strong>Hora seleccionada:</strong> {hora_seleccionada.strftime('%H:%M')}<br>
-                                <strong>Muestra histórica:</strong> {resultado.get('count_historico', 0):,} registros
+                                <strong>Hora seleccionada:</strong> {hora_seleccionada.strftime('%H:%M')}
                             </p>
                         </div>
                         """, unsafe_allow_html=True)
@@ -440,7 +439,6 @@ def main():
                     context_items = [
                         ("📅 Fin de semana", resultado.get('es_fin_de_semana', False)),
                         ("🌉 Es puente", resultado.get('es_puente', False)),
-                        ("⏰ Hora de apertura", resultado.get('es_hora_apertura', False)),
                         ("🔥 Hora pico", resultado.get('es_hora_pico', False)),
                         ("🌿 Hora valle", resultado.get('es_hora_valle', False))
                     ]
