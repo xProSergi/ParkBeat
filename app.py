@@ -247,7 +247,7 @@ def render_hero():
                 .hero-container {{
                     position: relative;
                     width: 100%;
-                    height: 500px;
+                    height: 600px;
                     background: {hero_bg} no-repeat center center;
                     background-size: cover;
                     display: flex;
@@ -281,7 +281,7 @@ def render_hero():
                         font-size: 2.5rem;
                     }}
                     .hero-subtitle {{
-                        font-size: 1.1rem;
+                        font-size: 1.5rem;
                     }}
                 }}
             </style>
@@ -297,7 +297,7 @@ def render_hero():
             st.markdown("""
             <div style="text-align: center; padding: 2rem 0;">
                 <h1 style="color: #FF8C00; margin: 0;">Parklytics</h1>
-                <p style="color: #FFA500; margin: 0.5rem 0 0; font-size: 1.2rem;">
+                <p style="color: #FFA500; margin: 0.5rem 0 0; font-size: 1.5rem;">
                     Predicción inteligente de tiempos de espera en Parque Warner
                 </p>
             </div>
@@ -309,7 +309,7 @@ def render_hero():
         st.markdown("""
         <div style="text-align: center; padding: 2rem 0;">
             <h1 style="color: #FF8C00; margin: 0;">Parklytics</h1>
-            <p style="color: #FFA500; margin: 0.5rem 0 0; font-size: 1.2rem;">
+            <p style="color: #FFA500; margin: 0.5rem 0 0; font-size: 1.5rem;">
                 Predicción inteligente de tiempos de espera en Parque Warner
             </p>
         </div>
