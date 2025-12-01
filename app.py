@@ -258,30 +258,35 @@ def render_hero():
                 }}
                 .hero-content {{
                     text-align: center;
+                    padding: 2rem;
                 }}
                 .hero-title {{
-                    font-size: 4rem;
+                    font-size: 4.5rem;
                     font-weight: 800;
                     margin: 0;
-                    color: #FFA500;  /* Naranja dorado que combina con el atardecer */
-                    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+                    color: #FFA500;
+                    text-shadow: 0 2px 6px rgba(0,0,0,0.7);
+                    line-height: 1.1;
                 }}
                 .hero-subtitle {{
-                    font-size: 2rem;
-                    margin: 1rem 0 0;
-                    color: #FFD700;  /* Dorado para el subtítulo */
-                    font-weight: 500;
-                    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+                    font-size: 2.2rem;
+                    margin: 1.5rem 0 0;
+                    color: #FFF8DC;  /* Un blanco roto más suave */
+                    font-weight: 600;  /* Texto un poco más grueso */
+                    text-shadow: 0 2px 8px rgba(0,0,0,0.8);  /* Sombra más pronunciada */
+                    line-height: 1.3;  /* Mejor espaciado entre líneas */
+                    letter-spacing: 0.5px;  /* Un poco más de espacio entre letras */
                 }}
                 @media (max-width: 768px) {{
                     .hero-container {{
-                        height: 300px;
+                        height: 400px;
                     }}
                     .hero-title {{
-                        font-size: 2.5rem;
+                        font-size: 3rem;
                     }}
                     .hero-subtitle {{
-                        font-size: 2rem;
+                        font-size: 1.5rem;
+                        margin-top: 1rem;
                     }}
                 }}
             </style>
@@ -296,8 +301,8 @@ def render_hero():
             # Fallback si no se encuentra la imagen
             st.markdown("""
             <div style="text-align: center; padding: 2rem 0;">
-                <h1 style="color: #FF8C00; margin: 0;">Parklytics</h1>
-                <p style="color: #FFA500; margin: 0.5rem 0 0; font-size: 1.5rem;">
+                <h1 style="color: #FF8C00; margin: 0; font-size: 3rem;">Parklytics</h1>
+                <p style="color: #FFA500; margin: 1rem 0 0; font-size: 1.8rem; font-weight: 500;">
                     Predicción inteligente de tiempos de espera en Parque Warner
                 </p>
             </div>
@@ -308,8 +313,8 @@ def render_hero():
         # Fallback en caso de error
         st.markdown("""
         <div style="text-align: center; padding: 2rem 0;">
-            <h1 style="color: #FF8C00; margin: 0;">Parklytics</h1>
-            <p style="color: #FFA500; margin: 0.5rem 0 0; font-size: 1.5rem;">
+            <h1 style="color: #FF8C00; margin: 0; font-size: 3rem;">Parklytics</h1>
+            <p style="color: #FFA500; margin: 1rem 0 0; font-size: 1.8rem; font-weight: 500;">
                 Predicción inteligente de tiempos de espera en Parque Warner
             </p>
         </div>
