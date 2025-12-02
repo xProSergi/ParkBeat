@@ -20,7 +20,7 @@ ParkBeat es una plataforma inteligente diseñada para transformar la manera en q
 - [Roadmap del proyecto](#️-roadmap-del-proyecto)  
 - [Instalación y ejecución](#-instalación-y-ejecución)  
 - [Contribuciones](#-contribuciones)  
-- [Licencia](#-licencia)  
+- [Licencia](#licencia)  
 - [Contacto](#contacto)  
 
 ---
