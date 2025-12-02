@@ -1,225 +1,185 @@
-🚀 Roadmap completo — Parklytics Warner Madrid (versión pública y realizable)
-🎯 Objetivo general
+<img src="img/logoParklytics.png">
 
-Desarrollar un sistema de analítica predictiva y simulación para Parque Warner Madrid, utilizando datos reales de:
+# ParkBeat
+**Predicción inteligente de tiempos de espera de Parque Warner**
 
-Tiempos de espera (Queue-Times API)
+ParkBeat es una plataforma inteligente diseñada para transformar la manera en que los usuarios descubren, planifican y disfrutan los parques temáticos. Combina análisis de datos, predicción de afluencia, machine learning y experiencias personalizadas para ofrecer una visión clara, útil y accionable sobre el estado de un parque en tiempo real y a futuro.
 
-Clima (Open-Meteo API)
+---
 
-Variables temporales (día, mes, festivos, etc.)
+## 🧭 Índice
 
-El sistema predecirá afluencia y esperas futuras, identificará patrones y permitirá simular escenarios “¿qué pasaría si…?” con Machine Learning explicable.
+- [Descripción general](#-descripción-general)  
+- [Características principales](#-características-principales)  
+- [Tecnologías utilizadas](#️-tecnologías-utilizadas)   
+- [Capturas de pantalla](#️capturas de pantalla)  
+- [Funcionamiento de la predicción](#-funcionamiento-de-la-predicción)  
+- [Interfaz y experiencia de usuario](#-interfaz-y-experiencia-de-usuario)  
+- [Casos de uso](#-casos-de-uso)  
+- [Retorno de valor para parques y empresas](#-retorno-de-valor-para-parques-y-empresas)  
+- [Roadmap del proyecto](#️-roadmap-del-proyecto)  
+- [Instalación y ejecución](#-instalación-y-ejecución)  
+- [Contribuciones](#-contribuciones)  
+- [Licencia](#-licencia)  
+- [Contacto](#contacto)  
 
-🧩 FASE 0 – Preparación del entorno (⏱ 1-2 días)
-🎯 Objetivo
+---
 
-Configurar un entorno profesional sin rutas de Users ni Documents, completamente limpio y controlado.
+## 🏰 Descripción general
 
-🔧 Instalaciones necesarias
-Herramienta	Versión recomendada	Descripción
-Python	3.10 – 3.12	PySpark no soporta 3.14 aún
-Java JDK	8 o 11	Requerido para Spark
-Apache Spark	3.5.1 o 4.0.1 (Hadoop 3)	Motor de procesamiento
-winutils.exe	✔️ Ya instalado	Necesario en Windows
-VSCode o PyCharm	Última	Editor
-venv	-	Entorno virtual
-Librerías	pandas, pyspark, matplotlib, seaborn, requests, scikit-learn, xgboost, shap, dash	Requeridas
-📁 Estructura del proyecto
+Los parques temáticos viven fluctuaciones de afluencia constantes, difíciles de predecir y de comunicar. Esto afecta a:
 
-Todo dentro de C:\Parklytics:
+- La experiencia del visitante  
+- Las decisiones operativas  
+- La optimización de recursos  
+- Las ventas y la satisfacción global  
 
-C:\Parklytics\
-│
-├── data\
-│   ├── raw\
-│   ├── processed\
-│   └── models\
-│
-├── notebooks\
-├── src\
-│   ├── ingestion\
-│   ├── processing\
-│   ├── analytics\
-│   ├── simulation\
-│   ├── visualization\
-│   └── utils\
-│
-└── requirements.txt
+ParkBeat nace para resolver esta falta de visibilidad, ofreciendo un sistema de predicción preciso, visual y eficiente, que permite anticiparse a los picos de afluencia y planificar mejor cada visita.
 
-🌦️ FASE 1 – Ingesta y exploración de datos (⏱ 3-5 días)
-🎯 Objetivo
+El objetivo es crear la herramienta de referencia para entender y prever el pulso (“beat”) del parque.
 
-Obtener y analizar datos reales de:
+---
 
-https://queue-times.com/parks/298/queue_times.json
+## 🚀 Características principales
 
-API meteorológica (Open-Meteo)
+### 🔮 Predicción horaria de afluencia
+- Modelos de Machine Learning entrenados con datos históricos.  
+- Pronóstico por horas.
+- Detección de patrones especiales: festivos, climatología adversa, periodos vacacionales.  
 
-Fechas (semana, mes, festivos, etc.)
+### ☁️ Integración meteorológica
+- Datos en tiempo real mediante la API de Queue-Times- 
+- Ajustes en el modelo según lluvia, temperatura.  
 
-🧰 Tecnologías
+### 📍 Mapa inteligente (en desarrollo)
+- Zonas calientes del parque.  
+- Detección de saturación.  
+- Visualización clara y accesible.  
 
-requests, pandas, json, pyspark.sql, matplotlib
+### 📊 Panel analítico (en desarrollo)
+- Gráficas comparativas entre días.  
+- Tendencias históricas.  
+- Estimación de tiempo óptimo para visitar.  
 
-🧩 Tareas
+### 🎯 Recomendaciones personalizadas
+- “Mejor hora para visitar hoy”.  
+- “Evita esta zona durante los próximos 30 min”.  
+- “Plan ideal según tu perfil (familia, thrill-seeker, niños…)”.  
 
-Crear scripts:
+### ❤️ Experiencia para el visitante
+- Navegación fluida, minimalista y moderna.  
+- Modo oscuro / claro.  
+- Totalmente optimizada para móviles.  
 
-queue_data_ingestor.py
+---
 
-weather_data_ingestor.py
+## 🛠️ Tecnologías utilizadas
 
-Fusión de datasets (por fecha/hora).
+**Frontend**  
+- Python + Streamlit  
+- HTML/CSS inyectado para personalización avanzada  
+- Gráficas dinámicas con Matplotlib / Plotly  
+- Responsive design  
 
-Limpieza: valores nulos, formatos, duplicados.
+**Backend / Data**  
+- Python  
+- Modelos estadísticos + regresión  
+- Preprocesamiento automático  
+- Data pipelines end to end
 
-EDA (Exploratory Data Analysis):
+## Capturas de pantalla
 
-Promedio de esperas por día.
+Aquí se puede ver unas capturas de pantalla de la interfaz sobre un caso de uso.
 
-Comparación clima ↔️ espera.
+<img src="img/intro.PNG">
+<img src="img/prediccion.PNG">
+<img src="img/recomendacion.PNG">
 
-Estacionalidad (findes, verano, etc.).
+## 🤖 Funcionamiento de la predicción
 
-📈 Resultado
+1. **Ingesta de datos**  
+   - Históricos por día y hora  
+   - Variables meteorológicas  
+   - Temporadas, festivos
 
-Dataset consolidado, limpio y exportado a data/processed/parklytics_data.csv.
+2. **Procesado y feature engineering**  
+   - Normalización  
+   - Detección de anomalías  
+   - Construcción de indicadores  
 
-🧠 FASE 2 – Modelado predictivo + Machine Learning explicable (⏱ 7-10 días)
-🎯 Objetivo
+3. **Entrenamiento del modelo**  
+   - Regresión avanzada 
+   - Evaluación por tramos horarios  
+   - Selección automática del mejor modelo  
 
-Predecir:
+4. **Predicción real-time**   
+   - Ajustes según clima del día  
 
-Afluencia esperada (estimada a partir de número de colas activas / esperas)
+5. **Visualización**  
+   - Gráficas horarias  
+   - Recomendaciones  
+   - Mapas de actividad  
 
-Tiempos de espera futuros (por atracción o global)
+---
 
-🧰 Tecnologías
+## 🎨 Interfaz y experiencia de usuario
 
-scikit-learn, xgboost, pyspark.ml, SHAP
+- Diseño centrado en claridad y velocidad  
+- Interactivo
+- Modo oscuro totalmente integrado  
+- Animaciones suaves y colores corporativos  
+- Compatible con navegador móvil  
 
-🧩 Tareas
+---
 
-Feature Engineering:
+## 🧠 Casos de uso
 
-Día de la semana, temperatura, humedad, precipitación, mes, festivo.
+### 👥 Para el visitante
+- Elegir el mejor momento para ir  
+- Evitar colas y zonas saturadas  
+- Planificar la visita completa  
+- Consultar previsión para mañana o el fin de semana  
 
-Modelos base:
+### 🏢 Para el parque
+- Optimizar la asignación de personal  
+- Mejorar la comunicación al visitante  
+- Identificar patrones clave  
+- Aumentar satisfacción, ventas y eficiencia operativa  
 
-Regresión lineal, Random Forest, XGBoost.
+---
 
-Evaluación:
+## 💼 Retorno de valor para parques y empresas
 
-Métricas MAE, RMSE, R².
+**Beneficios directos:**  
+- Reducción de saturación en horas punta  
+- Mejora de la imagen del parque  
+- Señalización inteligente basada en datos  
+- Incremento en consumo dentro del parque  
+- Visitas mejor distribuidas durante el día  
 
-Explicabilidad:
+**Beneficios estratégicos:**  
+- Sistema escalable a múltiples parques  
+- Análisis agregado por temporada  
+- Datos valiosos para decisiones de negocio  
+- Potencial integración con apps oficiales  
 
-Usar SHAP para mostrar qué variables más afectan la espera.
+---
 
-Crear gráficos interpretables.
+## 🗺️ Roadmap del proyecto
 
-Guardado de modelos (.joblib en data/models).
+-  **Fase 1 — MVP (completada)**  
+  Predicción horaria, UI completa, modo oscuro, gráficas y métricas  
 
-📈 Resultado
+-  **Fase 2 — Consolidación**  
+  API propia, modelos más precisos, alertas inteligentes  
 
-Modelos listos para usar, interpretables, con informes visuales de rendimiento.
+-  **Fase 3 — Expansión**  
+  Multi-parque, dashboard para operadores, IA generativa para planificación  
 
-🧩 FASE 3 – Simulador de estrategias (nivel experto) (⏱ 7-10 días)
-🎯 Objetivo
+---
 
-Crear un simulador interactivo donde se pueda modificar:
+## Contacto
 
-Día / clima / tipo de evento / afluencia esperada
-y observar las predicciones de espera y comportamiento del parque.
+- LinkedIn: [Sergio López](https://linkedin.com/in/sergio-lopez-dev)
 
-🧰 Tecnologías
 
-Dash (o Streamlit), Plotly, pandas, joblib
-
-🧩 Tareas
-
-Crear interfaz:
-
-Inputs: temperatura, lluvia, día, tipo (laboral/festivo).
-
-Output: predicción de espera media / afluencia.
-
-Mostrar gráficos dinámicos.
-
-Añadir explicabilidad visual (por qué se predijo eso).
-
-Opción “simulación comparativa”:
-
-“¿Qué pasa si llueve?”
-
-“¿Qué pasa si cambio de sábado a martes?”
-
-📈 Resultado
-
-App local o web que permita probar escenarios y ver su impacto en tiempo real.
-
-📊 FASE 4 – Visualización y presentación (⏱ 5 días)
-🎯 Objetivo
-
-Consolidar toda la información en un dashboard final y preparar el proyecto para portfolio o demo.
-
-🧰 Tecnologías
-
-Dash, Plotly, matplotlib, pandas
-
-🧩 Tareas
-
-Crear dashboard con:
-
-📊 Métricas principales (media de espera, clima, predicciones)
-
-🌦️ Clima y afluencia
-
-🤖 Resultados de modelos
-
-🧩 Simulador
-
-Preparar versión presentable.
-
-Documentar:
-
-README completo
-
-Capturas y vídeo corto para LinkedIn
-
-📄 FASE 5 – Documentación final (⏱ 2-3 días)
-🎯 Objetivo
-
-Cerrar el proyecto con una presentación profesional y divulgativa.
-
-🧩 Tareas
-
-Documentar arquitectura (diagramas y dependencias).
-
-Añadir explicación de cada módulo en README.md.
-
-Crear conclusiones técnicas:
-
-Qué patrones se han encontrado.
-
-Cómo responde la espera ante el clima.
-
-Qué mejoras futuras se pueden implementar.
-
-🕓 Duración total estimada
-
-25–30 días de trabajo intensivo (unas 5-6 semanas razonables).
-Ideal dedicación: 4-5 horas diarias.
-
-💡 Resultado final
-
-Parklytics se convierte en una plataforma de análisis y simulación predictiva basada en datos reales y públicos.
-Permite:
-
-Entender cómo afectan el clima y el calendario a la espera.
-
-Predecir picos de afluencia y optimizar recursos.
-
-Simular escenarios de operación y clima.
-Y todo ello con un enfoque transparente, reproducible y explicable.
